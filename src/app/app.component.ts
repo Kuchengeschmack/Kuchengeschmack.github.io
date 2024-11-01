@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MenuLateralComponent } from "../core/components/menu-lateral/menu-lateral.component";
-import { CartonPhotoComponent } from '../core/components/carton-photo/carton-photo.component';
+import { SideMenuComponent } from 'app/features/side-menu/side-menu.component';
+import { HeaderComponent } from 'app/features/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuLateralComponent],
+  imports: [RouterOutlet, SideMenuComponent, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'Marie-Cécile Caron, artiste-peintre';
