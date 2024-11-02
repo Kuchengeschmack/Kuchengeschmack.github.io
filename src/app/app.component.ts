@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FeatureModule } from './features/feature.module';
+import { ViewsModule } from './views/views.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FeatureModule],
+  imports: [RouterOutlet, ViewsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  public title = 'Marie-Cécile Caron, artiste-peintre';
-}
+export class AppComponent {}

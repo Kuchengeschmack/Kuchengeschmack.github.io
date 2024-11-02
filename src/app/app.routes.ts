@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { BookComponent } from './features/book/components/book.component';
-import { IntroComponent } from './features/intro/components/intro.component';
+import { BookComponent } from './views/book/components/book.component';
+import { IntroComponent } from './views/intro/components/intro.component';
 
 export const routes: Routes = [
   {
