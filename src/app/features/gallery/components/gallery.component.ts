@@ -9,6 +9,6 @@ import { GalleryService } from '../services/photo/gallery.service';
   templateUrl: './gallery.component.html',
 })
 export class GalleryComponent {
-  private readonly _photoService = inject(GalleryService);
-  public readonly photos = this._photoService.photos;
+  private readonly _galleryService = inject(GalleryService);
+  public readonly gallery = this._galleryService.gallery;
 }

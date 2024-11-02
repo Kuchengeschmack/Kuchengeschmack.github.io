@@ -1,5 +1,5 @@
 <mat-grid-list cols="3">
-  @for(photo of photos; track photo.path){
+  @for(photo of gallery.photos; track photo.path){
   <mat-grid-tile>
     <mat-card appearance="outlined">
       <mat-card-content><img [src]="photo.path" /></mat-card-content>
