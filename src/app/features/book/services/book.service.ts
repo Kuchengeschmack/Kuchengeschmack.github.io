@@ -4,11 +4,11 @@ import { GalleryService } from 'app/core/services/gallery.service';
 @Injectable({
   providedIn: 'root',
 })
-export class IntroService {
+export class BookService {
   private readonly _galleryService = inject(GalleryService);
-  private readonly _intro = this._galleryService.getGallery('intro/');
+  private readonly _book = this._galleryService.getGallery('book/');
 
-  public get intro() {
-    return this._intro;
+  public get book() {
+    return this._book;
   }
 }

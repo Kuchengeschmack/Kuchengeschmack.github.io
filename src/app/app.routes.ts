@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { GalleryComponent } from './features/gallery/components/gallery.component';
+import { BookComponent } from './features/book/components/book.component';
 import { IntroComponent } from './features/intro/components/intro.component';
 
 export const routes: Routes = [
@@ -11,7 +11,7 @@ export const routes: Routes = [
   {
     path: 'gallery',
     title: 'Marie-Cécile Caron | Book',
-    component: GalleryComponent,
+    component: BookComponent,
   },
   {
     path: '**',
