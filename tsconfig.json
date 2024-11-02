@@ -25,7 +25,8 @@
       "app/*": ["app/*"],
       "assets/*": ["assets/*"],
       "core/*": ["core/*"]
-    }
+    },
+    "resolveJsonModule": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

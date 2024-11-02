@@ -10,5 +10,5 @@ import { FeatureModule } from './features/feature.module';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'Marie-Cécile Caron, artiste-peintre';
+  public title = 'Marie-Cécile Caron, artiste-peintre';
 }
