@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as jsonData from 'assets/data.json';
+import * as jsonData from 'assets/book.json';
 import { Gallery } from '../models/gallery.model';
 
 @Injectable({

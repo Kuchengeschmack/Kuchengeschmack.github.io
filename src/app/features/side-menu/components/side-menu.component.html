@@ -3,8 +3,7 @@
       @for (item of sideMenu; track item.title) {
         <a
           class="pill"
-          [href]="item.link"
-          target="_blank"
+          [routerLink]="item.link"
           rel="noopener"
         >
           <span>{{ item.title }}</span>
