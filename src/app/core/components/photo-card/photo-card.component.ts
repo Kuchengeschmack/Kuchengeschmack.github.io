@@ -1,13 +1,15 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { CoreModule } from 'app/core/core.module';
+import { SharedModule } from 'app/core/shared/shared.module';
+import { Photo } from 'app/features/gallery/models/gallery.model';
 
 @Component({
   selector: 'app-photo-card',
   standalone: true,
-  imports: [MatCardModule],
+  imports: [SharedModule],
   templateUrl: './photo-card.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PhotoCardComponent {
-
+  @Input() photo!: Photo;
 }
