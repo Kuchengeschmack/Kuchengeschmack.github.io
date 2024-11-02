@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Gallery } from '../../models/gallery.model';
+import { Gallery } from '../models/gallery.model';
 
 @Injectable({
   providedIn: 'root',
