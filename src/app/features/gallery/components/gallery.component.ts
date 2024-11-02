@@ -1,15 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { PhotoService } from '../services/photo/photo.service';
+import { CoreModule } from 'app/core/core.module';
+import { GalleryService } from '../services/photo/gallery.service';
 
 @Component({
   selector: 'app-gallery',
-  imports: [MatCardModule, MatGridListModule],
+  imports: [CoreModule],
   standalone: true,
   templateUrl: './gallery.component.html',
 })
 export class GalleryComponent {
-  private _photoService = inject(PhotoService);
-  photos = this._photoService.photos;
+  private readonly _photoService = inject(GalleryService);
+  public readonly photos = this._photoService.photos;
 }

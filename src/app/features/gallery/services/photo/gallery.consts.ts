@@ -1,4 +1,4 @@
-export abstract class Photos {
+export abstract class GalleryConsts {
   public static readonly root = 'assets/';
   public static readonly extension = '.jpg';
   public static readonly titles = [

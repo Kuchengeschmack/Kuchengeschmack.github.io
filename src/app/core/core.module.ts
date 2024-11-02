@@ -1,8 +1,9 @@
-import { NgModule } from "@angular/core";
-import { PhotoCardComponent } from "./components/photo-card/photo-card.component";
+import { NgModule } from '@angular/core';
+import { ComponentModule } from './components/component.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-    imports:[PhotoCardComponent],
-    exports: [PhotoCardComponent]
+  imports: [ComponentModule, SharedModule],
+  exports: [ComponentModule, SharedModule],
 })
 export class CoreModule {}
