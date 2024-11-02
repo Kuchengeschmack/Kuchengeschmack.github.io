@@ -9,12 +9,12 @@ export const routes: Routes = [
     component: IntroComponent,
   },
   {
-    path: 'gallery',
+    path: 'book',
     title: 'Marie-Cécile Caron | Book',
     component: BookComponent,
   },
   {
     path: '**',
-    redirectTo: 'gallery'
+    redirectTo: 'book'
   }
 ];
