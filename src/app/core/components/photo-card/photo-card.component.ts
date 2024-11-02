@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { CoreModule } from 'app/core/core.module';
 import { SharedModule } from 'app/core/shared/shared.module';
 import { Photo } from 'app/features/gallery/models/gallery.model';
 
@@ -11,5 +10,5 @@ import { Photo } from 'app/features/gallery/models/gallery.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PhotoCardComponent {
-  @Input() photo!: Photo;
+  @Input() photo: Photo = new Photo();
 }
