@@ -1,0 +1,37 @@
+export abstract class Photos {
+  public static readonly root = 'assets/';
+  public static readonly extension = '.jpg';
+  public static readonly titles = [
+    '51degre',
+    'agave',
+    'Bandoleo',
+    'Bellisla',
+    'Blonde',
+    'bronzage',
+    'buick',
+    'Cadillac',
+    'clairde',
+    'Contrejo',
+    'crescent',
+    'Diane',
+    'Ethermer',
+    'Femme',
+    'Fenetre',
+    'fordmust',
+    'Frenchri',
+    'helios',
+    'Heuresch',
+    'jaguar',
+    'Lamain',
+    'Lavoute',
+    'Matin',
+    'Meditati',
+    'meilleur',
+    'reminisc',
+    'Rolls',
+    'Songeuse',
+    'themeant',
+    'Timine',
+    'Visage',
+  ];
+}

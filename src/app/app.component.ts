@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FeatureModule } from './feature/feature.module';
+import { FeatureModule } from './features/feature.module';
 
 @Component({
   selector: 'app-root',
