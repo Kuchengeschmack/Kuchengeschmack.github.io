@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Gallery, JsonData } from 'app/core/models/gallery.model';
-import * as jsonData from 'assets/images.json';
+import * as jsonData from 'app/core/constants/images.json';
 
 @Injectable({
   providedIn: 'root',

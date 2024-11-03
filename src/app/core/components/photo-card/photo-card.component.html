@@ -1,9 +1,5 @@
 <mat-card appearance="outlined">
   <mat-card-content>
-    @if(photo.path){
-    <img [src]="photo.path" />
-    } @else {
-    <span>Photo inexistante.</span>
-    }
+    <img [src]="photo.path" [alt]="photo.name"/>
   </mat-card-content>
 </mat-card>

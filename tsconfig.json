@@ -24,7 +24,9 @@
     "paths": {
       "app/*": ["app/*"],
       "assets/*": ["assets/*"],
-      "core/*": ["core/*"]
+      "core/*": ["core/*"],
+      "shared/*": ["app/core/shared/*"],
+      "constants/*": ["app/core/constants/*"]
     },
     "resolveJsonModule": true
   },
