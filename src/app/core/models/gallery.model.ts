@@ -6,9 +6,7 @@ export class Gallery {
   constructor(jsonData: JsonData, path: string) {
     this._photos = jsonData.folders
       .find((folder) => folder.path === path)
-      ?.names.map(
-        (name) => new Photo(name, IMAGES.ROOT + path + name + IMAGES.EXTENSION)
-      );
+      ?.names.map((name) => new Photo(name, path));
   }
 
   public get photos() {
@@ -18,11 +16,11 @@ export class Gallery {
 
 export class Photo {
   private _name: string;
-  private _path: string;
+  private _fullPath: string;
 
   constructor(name?: string, path?: string) {
     this._name = name || '';
-    this._path = path || '';
+    this._fullPath = path ? IMAGES.ROOT + path + name + IMAGES.EXTENSION : '';
   }
 
   public get name() {
@@ -30,7 +28,7 @@ export class Photo {
   }
 
   public get path() {
-    return this._path;
+    return this._fullPath;
   }
 }
 

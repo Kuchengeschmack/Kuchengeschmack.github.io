@@ -1,16 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Gallery, JsonData } from 'app/core/models/gallery.model';
-import * as jsonData from 'app/core/constants/images.json';
+import { Gallery } from 'app/core/models/gallery.model';
+import { IMAGES } from '../constants/constants';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GalleryService {
-  private readonly _jsonData: JsonData;
-
-  constructor() {
-    this._jsonData = jsonData;
-  }
+  private readonly _jsonData = IMAGES.JSON_DATA;
 
   public getGallery(path: string) {
     return new Gallery(this._jsonData, path);

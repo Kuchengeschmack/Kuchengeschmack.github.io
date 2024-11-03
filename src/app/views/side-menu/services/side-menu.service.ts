@@ -1,20 +1,11 @@
 import { Injectable } from '@angular/core';
-import { SideMenu } from '../models/side-menu.model';
+import { SIDE_MENU } from 'app/core/constants/constants';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SideMenuService {
-  private readonly _sideMenu: SideMenu[];
-
-  constructor() {
-    this._sideMenu = [
-      { title: 'Présentation', link: 'intro' },
-      { title: 'Book', link: 'gallery' },
-      { title: 'Cours de piano', link: 'piano' },
-      { title: 'Facebook', link: 'facebook' },
-    ];
-  }
+  private readonly _sideMenu = SIDE_MENU;
 
   public get sideMenu() {
     return this._sideMenu;
