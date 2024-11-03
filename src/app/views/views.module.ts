@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { GalleryComponent } from './gallery/components/gallery.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { HeaderComponent } from './header/components/header.component';
 import { SideMenuComponent } from './side-menu/components/side-menu.component';
 

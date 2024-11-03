@@ -1,5 +1,5 @@
 <mat-grid-list cols="3" gutterSize="10">
-  @for(photo of gallery.photos; track photo.fullPath){
+  @for(photo of photoGallery.photos; track photo.fullPath){
   <mat-grid-tile>
     <app-photo-card [photo]="photo"></app-photo-card>
   </mat-grid-tile>

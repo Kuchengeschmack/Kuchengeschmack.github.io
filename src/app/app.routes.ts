@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { ROUTES } from './core/constants/constants';
-import { GalleryComponent } from './views/gallery/components/gallery.component';
+import { GalleryComponent } from './views/gallery/gallery.component';
 
 export const routes: Routes = [
   {
