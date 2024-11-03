@@ -1,4 +1,4 @@
-import * as jsonData from 'app/core/constants/images.json';
+import * as jsonData from 'assets/images/images.json';
 
 export const ROUTES = {
   INTRO: {
