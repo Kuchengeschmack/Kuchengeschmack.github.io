@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SharedModule } from 'app/core/shared/shared.module';
-import { Photo } from 'app/core/models/gallery.model';
+import { Photo } from 'app/views/gallery/models/gallery.model';
 
 @Component({
   selector: 'app-photo-card',

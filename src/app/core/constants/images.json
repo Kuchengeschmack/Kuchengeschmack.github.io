@@ -1,7 +1,7 @@
 {
   "folders": [
     {
-      "path": "book/",
+      "path": "/book",
       "names": [
         "51degre",
         "agave",
@@ -37,9 +37,9 @@
       ]
     },
     {
-      "path": "intro/",
+      "path": "/intro",
       "names": ["la-montagne-des-pyrenees"]
     },
-    { "path": "piano/", "names": ["flyer-cours"] }
+    { "path": "/piano", "names": ["flyer-cours"] }
   ]
 }

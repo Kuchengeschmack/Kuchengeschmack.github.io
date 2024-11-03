@@ -1,12 +1,12 @@
 import * as jsonData from 'app/core/constants/images.json';
 
 export const IMAGES = {
-  ROOT: 'assets/images/',
+  ROOT: 'assets/images',
   EXTENSION: '.jpg',
   PATHS: {
-    BOOK: 'book/',
-    INTRO: 'intro/',
-    PIANO: 'piano/',
+    BOOK: 'book',
+    INTRO: 'intro',
+    PIANO: 'piano',
   },
   JSON_DATA : jsonData
 } as const;

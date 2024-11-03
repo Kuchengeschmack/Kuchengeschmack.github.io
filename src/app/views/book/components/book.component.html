@@ -1,7 +1,0 @@
-<mat-grid-list cols="3" gutterSize="10">
-  @for(photo of book.photos; track photo.path){
-  <mat-grid-tile>
-    <app-photo-card [photo]="photo"></app-photo-card>
-  </mat-grid-tile>
-  } @empty { Les photos n'ont pas pu être récupérées. }
-</mat-grid-list>

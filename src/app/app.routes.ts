@@ -1,20 +1,20 @@
 import { Routes } from '@angular/router';
-import { BookComponent } from './views/book/components/book.component';
-import { IntroComponent } from './views/intro/components/intro.component';
+import { IMAGES } from './core/constants/constants';
+import { GalleryComponent } from './views/gallery/components/gallery.component';
 
 export const routes: Routes = [
   {
-    path: 'intro',
+    path: IMAGES.PATHS.INTRO,
     title: 'Marie-Cécile Caron | Présentation',
-    component: IntroComponent,
+    component: GalleryComponent,
   },
   {
-    path: 'book',
+    path: IMAGES.PATHS.BOOK,
     title: 'Marie-Cécile Caron | Book',
-    component: BookComponent,
+    component: GalleryComponent,
   },
   {
     path: '**',
-    redirectTo: 'book'
-  }
+    redirectTo: IMAGES.PATHS.BOOK,
+  },
 ];
