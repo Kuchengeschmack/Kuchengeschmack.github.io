@@ -59,7 +59,9 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": false,
+              "outputHashing": "none",
+              "namedChunks": false
             }
           },
           "defaultConfiguration": "production"
