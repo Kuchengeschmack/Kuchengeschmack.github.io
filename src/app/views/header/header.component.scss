@@ -1,0 +1,13 @@
+.divider {
+  width: 1px;
+  background: var(--red-to-pink-to-purple-vertical-gradient);
+  margin-inline: 0.5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 3rem;
+}

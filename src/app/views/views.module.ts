@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { GalleryComponent } from './gallery/gallery.component';
-import { HeaderComponent } from './header/components/header.component';
-import { SideMenuComponent } from './side-menu/components/side-menu.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  imports: [HeaderComponent, SideMenuComponent, GalleryComponent],
-  exports: [HeaderComponent, SideMenuComponent, GalleryComponent],
+  imports: [HeaderComponent, GalleryComponent],
+  exports: [HeaderComponent, GalleryComponent],
 })
 export class ViewsModule {}

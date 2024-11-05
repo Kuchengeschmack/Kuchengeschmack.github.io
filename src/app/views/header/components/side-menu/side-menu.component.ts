@@ -1,6 +1,6 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CoreModule } from 'app/core/core.module';
-import { SideMenuService } from '../services/side-menu.service';
+import { SideMenu } from '../../models/header.model';
 
 @Component({
   selector: 'app-side-menu',
@@ -10,6 +10,5 @@ import { SideMenuService } from '../services/side-menu.service';
   imports: [CoreModule],
 })
 export class SideMenuComponent {
-  private readonly sideMenuService = inject(SideMenuService);
-  public readonly sideMenu = this.sideMenuService.sideMenu;
+  @Input() sideMenu!: SideMenu;
 }

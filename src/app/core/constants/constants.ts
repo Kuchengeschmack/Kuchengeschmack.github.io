@@ -1,3 +1,4 @@
+import { MenuItem } from 'app/views/header/models/header.model';
 import * as jsonData from 'assets/images/images.json';
 
 export const ROUTES = {
@@ -21,7 +22,7 @@ export const IMAGES = {
   JSON_DATA: jsonData,
 } as const;
 
-export const SIDE_MENU = [
+export const MENU_ITEMS: MenuItem[] = [
   { title: 'Présentation', link: ROUTES.INTRO.path },
   { title: 'Book', link: ROUTES.BOOK.path },
   { title: 'Cours de piano', link: ROUTES.PIANO.path },
