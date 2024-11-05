@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CoreModule } from 'app/core/core.module';
-import { Gallery } from '../models/gallery.model';
+import { PhotoGallery } from '../models/gallery.model';
 
 @Component({
   selector: 'app-photo-gallery',
@@ -9,5 +9,5 @@ import { Gallery } from '../models/gallery.model';
   templateUrl: './photo-gallery.component.html',
 })
 export class PhotoGalleryComponent {
-  @Input() photoGallery!: Gallery;
+  @Input() photoGallery!: PhotoGallery;
 }
