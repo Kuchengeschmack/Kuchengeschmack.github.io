@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CoreModule } from 'app/core/core.module';
-import { PhotoGalleryComponent } from './components/photo-gallery.component';
+import { PhotoGalleryComponent } from './components/photo-gallery/photo-gallery.component';
 import { GalleryService } from './services/gallery.service';
 
 @Component({
