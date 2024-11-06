@@ -7,9 +7,11 @@ import { Gallery } from 'app/views/gallery/models/gallery.model';
   providedIn: 'root',
 })
 export class GalleryService {
-  private readonly _url = inject(Router).url;
+  private readonly _router = inject(Router);
+  private readonly _jsonData = IMAGES.JSON_DATA;
+  private readonly _url = () => this._router.url;
 
   public getGallery() {
-    return new Gallery(IMAGES.JSON_DATA, this._url);
+    return new Gallery(this._jsonData, this._url());
   }
 }
