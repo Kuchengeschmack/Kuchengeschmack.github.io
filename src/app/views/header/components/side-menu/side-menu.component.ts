@@ -10,5 +10,5 @@ import { SideMenu } from '../../models/header.model';
   imports: [CoreModule],
 })
 export class SideMenuComponent {
-  @Input() sideMenu!: SideMenu;
+  @Input() sideMenu = {} as SideMenu;
 }

@@ -9,5 +9,5 @@ import { PhotoGallery } from '../../models/gallery.model';
   templateUrl: './photo-gallery.component.html',
 })
 export class PhotoGalleryComponent {
-  @Input() photoGallery!: PhotoGallery;
+  @Input() photoGallery = {} as PhotoGallery;
 }
