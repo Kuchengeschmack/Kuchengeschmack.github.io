@@ -9,5 +9,5 @@ import { Photo } from 'app/views/gallery/models/gallery.model';
   templateUrl: './photo-card.component.html',
 })
 export class PhotoCardComponent {
-  @Input() photo: Photo = new Photo();
+  @Input() photo = {} as Photo;
 }

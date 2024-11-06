@@ -1,38 +1,6 @@
 import { IMAGES } from 'constants/constants';
 
 export class Gallery {
-  private _photoGallery: PhotoGallery;
-
-  constructor(jsonData: JsonData, path: string) {
-    this._photoGallery = new PhotoGallery(jsonData, path);
-  }
-
-  public get photoGallery() {
-    return this._photoGallery;
-  }
-}
-
-export class Photo {
-  private _name: string;
-  private _fullPath: string;
-
-  constructor(name?: string, path?: string) {
-    this._name = name || '';
-    this._fullPath = path
-      ? IMAGES.ROOT + path + '/' + name + IMAGES.EXTENSION
-      : '';
-  }
-
-  public get name() {
-    return this._name;
-  }
-
-  public get fullPath() {
-    return this._fullPath;
-  }
-}
-
-export class PhotoGallery {
   private _photos: Photo[];
 
   constructor(jsonData: JsonData, path: string) {
@@ -47,11 +15,24 @@ export class PhotoGallery {
   }
 }
 
-export interface JsonData {
-  folders: Folder[];
+export class Photo {
+  private _alt: string;
+  private _src: string;
+
+  constructor(name: string, path: string) {
+    this._alt = name;
+    this._src = IMAGES.ROOT + path + '/' + name + IMAGES.EXTENSION;
+  }
+
+  public alt() {
+    return this._alt;
+  }
+
+  public get src() {
+    return this._src;
+  }
 }
 
-export interface Folder {
-  path: string;
-  names: string[];
+export interface JsonData {
+  folders: { path: string; names: string[] }[];
 }

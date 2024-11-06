@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { CoreModule } from 'app/core/core.module';
-import { PhotoGalleryComponent } from './components/photo-gallery/photo-gallery.component';
+import { PhotoCardComponent } from './components/photo-card/photo-card.component';
 import { GalleryService } from './services/gallery.service';
 
 @Component({
   selector: 'app-gallery',
-  imports: [CoreModule, PhotoGalleryComponent],
+  imports: [CoreModule, PhotoCardComponent],
   standalone: true,
   templateUrl: './gallery.component.html',
 })

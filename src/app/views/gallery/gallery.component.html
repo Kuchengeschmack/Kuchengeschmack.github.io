@@ -1,1 +1,8 @@
-<app-photo-gallery [photoGallery]="gallery.photoGallery"></app-photo-gallery>
+<mat-grid-list cols="3" gutterSize="10">
+    @for(photo of gallery.photos; track photo.alt){
+    <mat-grid-tile>
+      <app-photo-card [photo]="photo"></app-photo-card>
+    </mat-grid-tile>
+    } @empty { Les photos n'ont pas pu être récupérées. }
+  </mat-grid-list>
+  
