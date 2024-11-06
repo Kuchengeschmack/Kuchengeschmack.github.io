@@ -7,9 +7,9 @@ import { Gallery } from 'app/views/gallery/models/gallery.model';
   providedIn: 'root',
 })
 export class GalleryService {
-  private readonly _router = inject(Router);
+  private readonly _url = inject(Router).url;
 
   public getGallery() {
-    return new Gallery(IMAGES.JSON_DATA, this._router.url);
+    return new Gallery(IMAGES.JSON_DATA, this._url);
   }
 }
