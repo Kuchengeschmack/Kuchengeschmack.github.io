@@ -1,5 +1,8 @@
 <mat-card appearance="outlined">
-  <mat-card-content>
-    <img [src]="photo.src" [alt]="photo.alt"/>
-  </mat-card-content>
+  <mat-card-header>
+    <mat-card-title>{{photo.alt}}</mat-card-title>
+    <mat-card-subtitle>Acrylique sur toile</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="photo.src" [alt]="photo.alt" />
+  <mat-card-content>Description</mat-card-content>
 </mat-card>

@@ -8,6 +8,7 @@ import { GalleryService } from './services/gallery.service';
   imports: [CoreModule, PhotoCardComponent],
   standalone: true,
   templateUrl: './gallery.component.html',
+  styleUrl: './gallery.component.scss',
 })
 export class GalleryComponent {
   private readonly _galleryService = inject(GalleryService);

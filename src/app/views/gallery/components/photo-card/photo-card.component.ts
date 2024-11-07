@@ -7,6 +7,7 @@ import { Photo } from 'app/views/gallery/models/gallery.model';
   standalone: true,
   imports: [SharedModule],
   templateUrl: './photo-card.component.html',
+  styleUrl: './photo-card.component.scss'
 })
 export class PhotoCardComponent {
   @Input() photo = {} as Photo;
