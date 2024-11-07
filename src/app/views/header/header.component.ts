@@ -9,6 +9,7 @@ import { HeaderService } from './services/header.service';
   imports: [CoreModule, TitleComponent, SideMenuComponent],
   standalone: true,
   templateUrl: './header.component.html',
+  styleUrl:'./header.component.scss'
 })
 export class HeaderComponent {
   private readonly _headerService = inject(HeaderService);
