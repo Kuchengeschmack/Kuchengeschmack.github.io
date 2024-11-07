@@ -24,7 +24,7 @@ export class Photo {
     this._src = IMAGES.ROOT + url + '/' + name + IMAGES.EXTENSION;
   }
 
-  public alt() {
+  public get alt() {
     return this._alt;
   }
 
