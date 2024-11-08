@@ -7,7 +7,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
-const modules = [
+const materialModules = [
   MatCardModule,
   MatGridListModule,
   MatProgressSpinnerModule,
@@ -19,7 +19,7 @@ const modules = [
 ];
 
 @NgModule({
-  imports: modules,
-  exports: modules,
+  imports: materialModules,
+  exports: materialModules,
 })
-export class SharedModule {}
+export class MaterialModule {}
