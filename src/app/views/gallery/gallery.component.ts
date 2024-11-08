@@ -12,5 +12,5 @@ import { GalleryService } from './services/gallery.service';
 })
 export class GalleryComponent {
   private readonly _galleryService = inject(GalleryService);
-  public readonly gallery = this._galleryService.getGallery();
+  public readonly gallery = this._galleryService.gallery;
 }
