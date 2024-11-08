@@ -1,7 +1,7 @@
 import { IMAGES } from 'constants/constants';
 
 export class Gallery {
-  private _photos: Photo[];
+  private _photos: Photos;
 
   constructor(jsonData: JsonData, url: string) {
     this._photos =
@@ -33,6 +33,15 @@ export class Photo {
   }
 }
 
+export type Photos = Photo[];
+
 export interface JsonData {
-  folders: { path: string; names: string[] }[];
+  folders: Folders;
 }
+
+export interface Folder {
+  path: string;
+  names: string[];
+}
+
+export type Folders = Folder[];
