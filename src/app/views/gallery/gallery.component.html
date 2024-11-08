@@ -1,19 +1,20 @@
 <div class="content">
-  @if(!gallery){
-  <mat-progress-spinner
-    class="center"
-    color="primary"
-    mode="indeterminate"
-    value="50"
-  >
-  </mat-progress-spinner>
-  }@else{
-  <mat-grid-list cols="3" gutterSize="10">
-    @for(photo of gallery.photos; track photo.alt){
-    <mat-grid-tile class="mat-elevation-z4">
-      <app-photo-card [photo]="photo"></app-photo-card>
-    </mat-grid-tile>
-    } @empty { Les photos n'ont pas pu être récupérées. }
-  </mat-grid-list>
+  @if (!gallery) {
+    <mat-progress-spinner
+      class="center"
+      color="primary"
+      mode="indeterminate"
+      value="50">
+    </mat-progress-spinner>
+  } @else {
+    <mat-grid-list cols="3" gutterSize="10">
+      @for (photo of gallery.photos; track photo.alt) {
+        <mat-grid-tile class="mat-elevation-z4">
+          <app-photo-card [photo]="photo"></app-photo-card>
+        </mat-grid-tile>
+      } @empty {
+        Les photos n'ont pas pu être récupérées.
+      }
+    </mat-grid-list>
   }
 </div>
