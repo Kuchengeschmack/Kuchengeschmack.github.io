@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CoreModule } from 'app/core/core.module';
+
 import { SideMenu } from '../../models/header.model';
 
 @Component({

@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CoreModule } from 'app/core/core.module';
+
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { TitleComponent } from './components/title/title.component';
 import { HeaderService } from './services/header.service';

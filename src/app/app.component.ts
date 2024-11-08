@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { CoreModule } from './core/core.module';
 import { ViewsModule } from './views/views.module';
 
