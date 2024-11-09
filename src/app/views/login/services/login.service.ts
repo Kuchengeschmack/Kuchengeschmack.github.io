@@ -9,7 +9,7 @@ import { map } from 'rxjs';
 })
 export class LoginService {
   private readonly _store = inject(Store);
-  public readonly isAuthenticated = this._store
+  public readonly isAuthenticated$ = this._store
     .select(AuthState.getAuthData)
     .pipe(map(state => state.isAuthentified));
 

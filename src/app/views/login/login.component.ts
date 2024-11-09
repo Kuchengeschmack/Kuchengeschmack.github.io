@@ -14,7 +14,7 @@ export class LoginComponent {
   private readonly _loginService = inject(LoginService);
   public id = '';
   public password = '';
-  public readonly isAuthenticated$ = this._loginService.isAuthenticated;
+  public readonly isAuthenticated$ = this._loginService.isAuthenticated$;
 
   onSubmit() {
     this._loginService.login(this.id, this.password);
