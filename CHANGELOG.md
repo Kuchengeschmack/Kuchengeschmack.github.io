@@ -1,3 +1,13 @@
+## 0.0.2 (2024-11-09)
+
+### 🚀 Features
+
+- ngxs starter-kit ([8e770b7](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/8e770b7))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.0.1 (2024-11-09)
 
 ### 🚀 Features
