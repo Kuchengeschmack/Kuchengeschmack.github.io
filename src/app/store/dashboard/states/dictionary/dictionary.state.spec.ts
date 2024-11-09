@@ -1,7 +1,8 @@
-import {  provideStore,  Store } from '@ngxs/store';
 import { TestBed } from '@angular/core/testing';
-import { DictionaryState, DictionaryStateModel } from './dictionary.state';
+import { provideStore, Store } from '@ngxs/store';
+
 import { DictionaryReset, SetDictionaryData } from './dictionary.actions';
+import { DictionaryState, DictionaryStateModel } from './dictionary.state';
 
 const data = [
   {
@@ -11,7 +12,7 @@ const data = [
     mainCuratorUserId: 'admin',
     mainCuratorName: 'Adam Gordon',
     backupCuratorUserId: 'manager',
-    backupCuratorName: 'Alexander Chester'
+    backupCuratorName: 'Alexander Chester',
   },
   {
     id: '322',
@@ -20,8 +21,8 @@ const data = [
     mainCuratorUserId: 'manager',
     mainCuratorName: 'Alexander Chester',
     backupCuratorUserId: 'manager',
-    backupCuratorName: 'Amanda Brian'
-  }
+    backupCuratorName: 'Amanda Brian',
+  },
 ];
 
 describe('[TEST]: Dictionary state', () => {
@@ -29,8 +30,7 @@ describe('[TEST]: Dictionary state', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-       providers: [provideStore([DictionaryState])]
-      
+      providers: [provideStore([DictionaryState])],
     });
 
     store = TestBed.inject(Store);
@@ -43,7 +43,7 @@ describe('[TEST]: Dictionary state', () => {
       page: 0,
       size: 0,
       totalPages: 0,
-      totalElements: 0
+      totalElements: 0,
     };
 
     // Act
@@ -61,7 +61,7 @@ describe('[TEST]: Dictionary state', () => {
       page: 0,
       size: 20,
       totalPages: 2,
-      totalElements: 1
+      totalElements: 1,
     };
 
     // Act
@@ -79,7 +79,7 @@ describe('[TEST]: Dictionary state', () => {
       page: 0,
       size: 0,
       totalPages: 0,
-      totalElements: 0
+      totalElements: 0,
     };
 
     // Act

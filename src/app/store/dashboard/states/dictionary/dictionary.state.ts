@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Action, Selector, State, StateContext } from '@ngxs/store';
+
 import { DictionaryReset, SetDictionaryData } from './dictionary.actions';
 
 export interface DictionaryStateModel {
@@ -17,8 +18,8 @@ export interface DictionaryStateModel {
     page: 0,
     size: 0,
     totalPages: 0,
-    totalElements: 0
-  }
+    totalElements: 0,
+  },
 })
 @Injectable()
 export class DictionaryState {
@@ -32,11 +33,15 @@ export class DictionaryState {
     return state.content;
   }
 
-  private static setInstanceState(state: DictionaryStateModel): DictionaryStateModel {
+  private static setInstanceState(
+    state: DictionaryStateModel
+  ): DictionaryStateModel {
     return { ...state };
   }
 
-  private static getInstanceState(state: DictionaryStateModel): DictionaryStateModel {
+  private static getInstanceState(
+    state: DictionaryStateModel
+  ): DictionaryStateModel {
     return { ...state };
   }
 
@@ -55,7 +60,7 @@ export class DictionaryState {
       page: 0,
       size: 0,
       totalPages: 0,
-      totalElements: 0
+      totalElements: 0,
     };
     setState(initialState);
   }

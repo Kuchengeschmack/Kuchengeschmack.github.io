@@ -1,15 +1,15 @@
-import {  provideStore,  Store } from '@ngxs/store';
 import { TestBed } from '@angular/core/testing';
-import { UserStateModel, UserState } from './user.state';
+import { provideStore, Store } from '@ngxs/store';
+
 import { SetUser } from './user.actions';
+import { UserState, UserStateModel } from './user.state';
 
 describe('[TEST]: User state', () => {
   let store: Store;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-       providers: [provideStore([UserState])]
-      
+      providers: [provideStore([UserState])],
     });
 
     store = TestBed.inject(Store);
@@ -26,7 +26,7 @@ describe('[TEST]: User state', () => {
       lastName: '',
       fullName: '',
       positionId: '',
-      positionName: ''
+      positionName: '',
     };
 
     // Act
@@ -48,7 +48,7 @@ describe('[TEST]: User state', () => {
       lastName: 'Gordon',
       fullName: 'Adam Gordon',
       positionId: '102003',
-      positionName: 'admin'
+      positionName: 'admin',
     };
 
     // Act
