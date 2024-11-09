@@ -1,0 +1,8 @@
+<div><input id="id" [(ngModel)]="id" /></div>
+<div><input id="password" [(ngModel)]="password" /></div>
+<div>
+  <button mat-button type="submit" (click)="onSubmit()">Valider</button>
+</div>
+<div>
+  <span>{{ isAuthenticated$ | async }}</span>
+</div>

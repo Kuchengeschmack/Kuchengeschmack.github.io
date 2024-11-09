@@ -3,27 +3,27 @@ import { Action, Selector, State, StateContext } from '@ngxs/store';
 
 import { SetAuthData } from './auth.actions';
 
-export interface AuthenticationStateModel {
+const ID = 'dorian';
+const PASSWORD = '1234';
+
+export interface AuthenticationPayload {
   id: string;
-  firstName: string;
-  lastName: string;
-  fullName: string;
-  email: string;
-  roles: string[];
+  password: string;
+}
+
+export interface AuthenticationStateModel extends AuthenticationPayload {
+  isAuthentified: boolean;
 }
 
 @State<AuthenticationStateModel>({
   name: 'authState',
   defaults: {
     id: '',
-    firstName: '',
-    lastName: '',
-    fullName: '',
-    email: '',
-    roles: [],
+    password: '',
+    isAuthentified: false,
   },
 })
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class AuthState {
   @Selector()
   static getAuthData(
@@ -33,9 +33,12 @@ export class AuthState {
   }
 
   private static setInstanceState(
-    state: AuthenticationStateModel
+    state: AuthenticationPayload
   ): AuthenticationStateModel {
-    return { ...state };
+    return {
+      ...state,
+      isAuthentified: state.id === ID && state.password === PASSWORD,
+    };
   }
 
   private static getInstanceState(

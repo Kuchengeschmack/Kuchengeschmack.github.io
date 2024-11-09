@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 
 import { GalleryComponent } from './views/gallery/gallery.component';
+import { LoginComponent } from './views/login/login.component';
 
 export const routes: Routes = [
   {
@@ -19,7 +20,12 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'login',
+    title: 'Marie-Cécile Caron | Login',
+    component: LoginComponent,
+  },
+  {
     path: '**',
-    redirectTo: 'gallery/book',
+    redirectTo: 'login',
   },
 ];

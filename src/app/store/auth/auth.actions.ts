@@ -1,6 +1,6 @@
-import { AuthenticationStateModel } from './auth.state';
+import { AuthenticationPayload } from './auth.state';
 
 export class SetAuthData {
   static readonly type = '[Auth] Auth data';
-  constructor(readonly payload: AuthenticationStateModel) {}
+  constructor(readonly payload: AuthenticationPayload) {}
 }
