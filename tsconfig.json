@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -24,9 +23,9 @@
     "paths": {
       "app/*": ["app/*"],
       "assets/*": ["assets/*"],
+      "constants/*": ["app/core/constants/*"],
       "core/*": ["core/*"],
-      "shared/*": ["app/core/shared/*"],
-      "constants/*": ["app/core/constants/*"]
+      "shared/*": ["app/core/shared/*"]
     },
     "resolveJsonModule": true
   },
