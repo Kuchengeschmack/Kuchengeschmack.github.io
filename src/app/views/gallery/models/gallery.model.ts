@@ -6,8 +6,8 @@ export class Gallery {
   constructor(jsonData: JsonData, url: string) {
     this._photos =
       jsonData.folders
-        .find(folder => folder.path === url)
-        ?.names.map(name => new Photo(name, url)) || [];
+        .find(folder => folder.path === url?.split('gallery')[1])
+        ?.names.map(name => new Photo(name, url?.split('gallery')[1])) || [];
   }
 
   public get photos() {

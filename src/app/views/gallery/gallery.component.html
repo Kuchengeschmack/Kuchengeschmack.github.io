@@ -1,12 +1,5 @@
 <div class="content">
-  @if (!gallery) {
-    <mat-progress-spinner
-      class="center"
-      color="primary"
-      mode="indeterminate"
-      value="50">
-    </mat-progress-spinner>
-  } @else {
+  @if (gallery$ | async; as gallery) {
     <mat-grid-list cols="3" gutterSize="10">
       @for (photo of gallery.photos; track photo.alt) {
         <mat-grid-tile class="mat-elevation-z4">
@@ -16,5 +9,12 @@
         Les photos n'ont pas pu être récupérées.
       }
     </mat-grid-list>
+  } @else {
+    <mat-progress-spinner
+      class="center"
+      color="primary"
+      mode="indeterminate"
+      value="50">
+    </mat-progress-spinner>
   }
 </div>
