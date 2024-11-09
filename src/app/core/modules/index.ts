@@ -1,25 +1,15 @@
-import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterLink, RouterOutlet } from '@angular/router';
 
-const materialModules = [
+export const Modules = [
   MatCardModule,
   MatGridListModule,
   MatProgressSpinnerModule,
   MatToolbarModule,
   MatIconModule,
   MatButtonModule,
-  RouterLink,
-  RouterOutlet,
 ];
-
-@NgModule({
-  imports: materialModules,
-  exports: materialModules,
-})
-export class MaterialModule {}

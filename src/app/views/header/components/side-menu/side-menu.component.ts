@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CoreModule } from 'app/core/core.module';
+import { Core } from 'app/core';
 
 import { SideMenu } from '../../models/header.model';
 
@@ -8,7 +8,7 @@ import { SideMenu } from '../../models/header.model';
   standalone: true,
   templateUrl: './side-menu.component.html',
   styleUrl: './side-menu.component.scss',
-  imports: [CoreModule],
+  imports: Core,
 })
 export class SideMenuComponent {
   @Input() sideMenu = {} as SideMenu;
