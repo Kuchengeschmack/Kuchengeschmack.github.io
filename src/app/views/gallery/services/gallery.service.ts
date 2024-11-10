@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { RouterState } from '@ngxs/router-plugin';
 import { Store } from '@ngxs/store';
+import { IMAGES } from 'app/core/constants/constants';
 import { catchError, map, switchMap, tap } from 'rxjs';
 
 import { Gallery, JsonData } from '../models/gallery.model';
@@ -26,9 +27,15 @@ export class GalleryService {
           .pipe(
             catchError(() =>
               this._http
-                .get<JsonData>('assets/images/images.json')
+                .get<JsonData>(IMAGES.ROOT + '/images.json')
                 .pipe(
-                  map((jsonData: JsonData) => new Gallery(jsonData, url || ''))
+                  map(
+                    (jsonData: JsonData) =>
+                      new Gallery(
+                        jsonData,
+                        'assets/images' + url?.split('gallery')[1] || ''
+                      )
+                  )
                 )
             ),
             tap(gallery => {
