@@ -12,9 +12,9 @@ import { LoginService } from './services/login.service';
 })
 export class LoginComponent {
   private readonly _loginService = inject(LoginService);
-  public id = '';
-  public password = '';
-  public readonly isAuthenticated$ = this._loginService.isAuthenticated$;
+  id = '';
+  password = '';
+  readonly isAuthenticated$ = this._loginService.isAuthenticated$;
   readonly hide = signal(true);
 
   clickEvent(event: MouseEvent) {
