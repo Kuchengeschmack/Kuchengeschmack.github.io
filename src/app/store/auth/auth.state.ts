@@ -3,15 +3,9 @@ import { Action, Selector, State, StateContext } from '@ngxs/store';
 
 import { SetAuthData } from './auth.actions';
 
-const ID = 'dorian';
-const PASSWORD = '1234';
-
-export interface AuthenticationPayload {
+export interface AuthenticationStateModel {
   id: string;
   password: string;
-}
-
-export interface AuthenticationStateModel extends AuthenticationPayload {
   isAuthenticated: boolean;
 }
 
@@ -33,11 +27,10 @@ export class AuthState {
   }
 
   private static setInstanceState(
-    state: AuthenticationPayload
+    state: AuthenticationStateModel
   ): AuthenticationStateModel {
     return {
       ...state,
-      isAuthenticated: state.id === ID && state.password === PASSWORD,
     };
   }
 
