@@ -9,7 +9,7 @@ import { map } from 'rxjs';
   providedIn: 'root',
 })
 export class GalleryService {
-  public readonly gallery$ = inject(Store)
+  readonly gallery$ = inject(Store)
     .select(RouterState.url)
     .pipe(map(url => new Gallery(IMAGES.JSON_DATA, url || '')));
 }
