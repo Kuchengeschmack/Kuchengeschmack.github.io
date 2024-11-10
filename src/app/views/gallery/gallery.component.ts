@@ -12,5 +12,5 @@ import { GalleryService } from './services/gallery.service';
   styleUrl: './gallery.component.scss',
 })
 export class GalleryComponent {
-  public readonly gallery$ = inject(GalleryService).gallery$;
+  readonly gallery$ = inject(GalleryService).gallery$;
 }

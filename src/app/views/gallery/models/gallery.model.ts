@@ -10,7 +10,7 @@ export class Gallery {
         ?.names.map(name => new Photo(name, url?.split('gallery')[1])) || [];
   }
 
-  public get photos() {
+  get photos() {
     return this._photos;
   }
 }
@@ -24,11 +24,11 @@ export class Photo {
     this._src = IMAGES.ROOT + url + '/' + name + IMAGES.EXTENSION;
   }
 
-  public get alt() {
+  get alt() {
     return this._alt;
   }
 
-  public get src() {
+  get src() {
     return this._src;
   }
 }
