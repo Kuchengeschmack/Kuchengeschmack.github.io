@@ -12,7 +12,7 @@ export interface AuthenticationPayload {
 }
 
 export interface AuthenticationStateModel extends AuthenticationPayload {
-  isAuthentified: boolean;
+  isAuthenticated: boolean;
 }
 
 @State<AuthenticationStateModel>({
@@ -20,7 +20,7 @@ export interface AuthenticationStateModel extends AuthenticationPayload {
   defaults: {
     id: '',
     password: '',
-    isAuthentified: false,
+    isAuthenticated: false,
   },
 })
 @Injectable({ providedIn: 'root' })
@@ -37,7 +37,7 @@ export class AuthState {
   ): AuthenticationStateModel {
     return {
       ...state,
-      isAuthentified: state.id === ID && state.password === PASSWORD,
+      isAuthenticated: state.id === ID && state.password === PASSWORD,
     };
   }
 

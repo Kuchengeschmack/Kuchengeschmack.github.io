@@ -11,7 +11,7 @@ export class LoginService {
   private readonly _store = inject(Store);
   public readonly isAuthenticated$ = this._store
     .select(AuthState.getAuthData)
-    .pipe(map(state => state.isAuthentified));
+    .pipe(map(state => state.isAuthenticated));
 
   public login(id: string, password: string) {
     this._store.dispatch(
