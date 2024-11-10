@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Core } from 'app/core';
 
 import { LoginService } from './services/login.service';
@@ -15,6 +15,12 @@ export class LoginComponent {
   public id = '';
   public password = '';
   public readonly isAuthenticated$ = this._loginService.isAuthenticated$;
+  readonly hide = signal(true);
+
+  clickEvent(event: MouseEvent) {
+    this.hide.set(!this.hide());
+    event.stopPropagation();
+  }
 
   onSubmit() {
     this._loginService.login(this.id, this.password);
