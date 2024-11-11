@@ -7,7 +7,7 @@ import { Header } from '../models/header.model';
   providedIn: 'root',
 })
 export class HeaderService {
-  public readonly header = new Header(
+  readonly header = new Header(
     MENU_ITEMS,
     'Marie-Cécile Caron, artiste-peintre'
   );

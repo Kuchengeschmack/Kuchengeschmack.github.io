@@ -1,45 +1,45 @@
 {
   "folders": [
     {
-      "path": "/book",
-      "names": [
-        "51degre",
-        "agave",
-        "Bandoleo",
-        "Bellisla",
-        "Blonde",
-        "bronzage",
-        "buick",
-        "Cadillac",
-        "clairde",
-        "Contrejo",
-        "crescent",
-        "Diane",
-        "Ethermer",
-        "Femme",
-        "Fenetre",
-        "fordmust",
-        "Frenchri",
-        "helios",
-        "Heuresch",
-        "jaguar",
-        "Lamain",
-        "Lavoute",
-        "Matin",
-        "Meditati",
-        "meilleur",
-        "reminisc",
-        "Rolls",
-        "Songeuse",
-        "themeant",
-        "Timine",
-        "Visage"
+      "path": "assets/images/book",
+      "fileNames": [
+        "51degre.jpg",
+        "agave.jpg",
+        "Bandoleo.jpg",
+        "Bellisla.jpg",
+        "Blonde.jpg",
+        "bronzage.jpg",
+        "buick.jpg",
+        "Cadillac.jpg",
+        "clairde.jpg",
+        "Contrejo.jpg",
+        "crescent.jpg",
+        "Diane.jpg",
+        "Ethermer.jpg",
+        "Femme.jpg",
+        "Fenetre.jpg",
+        "fordmust.jpg",
+        "Frenchri.jpg",
+        "helios.jpg",
+        "Heuresch.jpg",
+        "jaguar.jpg",
+        "Lamain.jpg",
+        "Lavoute.jpg",
+        "Matin.jpg",
+        "Meditati.jpg",
+        "meilleur.jpg",
+        "reminisc.jpg",
+        "Rolls.jpg",
+        "Songeuse.jpg",
+        "themeant.jpg",
+        "Timine.jpg",
+        "Visage.jpg"
       ]
     },
     {
-      "path": "/intro",
-      "names": ["la-montagne-des-pyrenees"]
+      "path": "assets/images/intro",
+      "fileNames": ["la-montagne-des-pyrenees.jpg"]
     },
-    { "path": "/piano", "names": ["flyer-cours"] }
+    { "path": "assets/images/piano", "fileNames": ["flyer-cours.jpg"] }
   ]
 }

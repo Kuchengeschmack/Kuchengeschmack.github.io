@@ -5,25 +5,19 @@ import { SetAuthData } from './auth.actions';
 
 export interface AuthenticationStateModel {
   id: string;
-  firstName: string;
-  lastName: string;
-  fullName: string;
-  email: string;
-  roles: string[];
+  password: string;
+  isAuthenticated: boolean;
 }
 
 @State<AuthenticationStateModel>({
   name: 'authState',
   defaults: {
     id: '',
-    firstName: '',
-    lastName: '',
-    fullName: '',
-    email: '',
-    roles: [],
+    password: '',
+    isAuthenticated: false,
   },
 })
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class AuthState {
   @Selector()
   static getAuthData(
@@ -35,7 +29,9 @@ export class AuthState {
   private static setInstanceState(
     state: AuthenticationStateModel
   ): AuthenticationStateModel {
-    return { ...state };
+    return {
+      ...state,
+    };
   }
 
   private static getInstanceState(

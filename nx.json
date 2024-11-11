@@ -32,5 +32,10 @@
     "changelog": {
       "automaticFromRef": true
     }
+  },
+  "generators": {
+    "@nx/angular:component": {
+      "style": "scss"
+    }
   }
 }

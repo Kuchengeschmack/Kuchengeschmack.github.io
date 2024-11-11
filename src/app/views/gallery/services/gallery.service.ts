@@ -6,6 +6,9 @@ import { catchError, map, switchMap, tap } from 'rxjs';
 
 import { Gallery, JsonData } from '../models/gallery.model';
 
+const url = 'http://localhost:8080/images';
+const dir = 'assets/images/images.json';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -18,17 +21,23 @@ export class GalleryService {
 
   getImages() {
     return this._store.select(RouterState.url).pipe(
-      switchMap(url =>
+      switchMap(path =>
         this._http
-          .get<Gallery>('http://localhost:8080/images', {
-            params: { url: url || '' },
+          .get<Gallery>(url, {
+            params: { url: path || '' },
           })
           .pipe(
             catchError(() =>
               this._http
-                .get<JsonData>('assets/images/images.json')
+                .get<JsonData>(dir)
                 .pipe(
-                  map((jsonData: JsonData) => new Gallery(jsonData, url || ''))
+                  map(
+                    (jsonData: JsonData) =>
+                      new Gallery(
+                        jsonData,
+                        'assets/images' + path?.split('gallery')[1] || ''
+                      )
+                  )
                 )
             ),
             tap(gallery => {

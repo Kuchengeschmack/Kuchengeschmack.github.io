@@ -14,5 +14,5 @@ import { HeaderService } from './services/header.service';
 })
 export class HeaderComponent {
   private readonly _headerService = inject(HeaderService);
-  public readonly header = this._headerService.header;
+  readonly header = this._headerService.header;
 }

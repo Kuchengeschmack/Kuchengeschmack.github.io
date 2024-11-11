@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-form-field>
+    <mat-label>Identifiant</mat-label>
+    <input matInput type="text" [(ngModel)]="id" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Mot de passe</mat-label>
+    <input
+      matInput
+      [type]="hide() ? 'password' : 'text'"
+      [(ngModel)]="password" />
+    <button
+      mat-icon-button
+      matSuffix
+      (click)="clickEvent($event)"
+      [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="hide()">
+      <mat-icon>{{ hide() ? 'visibility_off' : 'visibility' }}</mat-icon>
+    </button>
+  </mat-form-field>
+  <button mat-raised-button type="submit" (click)="onSubmit()">Valider</button>
+</div>
