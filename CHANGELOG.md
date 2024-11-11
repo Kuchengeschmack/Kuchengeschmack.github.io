@@ -1,3 +1,16 @@
+## 0.1.0 (2024-11-11)
+
+### 🚀 Features
+
+- login + auth state ([30eb54f](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/30eb54f))
+- auth guard ([8fd3902](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/8fd3902))
+- mat form fields ([af8f1db](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/af8f1db))
+- styling ([14d86c0](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/14d86c0))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.0.2 (2024-11-09)
 
 ### 🚀 Features
