@@ -1,16 +1,14 @@
-import { IMAGES } from 'constants/constants';
-
 export class Gallery {
   private _photos: Photos;
 
-  constructor(jsonData: JsonData, url: string) {
+  constructor(jsonData: JsonData, path: string) {
     this._photos =
       jsonData.folders
-        .find(folder => folder.path === url?.split('gallery')[1])
-        ?.names.map(name => new Photo(name, url?.split('gallery')[1])) || [];
+        .find(folder => folder.path === path)
+        ?.fileNames.map(fileName => new Photo(fileName, path)) || [];
   }
 
-  public get photos() {
+  get photos() {
     return this._photos;
   }
 }
@@ -19,16 +17,16 @@ export class Photo {
   private _alt: string;
   private _src: string;
 
-  constructor(name: string, url: string) {
-    this._alt = name;
-    this._src = IMAGES.ROOT + url + '/' + name + IMAGES.EXTENSION;
+  constructor(fileName: string, path: string) {
+    this._alt = fileName;
+    this._src = path + '/' + fileName;
   }
 
-  public get alt() {
+  get alt() {
     return this._alt;
   }
 
-  public get src() {
+  get src() {
     return this._src;
   }
 }
@@ -41,7 +39,7 @@ export interface JsonData {
 
 export interface Folder {
   path: string;
-  names: string[];
+  fileNames: string[];
 }
 
 export type Folders = Folder[];

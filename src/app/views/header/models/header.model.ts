@@ -7,11 +7,11 @@ export class Header {
     this._title = title;
   }
 
-  public get sideMenu() {
+  get sideMenu() {
     return this._sideMenu;
   }
 
-  public get title() {
+  get title() {
     return this._title;
   }
 }
@@ -23,7 +23,7 @@ export class SideMenu {
     this._menuItems = menuItems;
   }
 
-  public get menuItems() {
+  get menuItems() {
     return this._menuItems;
   }
 }
