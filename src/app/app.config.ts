@@ -12,7 +12,12 @@ import { provideStore } from '@ngxs/store';
 import { withNgxsWebSocketPlugin } from '@ngxs/websocket-plugin';
 
 import { routes } from './app.routes';
-import { STATES_MODULES } from './store/store.config';
+import {
+  DEVTOOLS_REDUX_CONFIG,
+  LOGGER_CONFIG,
+  OPTIONS_CONFIG,
+  STATES_MODULES,
+} from './store/store.config';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -22,9 +27,10 @@ export const appConfig: ApplicationConfig = {
     provideAnimationsAsync(),
     provideStore(
       STATES_MODULES,
-      withNgxsReduxDevtoolsPlugin(),
+      OPTIONS_CONFIG,
+      withNgxsReduxDevtoolsPlugin(DEVTOOLS_REDUX_CONFIG),
       withNgxsFormPlugin(),
-      withNgxsLoggerPlugin(),
+      withNgxsLoggerPlugin(LOGGER_CONFIG),
       withNgxsRouterPlugin(),
       withNgxsStoragePlugin({ keys: '*' }),
       withNgxsWebSocketPlugin()
