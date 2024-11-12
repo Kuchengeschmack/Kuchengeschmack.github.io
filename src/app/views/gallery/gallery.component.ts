@@ -18,9 +18,15 @@ export class GalleryComponent implements OnInit, OnDestroy {
   private readonly _galleryService = inject(GalleryService);
   private _subscriptions = [] as Subscription[];
   readonly gallery = this._galleryService.gallery;
+  breakpoint: number = 3;
 
   ngOnInit() {
+    this.breakpoint = window.innerWidth <= 500 ? 1 : 3;
     this._subscriptions.push(this._galleryService.getImages().subscribe());
+  }
+
+  onResize(event: Event) {
+    this.breakpoint = (event.target as Window).innerWidth <= 500 ? 1 : 3;
   }
 
   ngOnDestroy() {
