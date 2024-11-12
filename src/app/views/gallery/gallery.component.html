@@ -1,6 +1,9 @@
 <div class="content">
   @if (gallery()) {
-    <mat-grid-list cols="3" gutterSize="10">
+    <mat-grid-list
+      [cols]="breakpoint"
+      gutterSize="10"
+      (window:resize)="onResize($event)">
       @for (photo of gallery().photos; track photo.alt) {
         <mat-grid-tile class="mat-elevation-z4">
           <app-photo-card [photo]="photo"></app-photo-card>

@@ -12,7 +12,7 @@ import { LoginService } from './services/login.service';
 })
 export class LoginComponent {
   private readonly _loginService = inject(LoginService);
-  id = '';
+  email = '';
   password = '';
   readonly isAuthenticated$ = this._loginService.isAuthenticated$;
   readonly hide = signal(true);
@@ -23,6 +23,6 @@ export class LoginComponent {
   }
 
   onSubmit() {
-    this._loginService.login(this.id, this.password);
+    this._loginService.login(this.email, this.password);
   }
 }
