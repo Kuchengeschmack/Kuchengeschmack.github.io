@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/nx/schemas/project-schema.json",
-  "name": "marie-cecile-artiste-peintre",
+  "name": "kuchengeschmack.github.io",
   "projectType": "application",
   "generators": {
     "@schematics/angular:component": {
@@ -13,7 +13,7 @@
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "options": {
-        "outputPath": "dist/marie-cecile-artiste-peintre",
+        "outputPath": "dist/kuchengeschmack.github.io",
         "index": "src/index.html",
         "browser": "src/main.ts",
         "polyfills": [
@@ -72,10 +72,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "marie-cecile-artiste-peintre:build:production"
+          "buildTarget": "kuchengeschmack.github.io:build:production"
         },
         "development": {
-          "buildTarget": "marie-cecile-artiste-peintre:build:development"
+          "buildTarget": "kuchengeschmack.github.io:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "marie-cecile-artiste-peintre:build"
+        "buildTarget": "kuchengeschmack.github.io:build"
       }
     },
     "test": {
