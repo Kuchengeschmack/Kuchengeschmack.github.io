@@ -1,3 +1,19 @@
+## 0.2.0 (2024-11-12)
+
+### 🚀 Features
+
+- login + auth state ([30eb54f](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/30eb54f))
+- auth guard ([8fd3902](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/8fd3902))
+- mat form fields ([af8f1db](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/af8f1db))
+- styling ([14d86c0](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/14d86c0))
+- responsive desgin for mobile ([f09c1a5](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/f09c1a5))
+- **gallery:** add piano route ([b3a63d7](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/b3a63d7))
+- **login:** center form on div ([c270198](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/c270198))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.1.1 (2024-11-11)
 
 This was a version bump only, there were no code changes.
