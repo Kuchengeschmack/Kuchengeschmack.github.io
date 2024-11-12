@@ -1,9 +1,18 @@
 .container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
   margin: 10px;
+}
 
+.content{
+  display:grid;
+  align-items: center;
+  margin: 0px auto;
   mat-form-field {
     + mat-form-field, + button {
-      margin-left: 8px;
+      margin-top: 0px;
     }
   }
 }

@@ -4,7 +4,7 @@ import { SetAuthData } from 'app/store/auth/auth.actions';
 import { AuthState } from 'app/store/auth/auth.state';
 import { map } from 'rxjs';
 
-const ID = 'dorian';
+const ID = 'dorian@example.com';
 const PASSWORD = '1234';
 
 @Injectable({

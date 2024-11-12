@@ -1,13 +1,13 @@
 {
-  "name": "marie-cecile-artiste-peintre",
-  "version": "0.1.1",
+  "name": "kuchengeschmack.github.io",
+  "version": "0.2.0",
   "scripts": {
     "ng": "ng",
     "start": "nx serve",
     "build": "nx build",
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
-    "serve:ssr:marie-cecile-artiste-peintre": "node dist/marie-cecile-artiste-peintre/server/server.mjs",
+    "serve:ssr:kuchengeschmack.github.io": "node dist/kuchengeschmack.github.io/server/server.mjs",
     "lint": "nx lint"
   },
   "private": true,
