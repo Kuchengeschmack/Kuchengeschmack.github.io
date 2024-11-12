@@ -20,6 +20,12 @@ export const routes: Routes = [
         canActivate: [authGuard],
         component: GalleryComponent,
       },
+      {
+        path: 'piano',
+        title: 'Marie-Cécile Caron | Cours de piano',
+        canActivate: [authGuard],
+        component: GalleryComponent,
+      },
     ],
   },
   {
