@@ -1,20 +1,17 @@
 @media screen and (max-width: 500px) {
   .pill-group {
-    display: flex;
     flex-direction: row;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1.25rem;
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 500px) {
   .pill-group {
-    display: flex;
     flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1.25rem;
   }
 }
 
@@ -42,16 +39,24 @@
   background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
 }
 
-.pill-group .pill:nth-child(6n + 1) {
-  --pill-accent: var(--bright-blue);
-}
-.pill-group .pill:nth-child(6n + 2) {
-  --pill-accent: var(--french-violet);
-}
-.pill-group .pill:nth-child(6n + 3),
-.pill-group .pill:nth-child(6n + 4),
-.pill-group .pill:nth-child(6n + 5) {
-  --pill-accent: var(--hot-red);
+.pill-group {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+
+  .pill:nth-child(6n + 1) {
+    --pill-accent: var(--bright-blue);
+  }
+
+  .pill:nth-child(6n + 2) {
+    --pill-accent: var(--french-violet);
+  }
+  .pill:nth-child(6n + 3),
+  .pill:nth-child(6n + 4),
+  .pill:nth-child(6n + 5) {
+    --pill-accent: var(--hot-red);
+  }
 }
 
 .pill-group svg {
@@ -63,13 +68,13 @@
   align-items: center;
   gap: 0.73rem;
   margin-top: 1.5rem;
-}
 
-.social-links path {
-  transition: fill 0.3s ease;
-  fill: var(--gray-400);
-}
+  path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+  }
 
-.social-links a:hover svg path {
-  fill: var(--gray-900);
+  a:hover svg path {
+    fill: var(--gray-900);
+  }
 }
