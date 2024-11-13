@@ -2,7 +2,7 @@ export class Header {
   private _sideMenu: SideMenu;
   private _title: string;
 
-  constructor(menuItems: MenuItem[], title: string) {
+  constructor(menuItems: MenuItems, title: string) {
     this._sideMenu = new SideMenu(menuItems);
     this._title = title;
   }
@@ -17,9 +17,9 @@ export class Header {
 }
 
 export class SideMenu {
-  private _menuItems: MenuItem[];
+  private _menuItems: MenuItems;
 
-  constructor(menuItems: MenuItem[]) {
+  constructor(menuItems: MenuItems) {
     this._menuItems = menuItems;
   }
 
@@ -32,3 +32,5 @@ export interface MenuItem {
   title: string;
   link: string;
 }
+
+export type MenuItems = MenuItem[];

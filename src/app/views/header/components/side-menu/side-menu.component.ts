@@ -12,4 +12,5 @@ import { SideMenu } from '../../models/header.model';
 })
 export class SideMenuComponent {
   @Input() sideMenu = {} as SideMenu;
+  readonly facebookUrl = 'https://www.facebook.com/mariececile.caron';
 }
