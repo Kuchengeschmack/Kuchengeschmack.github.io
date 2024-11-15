@@ -2,7 +2,7 @@ FROM node:lts-alpine
 ENV NODE_ENV=production
 WORKDIR /usr/src/app
 COPY ["package.json", "yarn.lock*", "./"]
-RUN yarn --production --silent && mv node_modules ../
+RUN yarn --production=false --silent
 COPY . .
 EXPOSE 4200
 RUN chown -R node /usr/src/app
