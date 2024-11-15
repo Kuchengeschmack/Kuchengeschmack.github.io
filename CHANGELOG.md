@@ -1,3 +1,13 @@
+## 0.4.1 (2024-11-15)
+
+### 🩹 Fixes
+
+- **docker:** switch from npm to yarn ([4b353ae](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/4b353ae))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.4.0 (2024-11-15)
 
 ### 🚀 Features
