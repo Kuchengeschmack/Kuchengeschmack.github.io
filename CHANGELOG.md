@@ -1,3 +1,13 @@
+## 0.4.0 (2024-11-15)
+
+### 🚀 Features
+
+- **gallery:** responsive design ([c12ee67](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/c12ee67))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.3.0 (2024-11-13)
 
 ### 🚀 Features
