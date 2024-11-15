@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "nx serve",
+    "release:version": "nx release version",
+    "release:changelog": "nx release changelog",
     "build": "nx build",
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
