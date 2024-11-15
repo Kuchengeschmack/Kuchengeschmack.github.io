@@ -26,7 +26,11 @@ export class GalleryComponent implements OnInit, OnDestroy {
   }
 
   onResize(event: Event) {
-    this.breakpoint = (event.target as Window).innerWidth <= 500 ? 1 : 3;
+    this.breakpoint =
+      (event.target as Window).innerWidth <= 500 ||
+      this.gallery().photos.length === 1
+        ? 1
+        : 3;
   }
 
   ngOnDestroy() {
