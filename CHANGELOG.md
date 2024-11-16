@@ -1,3 +1,13 @@
+## 0.4.2 (2024-11-16)
+
+### 🩹 Fixes
+
+- **login:** fix auth guard ([68f8691](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/68f8691))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.4.1 (2024-11-15)
 
 ### 🩹 Fixes
