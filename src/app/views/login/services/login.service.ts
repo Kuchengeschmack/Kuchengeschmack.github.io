@@ -1,8 +1,4 @@
-import { inject, Injectable } from '@angular/core';
-import { Store } from '@ngxs/store';
-import { SetAuthData } from 'app/store/auth/auth.actions';
-import { AuthState } from 'app/store/auth/auth.state';
-import { map } from 'rxjs';
+import { Injectable } from '@angular/core';
 
 const ID = 'dorian@example.com';
 const PASSWORD = '1234';
@@ -11,22 +7,13 @@ const PASSWORD = '1234';
   providedIn: 'root',
 })
 export class LoginService {
-  private readonly _store = inject(Store);
-  private readonly _isAuthenticated$ = this._store
-    .select(AuthState.getAuthData)
-    .pipe(map(state => state.isAuthenticated));
+  private _isAuthenticated = false;
 
   login(id: string, password: string) {
-    this._store.dispatch(
-      new SetAuthData({
-        id,
-        password,
-        isAuthenticated: id === ID && password === PASSWORD,
-      })
-    );
+    this._isAuthenticated = id === ID && password === PASSWORD;
   }
 
   canActivate() {
-    return this._isAuthenticated$;
+    return this._isAuthenticated;
   }
 }
