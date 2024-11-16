@@ -1,3 +1,13 @@
+## 0.5.1 (2024-11-16)
+
+### 🔥 Performance
+
+- **package.json:** add @swc/core and @swc-node/register ([580a2cf](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/580a2cf))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.5.0 (2024-11-16)
 
 ### 🚀 Features
