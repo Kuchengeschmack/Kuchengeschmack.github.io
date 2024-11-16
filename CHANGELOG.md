@@ -1,3 +1,13 @@
+## 0.5.2 (2024-11-16)
+
+### 🚀 Features
+
+- **auth:** handle navigation when not authentified ([6f01c82](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/6f01c82))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.5.1 (2024-11-16)
 
 ### 🔥 Performance
