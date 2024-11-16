@@ -25,7 +25,7 @@ export class LoginService {
     }
   }
 
-  canActivate() {
+  get isAuthenticated() {
     return this._isAuthenticated;
   }
 }
