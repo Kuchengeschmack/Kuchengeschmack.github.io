@@ -1,3 +1,21 @@
+## 0.5.0 (2024-11-16)
+
+### 🚀 Features
+
+- **login:** display snack bar and redirect to intro ([fd1db92](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/fd1db92))
+
+### 🩹 Fixes
+
+- **login:** do not use a store ([d6ea90d](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/d6ea90d))
+
+### 🔥 Performance
+
+- **gallery:** render gallery faster ([6149a12](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/6149a12))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.4.2 (2024-11-16)
 
 ### 🩹 Fixes
