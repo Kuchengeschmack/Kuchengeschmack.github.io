@@ -12,11 +12,11 @@ const PASSWORD = '1234';
 })
 export class LoginService {
   private readonly _store = inject(Store);
-  public readonly isAuthenticated$ = this._store
+  private readonly _isAuthenticated$ = this._store
     .select(AuthState.getAuthData)
     .pipe(map(state => state.isAuthenticated));
 
-  public login(id: string, password: string) {
+  login(id: string, password: string) {
     this._store.dispatch(
       new SetAuthData({
         id,
@@ -24,5 +24,9 @@ export class LoginService {
         isAuthenticated: id === ID && password === PASSWORD,
       })
     );
+  }
+
+  canActivate() {
+    return this._isAuthenticated$;
   }
 }

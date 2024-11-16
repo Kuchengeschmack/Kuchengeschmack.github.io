@@ -14,7 +14,6 @@ export class LoginComponent {
   private readonly _loginService = inject(LoginService);
   email = '';
   password = '';
-  readonly isAuthenticated$ = this._loginService.isAuthenticated$;
   readonly hide = signal(true);
 
   clickEvent(event: MouseEvent) {
