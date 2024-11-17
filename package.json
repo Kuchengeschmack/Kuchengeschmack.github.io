@@ -37,6 +37,7 @@
     "@ngxs/router-plugin": "18.1.4",
     "@ngxs/storage-plugin": "18.1.4",
     "@ngxs/websocket-plugin": "18.1.4",
+    "angular-cli-ghpages": "^2.0.3",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
