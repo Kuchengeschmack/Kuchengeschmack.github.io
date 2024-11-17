@@ -1,3 +1,13 @@
+## 0.6.0 (2024-11-17)
+
+### 🚀 Features
+
+- add http call to backend ([b537824](https://github.com/Kuchengeschmack/artiste-peintre/commit/b537824))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.5.2 (2024-11-16)
 
 ### 🚀 Features
