@@ -2,7 +2,7 @@
 
 ### 🚀 Features
 
-- **auth:** handle navigation when not authentified ([6f01c82](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/6f01c82))
+- **auth:** handle navigation when not authentified ([6f01c82](https://github.com/Kuchengeschmack/artiste-peintre/commit/6f01c82))
 
 ### ❤️  Thank You
 
@@ -12,7 +12,7 @@
 
 ### 🔥 Performance
 
-- **package.json:** add @swc/core and @swc-node/register ([580a2cf](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/580a2cf))
+- **package.json:** add @swc/core and @swc-node/register ([580a2cf](https://github.com/Kuchengeschmack/artiste-peintre/commit/580a2cf))
 
 ### ❤️  Thank You
 
@@ -22,15 +22,15 @@
 
 ### 🚀 Features
 
-- **login:** display snack bar and redirect to intro ([fd1db92](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/fd1db92))
+- **login:** display snack bar and redirect to intro ([fd1db92](https://github.com/Kuchengeschmack/artiste-peintre/commit/fd1db92))
 
 ### 🩹 Fixes
 
-- **login:** do not use a store ([d6ea90d](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/d6ea90d))
+- **login:** do not use a store ([d6ea90d](https://github.com/Kuchengeschmack/artiste-peintre/commit/d6ea90d))
 
 ### 🔥 Performance
 
-- **gallery:** render gallery faster ([6149a12](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/6149a12))
+- **gallery:** render gallery faster ([6149a12](https://github.com/Kuchengeschmack/artiste-peintre/commit/6149a12))
 
 ### ❤️  Thank You
 
@@ -40,7 +40,7 @@
 
 ### 🩹 Fixes
 
-- **login:** fix auth guard ([68f8691](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/68f8691))
+- **login:** fix auth guard ([68f8691](https://github.com/Kuchengeschmack/artiste-peintre/commit/68f8691))
 
 ### ❤️  Thank You
 
@@ -50,7 +50,7 @@
 
 ### 🩹 Fixes
 
-- **docker:** switch from npm to yarn ([4b353ae](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/4b353ae))
+- **docker:** switch from npm to yarn ([4b353ae](https://github.com/Kuchengeschmack/artiste-peintre/commit/4b353ae))
 
 ### ❤️  Thank You
 
@@ -60,7 +60,7 @@
 
 ### 🚀 Features
 
-- **gallery:** responsive design ([c12ee67](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/c12ee67))
+- **gallery:** responsive design ([c12ee67](https://github.com/Kuchengeschmack/artiste-peintre/commit/c12ee67))
 
 ### ❤️  Thank You
 
@@ -70,14 +70,14 @@
 
 ### 🚀 Features
 
-- login + auth state ([30eb54f](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/30eb54f))
-- auth guard ([8fd3902](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/8fd3902))
-- mat form fields ([af8f1db](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/af8f1db))
-- styling ([14d86c0](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/14d86c0))
-- responsive desgin for mobile ([f09c1a5](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/f09c1a5))
-- **gallery:** add piano route ([b3a63d7](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/b3a63d7))
-- **login:** center form on div ([c270198](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/c270198))
-- **side-menu:** facebook profile link ([e4a6707](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/e4a6707))
+- login + auth state ([30eb54f](https://github.com/Kuchengeschmack/artiste-peintre/commit/30eb54f))
+- auth guard ([8fd3902](https://github.com/Kuchengeschmack/artiste-peintre/commit/8fd3902))
+- mat form fields ([af8f1db](https://github.com/Kuchengeschmack/artiste-peintre/commit/af8f1db))
+- styling ([14d86c0](https://github.com/Kuchengeschmack/artiste-peintre/commit/14d86c0))
+- responsive desgin for mobile ([f09c1a5](https://github.com/Kuchengeschmack/artiste-peintre/commit/f09c1a5))
+- **gallery:** add piano route ([b3a63d7](https://github.com/Kuchengeschmack/artiste-peintre/commit/b3a63d7))
+- **login:** center form on div ([c270198](https://github.com/Kuchengeschmack/artiste-peintre/commit/c270198))
+- **side-menu:** facebook profile link ([e4a6707](https://github.com/Kuchengeschmack/artiste-peintre/commit/e4a6707))
 
 ### ❤️  Thank You
 
@@ -87,13 +87,13 @@
 
 ### 🚀 Features
 
-- login + auth state ([30eb54f](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/30eb54f))
-- auth guard ([8fd3902](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/8fd3902))
-- mat form fields ([af8f1db](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/af8f1db))
-- styling ([14d86c0](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/14d86c0))
-- responsive desgin for mobile ([f09c1a5](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/f09c1a5))
-- **gallery:** add piano route ([b3a63d7](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/b3a63d7))
-- **login:** center form on div ([c270198](https://github.com/Kuchengeschmack/kuchengeschmack.github.io/commit/c270198))
+- login + auth state ([30eb54f](https://github.com/Kuchengeschmack/artiste-peintre/commit/30eb54f))
+- auth guard ([8fd3902](https://github.com/Kuchengeschmack/artiste-peintre/commit/8fd3902))
+- mat form fields ([af8f1db](https://github.com/Kuchengeschmack/artiste-peintre/commit/af8f1db))
+- styling ([14d86c0](https://github.com/Kuchengeschmack/artiste-peintre/commit/14d86c0))
+- responsive desgin for mobile ([f09c1a5](https://github.com/Kuchengeschmack/artiste-peintre/commit/f09c1a5))
+- **gallery:** add piano route ([b3a63d7](https://github.com/Kuchengeschmack/artiste-peintre/commit/b3a63d7))
+- **login:** center form on div ([c270198](https://github.com/Kuchengeschmack/artiste-peintre/commit/c270198))
 
 ### ❤️  Thank You
 
