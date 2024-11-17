@@ -16,13 +16,14 @@ import { GalleryService } from './services/gallery.service';
 })
 export class GalleryComponent implements OnInit, OnDestroy {
   private readonly _galleryService = inject(GalleryService);
-  private _subscriptions = [] as Subscription[];
+  private _subscription: Subscription = this._galleryService
+    .getGallery()
+    .subscribe();
   readonly gallery = this._galleryService.gallery;
   breakpoint: number = 3;
 
   ngOnInit() {
     this.breakpoint = window.innerWidth <= 500 ? 1 : 3;
-    this._subscriptions.push(this._galleryService.getImages().subscribe());
   }
 
   onResize(event: Event) {
@@ -34,6 +35,6 @@ export class GalleryComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this._subscriptions.forEach(s => s.unsubscribe());
+    this._subscription.unsubscribe();
   }
 }

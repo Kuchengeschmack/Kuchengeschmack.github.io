@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { map, tap } from 'rxjs';
+import { catchError, map, tap } from 'rxjs';
 
 import { Gallery, JsonData } from '../models/gallery.model';
 
@@ -17,18 +17,33 @@ export class GalleryService {
   private _gallery = signal({} as Gallery);
   gallery = this._gallery.asReadonly();
 
-  getImages() {
-    return this._http.get<JsonData>(dir).pipe(
-      map(
-        (jsonData: JsonData) =>
-          new Gallery(
-            jsonData,
-            'assets/images' + this._router.url?.split('gallery')[1] || ''
-          )
-      ),
-      tap(gallery => {
-        this._gallery.set(gallery);
+  getGallery() {
+    return this._http
+      .get<Gallery>('http://localhost:8080/images', {
+        params: {
+          path: this._router.url.split('gallery')[1],
+        },
       })
-    );
+      .pipe(
+        catchError(() => this.getGalleryLocally()),
+        tap(gallery => {
+          console.log(gallery);
+          this._gallery.set(gallery);
+        })
+      );
+  }
+
+  getGalleryLocally() {
+    return this._http
+      .get<JsonData>(dir)
+      .pipe(
+        map(
+          (jsonData: JsonData) =>
+            new Gallery(
+              jsonData,
+              'assets/images' + this._router.url?.split('gallery')[1] || ''
+            )
+        )
+      );
   }
 }
