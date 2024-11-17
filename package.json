@@ -15,7 +15,8 @@
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
     "serve:ssr": "node dist/kuchengeschmack.github.io/server/server.mjs",
-    "lint": "nx lint"
+    "lint": "nx lint",
+    "deploy": "nx deploy"
   },
   "dependencies": {
     "@angular/animations": "^18.2.11",
