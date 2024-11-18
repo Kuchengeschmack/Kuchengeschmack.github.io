@@ -1,8 +1,6 @@
-<mat-card appearance="outlined">
-  <mat-card-header>
+<mat-card class="card" appearance="outlined">
+  <mat-card-header class="header">
     <mat-card-title>{{ photo.alt | capitalize }}</mat-card-title>
-    <mat-card-subtitle>Acrylique sur toile</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="photo.src" [alt]="photo.alt" />
-  <mat-card-content>Crédit : Marie-Cécile Caron</mat-card-content>
+  <img class="img" mat-card-image [src]="photo.src" [alt]="photo.alt" />
 </mat-card>
