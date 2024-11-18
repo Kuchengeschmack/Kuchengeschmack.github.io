@@ -12,7 +12,7 @@ I'm also trying to improve my Git workflow and try some technos such as Nx and D
 
 ## How-to 🤔
 
-To serve the project, type `yarn run start`.
+To serve the project, type `pnpm start`.
 
 Then, open your favorite browser at `http://localhost:4200`.
 
