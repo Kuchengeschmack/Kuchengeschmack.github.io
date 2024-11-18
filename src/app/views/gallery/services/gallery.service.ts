@@ -17,23 +17,15 @@ export class GalleryService {
   private _gallery = signal({} as Gallery);
   gallery = this._gallery.asReadonly();
 
-  getGallery() {
-    return this._http
-      .get<Gallery>('http://localhost:8080/images', {
-        params: {
-          path: this._router.url.split('gallery')[1],
-        },
-      })
-      .pipe(
-        catchError(() => this.getGalleryLocally()),
-        tap(gallery => {
-          console.log(gallery);
-          this._gallery.set(gallery);
-        })
-      );
+  private _getGalleryRemotely() {
+    return this._http.get<Gallery>('http://localhost:8080/images', {
+      params: {
+        path: this._router.url.split('gallery')[1],
+      },
+    });
   }
 
-  getGalleryLocally() {
+  private _getGalleryLocally() {
     return this._http
       .get<JsonData>(dir)
       .pipe(
@@ -45,5 +37,15 @@ export class GalleryService {
             )
         )
       );
+  }
+
+  getGallery() {
+    return this._getGalleryRemotely().pipe(
+      catchError(() => this._getGalleryLocally()),
+      tap(gallery => {
+        console.log(gallery);
+        this._gallery.set(gallery);
+      })
+    );
   }
 }
