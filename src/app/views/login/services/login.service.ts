@@ -2,7 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
-const ID = 'dorian@example.com';
+const ID = 'dorian';
 const PASSWORD = '1234';
 
 @Injectable({

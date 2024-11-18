@@ -17,7 +17,8 @@ To serve the project, type `pnpm start`.
 Then, open your favorite browser at `http://localhost:4200`.
 
 The login credentials are :
-- dorian@example.com
+
+- dorian
 - 1234
 
 ## Workflow 🤓
