@@ -1,9 +1,25 @@
-# Marie-Cécile | Artiste-peintre
+# Artiste-peintre
 
 ## Description
 
-I'm developping this app to expand my knowledge on the Angular 18 framework. Indeed, I have been working with Angular 9 and I want to get up-to-date with its latest features.
+This project is meant to be a portofolio for an artist. The website is still under construction.
 
-To launch the projet, type `yarn run start`.
+## Motives
 
-The repository follows [Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development).
+I have been developpping professionally using Angular v9. I dedicate this project to improving on my knowledge using v18 so to get updated with Angular's latest features.
+
+I'm also trying to improve my Git workflow and try some technos such as Nx and Docker, even if it's not relevant for my project; I want to make experiments.
+
+## How-to 🤔
+
+To serve the project, type `yarn run start`.
+
+Then, open your favorite browser at `http://localhost:4200`.
+
+The login credentials are :
+- dorian@example.com
+- 1234
+
+## Workflow 🤓
+
+The repository (allegedly) follows [Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development).
