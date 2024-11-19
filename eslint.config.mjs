@@ -10,5 +10,6 @@ export default antfu({
     'style/space-before-function-paren': ['error', 'always'],
     'antfu/top-level-function': 'off',
     'antfu/if-newline': 'off',
+    'no-console': 'off',
   },
 });
