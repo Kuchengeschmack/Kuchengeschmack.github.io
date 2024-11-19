@@ -1,19 +1,11 @@
 <article>
   <div class="content">
     @if (gallery()) {
-      <mat-grid-list
-        [cols]="breakpoint"
-        gutterSize="10"
-        (window:resize)="onResize($event)"
-        rowHeight="600">
-        @for (photo of gallery().photos; track photo.alt) {
-          <mat-grid-tile>
-            <app-photo-card [photo]="photo"></app-photo-card>
-          </mat-grid-tile>
-        } @empty {
-          Les photos n'ont pas pu être récupérées.
-        }
-      </mat-grid-list>
+      @for (photo of gallery().photos; track photo.alt) {
+        <app-photo-card [photo]="photo"></app-photo-card>
+      } @empty {
+        Les photos n'ont pas pu être récupérées.
+      }
     } @else {
       <mat-progress-spinner
         class="center"
