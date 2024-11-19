@@ -53,8 +53,18 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.2.10",
     "nx": "20.0.12",
     "prettier": "^3.3.3",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "~5.5.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,json}": [
+      "eslint . --fix"
+    ]
   }
 }
