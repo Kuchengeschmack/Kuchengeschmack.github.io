@@ -14,7 +14,7 @@ I'm also trying to improve my Git workflow and try some technos such as Nx and D
 
 To serve the project, type `pnpm start`.
 
-Then, open your favorite browser at `http://localhost:4200`.
+Then, open your favorite browser at <http://localhost:4200>.
 
 The login credentials are :
 
@@ -24,3 +24,5 @@ The login credentials are :
 ## Workflow 🤓
 
 The repository (allegedly) follows [Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development).
+
+The commits follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
