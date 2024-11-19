@@ -1,3 +1,15 @@
+## 0.7.0 (2024-11-19)
+
+### 🚀 Features
+
+- withFetch ([7db971c](https://github.com/Kuchengeschmack/artiste-peintre/commit/7db971c))
+- change login id ([10353b8](https://github.com/Kuchengeschmack/artiste-peintre/commit/10353b8))
+- **gallery:** improve rendering ([1170f76](https://github.com/Kuchengeschmack/artiste-peintre/commit/1170f76))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.6.0 (2024-11-17)
 
 ### 🚀 Features
