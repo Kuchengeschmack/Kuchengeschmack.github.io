@@ -7,17 +7,11 @@
   "repository": "git@github.com:Kuchengeschmack/artiste-peintre.git",
   "main": "index.js",
   "scripts": {
-    "ng": "ng",
     "start": "nx serve",
-    "version": "nx release version",
-    "changelog": "nx release changelog",
+    "release": "nx release --skip-publish",
     "build": "nx build",
-    "watch": "nx build --watch --configuration development",
     "test": "nx test",
-    "serve:ssr": "node dist/artiste-peintre/server/server.mjs",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "deploy": "nx deploy"
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "@angular/animations": "^18.2.12",
