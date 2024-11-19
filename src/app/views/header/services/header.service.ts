@@ -9,6 +9,6 @@ import { Header } from '../models/header.model';
 export class HeaderService {
   readonly header = new Header(
     MENU_ITEMS,
-    'Marie-Cécile Caron, artiste-peintre'
+    'Marie-Cécile Caron, artiste-peintre',
   );
 }

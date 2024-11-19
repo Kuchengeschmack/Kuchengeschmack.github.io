@@ -13,19 +13,20 @@ export class LoginService {
   private readonly _snackBar = inject(MatSnackBar);
   private _isAuthenticated = false;
 
-  login(id: string, password: string) {
+  login (id: string, password: string) {
     this._isAuthenticated = id === ID && password === PASSWORD;
     if (this._isAuthenticated) {
       this._snackBar.open('Vous êtes connecté.', undefined, { duration: 3000 });
       this._router.navigate(['gallery/intro']);
-    } else {
+    }
+    else {
       this._snackBar.open('E-mail ou mot de passe erroné.', undefined, {
         duration: 3000,
       });
     }
   }
 
-  get isAuthenticated() {
+  get isAuthenticated () {
     return this._isAuthenticated;
   }
 }

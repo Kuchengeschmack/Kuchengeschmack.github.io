@@ -2,10 +2,10 @@
   "name": "artiste-peintre",
   "version": "0.6.0",
   "private": true,
-  "main": "index.js",
-  "repository": "git@github.com:Kuchengeschmack/artiste-peintre.git",
   "author": "Dorian Réale--Caron <drealecaron@protonmail.com>",
   "license": "MIT",
+  "repository": "git@github.com:Kuchengeschmack/artiste-peintre.git",
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
     "start": "nx serve",

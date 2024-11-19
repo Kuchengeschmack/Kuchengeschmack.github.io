@@ -1,8 +1,9 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import type { ComponentFixture } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 
 import { PhotoCardComponent } from './photo-card.component';
 
-describe('PhotoCardComponent', () => {
+describe('photoCardComponent', () => {
   let component: PhotoCardComponent;
   let fixture: ComponentFixture<PhotoCardComponent>;
 

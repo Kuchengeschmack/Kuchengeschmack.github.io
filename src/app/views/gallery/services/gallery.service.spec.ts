@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { GalleryService } from './gallery.service';
 
-describe('GalleryService', () => {
+describe('galleryService', () => {
   let service: GalleryService;
 
   beforeEach(() => {

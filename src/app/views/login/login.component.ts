@@ -16,12 +16,12 @@ export class LoginComponent {
   password = '';
   readonly hide = signal(true);
 
-  clickEvent(event: MouseEvent) {
+  clickEvent (event: MouseEvent) {
     this.hide.set(!this.hide());
     event.stopPropagation();
   }
 
-  onSubmit() {
+  onSubmit () {
     this._loginService.login(this.email, this.password);
   }
 }

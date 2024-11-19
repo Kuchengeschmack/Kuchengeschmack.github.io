@@ -1,9 +1,10 @@
+import type { JsonData } from '../models/gallery.model';
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { catchError, map, tap } from 'rxjs';
 
-import { Gallery, JsonData } from '../models/gallery.model';
+import { catchError, map, tap } from 'rxjs';
+import { Gallery } from '../models/gallery.model';
 
 const dir = 'assets/images/images.json';
 
@@ -17,7 +18,7 @@ export class GalleryService {
   private _gallery = signal({} as Gallery);
   gallery = this._gallery.asReadonly();
 
-  private _getGalleryRemotely() {
+  private _getGalleryRemotely () {
     return this._http.get<Gallery>('http://localhost:8080/images', {
       params: {
         path: this._router.url.split('gallery')[1],
@@ -25,7 +26,7 @@ export class GalleryService {
     });
   }
 
-  private _getGalleryLocally() {
+  private _getGalleryLocally () {
     return this._http
       .get<JsonData>(dir)
       .pipe(
@@ -33,19 +34,19 @@ export class GalleryService {
           (jsonData: JsonData) =>
             new Gallery(
               jsonData,
-              'assets/images' + this._router.url?.split('gallery')[1] || ''
-            )
-        )
+              `assets/images${this._router.url?.split('gallery')[1]}` || '',
+            ),
+        ),
       );
   }
 
-  getGallery() {
+  getGallery () {
     return this._getGalleryRemotely().pipe(
       catchError(() => this._getGalleryLocally()),
-      tap(gallery => {
+      tap((gallery) => {
         console.log(gallery);
         this._gallery.set(gallery);
-      })
+      }),
     );
   }
 }

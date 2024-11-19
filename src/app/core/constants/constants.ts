@@ -1,4 +1,4 @@
-import { MenuItem } from 'app/views/header/models/header.model';
+import type { MenuItem } from 'app/views/header/models/header.model';
 
 export const MENU_ITEMS: MenuItem[] = [
   { title: 'Présentation', link: 'gallery/intro/' },
