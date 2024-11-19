@@ -2,5 +2,7 @@
   <mat-card-header class="header">
     <mat-card-title>{{ photo.alt | capitalize }}</mat-card-title>
   </mat-card-header>
-  <img class="img" mat-card-image [src]="photo.src" [alt]="photo.alt" />
+  <div class="img">
+    <img mat-card-image [src]="photo.src" [alt]="photo.alt" />
+  </div>
 </mat-card>
