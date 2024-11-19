@@ -41,10 +41,8 @@ export class GalleryService {
   }
 
   getGallery () {
-    return this._getGalleryRemotely().pipe(
-      catchError(() => this._getGalleryLocally()),
+    return this._getGalleryLocally().pipe(
       tap((gallery) => {
-        console.log(gallery);
         this._gallery.set(gallery);
       }),
     );
