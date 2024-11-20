@@ -1,3 +1,3 @@
-import { CapitalizePipe } from './capitalize/capitalize.pipe';
+import { CapitalizePipe } from './capitalize.pipe';
 
 export const Pipes = [CapitalizePipe];

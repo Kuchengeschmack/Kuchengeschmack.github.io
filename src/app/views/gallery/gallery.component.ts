@@ -5,7 +5,7 @@ import { Component, inject } from '@angular/core';
 import { Core } from 'app/core';
 
 import { PhotoCardComponent } from './components/photo-card/photo-card.component';
-import { GalleryService } from './services/gallery.service';
+import { GalleryService } from './gallery.service';
 
 @Component({
   selector: 'app-gallery',
