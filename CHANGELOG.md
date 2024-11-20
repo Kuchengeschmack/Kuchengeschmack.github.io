@@ -1,3 +1,16 @@
+## 0.8.0 (2024-11-20)
+
+### 🚀 Features
+
+- overflow hidden ([fbe9584](https://github.com/Kuchengeschmack/artiste-peintre/commit/fbe9584))
+- use css grid instead of mat-grid-list ([2d38d5e](https://github.com/Kuchengeschmack/artiste-peintre/commit/2d38d5e))
+- add an image title drawer ([4c8aef8](https://github.com/Kuchengeschmack/artiste-peintre/commit/4c8aef8))
+- center gallery ([47c1215](https://github.com/Kuchengeschmack/artiste-peintre/commit/47c1215))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.7.0 (2024-11-19)
 
 ### 🚀 Features
