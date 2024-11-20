@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { catchError, map, tap } from 'rxjs';
+import { map, tap } from 'rxjs';
 import { Gallery } from '../models/gallery.model';
 
 const dir = 'assets/images/images.json';

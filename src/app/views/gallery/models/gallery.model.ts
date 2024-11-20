@@ -19,7 +19,7 @@ export class Photo {
   private _src: string;
 
   constructor (fileName: string, path: string) {
-    this._alt = fileName;
+    this._alt = fileName.split('.jpg')[0];
     this._src = `${path}/${fileName}`;
   }
 

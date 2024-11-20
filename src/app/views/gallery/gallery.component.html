@@ -1,18 +1,16 @@
-<article>
-  <div class="content">
-    @if (gallery()) {
-      @for (photo of gallery().photos; track photo.alt) {
-        <app-photo-card [photo]="photo"></app-photo-card>
-      } @empty {
-        Les photos n'ont pas pu être récupérées.
-      }
-    } @else {
-      <mat-progress-spinner
-        class="center"
-        color="primary"
-        mode="indeterminate"
-        value="50">
-      </mat-progress-spinner>
+<article class="content">
+  @if (gallery()) {
+    @for (photo of gallery().photos; track photo.alt) {
+      <app-photo-card [photo]="photo"></app-photo-card>
+    } @empty {
+      Les photos n'ont pas pu être récupérées.
     }
-  </div>
+  } @else {
+    <mat-progress-spinner
+      class="center"
+      color="primary"
+      mode="indeterminate"
+      value="50">
+    </mat-progress-spinner>
+  }
 </article>
