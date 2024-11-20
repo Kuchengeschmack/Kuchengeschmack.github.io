@@ -1,19 +1,19 @@
 @media screen and (min-width: 500px) {
   .content {
     min-width: 1000px;
-    max-width: 1400px;
   }
 }
 
 .content {
   display: grid;
+  width: min(100%, 75rem);
+  margin: 0 auto;
   grid-template-columns: repeat(auto-fill, 15rem);
   grid-auto-rows: minmax(20rem, auto);
   grid-auto-flow: row dense;
   justify-content: center;
   place-items: center;
   gap: 3rem;
-  width: min(100%, 75rem);
 }
 
 .center {
