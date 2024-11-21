@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from 'components/header.component';
 import { Core } from '.';
+import { version } from '../../package.json';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,7 @@ import { Core } from '.';
     </main>
 
     <footer class="footer">
-      <p></p>
+      <p>v{{version}}</p>
     </footer>
   `,
   styles: `
@@ -40,4 +41,6 @@ import { Core } from '.';
     }
   `,
 })
-export class AppComponent {}
+export class AppComponent {
+  public version = version;
+}
