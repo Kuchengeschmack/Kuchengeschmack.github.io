@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
-import { Core } from 'app/core';
+import { Core } from 'app';
 
-import { SideMenuComponent } from './components/side-menu/side-menu.component';
-import { TitleComponent } from './components/title.component';
-import { HeaderService } from './header.service';
+import { HeaderService } from 'services/header.service';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { TitleComponent } from './title.component';
 
 @Component({
   selector: 'app-header',

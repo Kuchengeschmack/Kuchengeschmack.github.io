@@ -1,3 +1,6 @@
+import { CommonModule } from '@angular/common';
+
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -7,8 +10,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { GalleryComponent } from './pages/gallery.component';
+import { LoginComponent } from './pages/login.component';
 
-export const Modules = [
+export const Core = [
+  CommonModule,
+  FormsModule,
   MatCardModule,
   MatGridListModule,
   MatProgressSpinnerModule,
@@ -18,4 +26,8 @@ export const Modules = [
   MatFormFieldModule,
   MatInputModule,
   MatSnackBarModule,
+  RouterLink,
+  RouterOutlet,
 ];
+
+export const Views = [LoginComponent, GalleryComponent];

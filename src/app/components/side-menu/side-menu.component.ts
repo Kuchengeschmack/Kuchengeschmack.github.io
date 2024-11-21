@@ -1,7 +1,7 @@
-import type { SideMenu } from '../../header.model';
+import type { SideMenu } from 'models/header.model';
 import { Component, Input } from '@angular/core';
 
-import { Core } from 'app/core';
+import { Core } from 'app';
 
 @Component({
   selector: 'app-side-menu',

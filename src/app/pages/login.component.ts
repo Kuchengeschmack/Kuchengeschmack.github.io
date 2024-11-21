@@ -1,7 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
-import { Core } from 'app/core';
+import { Core } from 'app';
 
-import { LoginService } from './login.service';
+import { LoginService } from 'services/login.service';
 
 @Component({
   selector: 'app-login',

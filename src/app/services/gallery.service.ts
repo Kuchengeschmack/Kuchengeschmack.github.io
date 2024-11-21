@@ -1,10 +1,10 @@
-import type { JsonData } from './gallery.model';
+import type { JsonData } from 'models/gallery.model';
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { Gallery } from 'models/gallery.model';
 import { map, tap } from 'rxjs';
-import { Gallery } from './gallery.model';
 
 const dir = 'assets/images/images.json';
 

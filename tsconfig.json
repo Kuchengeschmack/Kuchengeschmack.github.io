@@ -9,11 +9,12 @@
     "module": "ES2022",
     "moduleResolution": "node",
     "paths": {
-      "app/*": ["app/*"],
       "assets/*": ["assets/*"],
-      "constants/*": ["app/core/constants/*"],
-      "core/*": ["core/*"],
-      "shared/*": ["app/core/shared/*"]
+      "components/*": ["app/components/*"],
+      "core/*": ["app/core/*"],
+      "models/*": ["app/models/*"],
+      "pages/*": ["app/pages/*"],
+      "services/*": ["app/services/*"]
     },
     "resolveJsonModule": true,
     "strict": true,

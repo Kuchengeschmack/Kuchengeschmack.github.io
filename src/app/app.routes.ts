@@ -1,8 +1,8 @@
 import type { Routes } from '@angular/router';
 
-import { authGuard } from './guards/auth.guard';
-import { GalleryComponent } from './views/gallery/gallery.component';
-import { LoginComponent } from './views/login/login.component';
+import { GalleryComponent } from 'pages/gallery.component';
+import { LoginComponent } from 'pages/login.component';
+import { authGuard } from './auth.guard';
 
 export const routes: Routes = [
   {

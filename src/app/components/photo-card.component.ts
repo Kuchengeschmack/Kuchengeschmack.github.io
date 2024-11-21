@@ -1,7 +1,7 @@
-import type { Photo } from 'app/views/gallery/gallery.model';
+import type { Photo } from 'models/gallery.model';
 import { Component, Input } from '@angular/core';
-import { Core } from 'app/core';
-import { CapitalizePipe } from 'app/core/pipes/capitalize.pipe';
+import { Core } from 'app';
+import { CapitalizePipe } from 'core/capitalize.pipe';
 
 @Component({
   selector: 'app-photo-card',
