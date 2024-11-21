@@ -3,10 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { environment } from 'environments/environment';
 import { Gallery } from 'models/gallery.model';
 import { map, tap } from 'rxjs';
-
-const dir = 'assets/images/images.json';
 
 @Injectable({
   providedIn: 'root',
@@ -18,30 +17,15 @@ export class GalleryService {
   private _gallery = signal({} as Gallery);
   gallery = this._gallery.asReadonly();
 
-  private _getGalleryRemotely () {
-    return this._http.get<Gallery>('http://localhost:8080/images', {
-      params: {
-        path: this._router.url.split('gallery')[1],
-      },
-    });
-  }
-
-  private _getGalleryLocally () {
-    return this._http
-      .get<JsonData>(dir)
-      .pipe(
-        map(
-          (jsonData: JsonData) =>
-            new Gallery(
-              jsonData,
-              `assets/images${this._router.url?.split('gallery')[1]}` || '',
-            ),
-        ),
-      );
-  }
-
-  getGallery () {
-    return this._getGalleryLocally().pipe(
+  public getGallery () {
+    return this._http.get<JsonData>(environment.backendUrl).pipe(
+      map(
+        (jsonData: JsonData) =>
+          new Gallery(
+            jsonData,
+            `assets/images${this._router.url?.split('gallery')[1]}` || '',
+          ),
+      ),
       tap((gallery) => {
         this._gallery.set(gallery);
       }),
