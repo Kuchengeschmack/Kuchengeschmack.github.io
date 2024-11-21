@@ -12,7 +12,7 @@ import { GalleryService } from 'services/gallery.service';
   imports: [...Core, PhotoCardComponent],
   standalone: true,
   template: `
-    <article class="content">
+    <div class="content">
       @if (gallery()) {
         @for (photo of gallery().photos; track photo.alt) {
           <app-photo-card [photo]="photo"></app-photo-card>
@@ -27,7 +27,7 @@ import { GalleryService } from 'services/gallery.service';
           value="50">
         </mat-progress-spinner>
       }
-    </article>
+    </div>
   `,
   styles: `
     @media screen and (min-width: 500px) {
