@@ -11,8 +11,6 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { GalleryComponent } from './pages/gallery.component';
-import { LoginComponent } from './pages/login.component';
 
 export const Core = [
   CommonModule,
@@ -29,5 +27,3 @@ export const Core = [
   RouterLink,
   RouterOutlet,
 ];
-
-export const Views = [LoginComponent, GalleryComponent];
