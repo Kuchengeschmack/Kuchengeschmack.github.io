@@ -1,3 +1,22 @@
+## 0.9.0 (2024-11-21)
+
+### 🚀 Features
+
+- create intro and piano pages ([7eed6c6](https://github.com/Kuchengeschmack/artiste-peintre/commit/7eed6c6))
+- reorganize app component template ([75e8cb8](https://github.com/Kuchengeschmack/artiste-peintre/commit/75e8cb8))
+- display current version in footer ([a60de65](https://github.com/Kuchengeschmack/artiste-peintre/commit/a60de65))
+- set header and footer ([6a36e79](https://github.com/Kuchengeschmack/artiste-peintre/commit/6a36e79))
+- remove login ([72a4de4](https://github.com/Kuchengeschmack/artiste-peintre/commit/72a4de4))
+
+### 🩹 Fixes
+
+- environments settings ([dfd1828](https://github.com/Kuchengeschmack/artiste-peintre/commit/dfd1828))
+- import prod environment ([2aa845e](https://github.com/Kuchengeschmack/artiste-peintre/commit/2aa845e))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.8.0 (2024-11-20)
 
 ### 🚀 Features
