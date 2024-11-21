@@ -4,9 +4,9 @@ import { Injectable } from '@angular/core';
 import { Header } from 'models/header.model';
 
 const MENU_ITEMS: MenuItem[] = [
-  { title: 'Présentation', link: 'gallery/intro/' },
+  { title: 'Présentation', link: 'intro/' },
   { title: 'Book', link: 'gallery/book/' },
-  { title: 'Cours de piano', link: 'gallery/piano/' },
+  { title: 'Cours de piano', link: 'piano/' },
 ] as const;
 
 @Injectable({
