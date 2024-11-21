@@ -23,7 +23,6 @@ import { TitleComponent } from './title.component';
         justify-content: space-around;
         width: 100%;
         max-width: 700px;
-        margin-bottom: 3rem;
       }
 
       .divider {
@@ -38,7 +37,6 @@ import { TitleComponent } from './title.component';
         display: grid;
         justify-content: start;
         width: 100%;
-        margin-bottom: 3rem;
       }
 
       .divider {

@@ -17,7 +17,7 @@ export class LoginService {
     this._isAuthenticated = id === ID && password === PASSWORD;
     if (this._isAuthenticated) {
       this._snackBar.open('Vous êtes connecté.', undefined, { duration: 3000 });
-      this._router.navigate(['gallery/intro']);
+      this._router.navigate(['gallery/book']);
     }
     else {
       this._snackBar.open('E-mail ou mot de passe erroné.', undefined, {

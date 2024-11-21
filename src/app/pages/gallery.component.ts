@@ -12,22 +12,17 @@ import { GalleryService } from 'services/gallery.service';
   imports: [...Core, PhotoCardComponent],
   standalone: true,
   template: `
-    <div class="content">
-      @if (gallery()) {
+    <article class="article">
+      <h1>Book</h1>
+      <div class="content">
         @for (photo of gallery().photos; track photo.alt) {
           <app-photo-card [photo]="photo"></app-photo-card>
         } @empty {
-          Les photos n'ont pas pu être récupérées.
+          <mat-progress-spinner color="primary" mode="indeterminate" value="50">
+          </mat-progress-spinner>
         }
-      } @else {
-        <mat-progress-spinner
-          class="center"
-          color="primary"
-          mode="indeterminate"
-          value="50">
-        </mat-progress-spinner>
-      }
-    </div>
+      </div>
+    </article>
   `,
   styles: `
     @media screen and (min-width: 500px) {
@@ -48,8 +43,8 @@ import { GalleryService } from 'services/gallery.service';
       gap: 3rem;
     }
 
-    .center {
-      margin: 0 auto;
+    .article h1 {
+      text-align: center;
     }
   `,
   providers: [HttpClient],
