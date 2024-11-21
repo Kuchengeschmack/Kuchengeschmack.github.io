@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { environment } from 'environments/environment.development';
+import { environment } from 'environments/environment';
 import { Gallery } from 'models/gallery.model';
 import { map, tap } from 'rxjs';
 
