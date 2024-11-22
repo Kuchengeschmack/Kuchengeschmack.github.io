@@ -22,7 +22,7 @@ import { Core } from 'core/index';
             </svg>
           </a>
         }
-        <a class="pill" [href]="facebookUrl" rel="noopener">
+        <a class="pill" [href]="facebookUrl" target="_blank" rel="noopener">
           <span>Facebook</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
