@@ -1,10 +1,10 @@
 import type { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { Core } from 'app';
 
+import photos from 'assets/images/images.json';
 import { PhotoCardComponent } from 'components/photo-card.component';
-import { GalleryService } from 'services/gallery.service';
 
 @Component({
   selector: 'app-gallery',
@@ -14,7 +14,7 @@ import { GalleryService } from 'services/gallery.service';
     <article class="article">
       <h1>Book</h1>
       <div class="content">
-        @for (photo of gallery().photos; track photo.alt) {
+        @for (photo of gallery.photos; track photo.alt) {
           <app-photo-card [photo]="photo"></app-photo-card>
         } @empty {
           <mat-progress-spinner color="primary" mode="indeterminate" value="50">
@@ -49,8 +49,7 @@ import { GalleryService } from 'services/gallery.service';
   providers: [HttpClient],
 })
 export class GalleryComponent implements OnInit {
-  private readonly _galleryService = inject(GalleryService);
-  readonly gallery = this._galleryService.gallery;
+  readonly gallery = { photos };
   breakpoint: number = 3;
 
   ngOnInit () {
@@ -60,7 +59,7 @@ export class GalleryComponent implements OnInit {
   onResize (event: Event) {
     this.breakpoint
       = (event.target as Window).innerWidth <= 500
-      || this.gallery().photos.length === 1
+      || this.gallery.photos.length === 1
         ? 1
         : 3;
   }

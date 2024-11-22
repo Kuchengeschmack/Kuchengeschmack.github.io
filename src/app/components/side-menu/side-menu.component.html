@@ -1,6 +1,6 @@
 <div class="right-side">
   <div class="pill-group">
-    @for (item of sideMenu.menuItems; track item.title) {
+    @for (item of sideMenu; track item.title) {
       <a class="pill" [routerLink]="item.link" rel="noopener">
         <span>{{ item.title }}</span>
         <svg

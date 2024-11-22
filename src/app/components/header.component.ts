@@ -1,7 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { Core } from 'app';
 
-import { HeaderService } from 'services/header.service';
+import header from 'assets/header.json';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TitleComponent } from './title.component';
 
@@ -13,7 +13,7 @@ import { TitleComponent } from './title.component';
     <div class="content">
       <app-title [title]="header.title"></app-title>
       <div class="divider" role="separator" aria-label="Divider"></div>
-      <app-side-menu [sideMenu]="header.sideMenu"></app-side-menu>
+      <app-side-menu [sideMenu]="header.menuItems"></app-side-menu>
     </div>
   `,
   styles: `
@@ -49,6 +49,5 @@ import { TitleComponent } from './title.component';
   `,
 })
 export class HeaderComponent {
-  private readonly _headerService = inject(HeaderService);
-  readonly header = this._headerService.header;
+  readonly header = header;
 }

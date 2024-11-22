@@ -1,4 +1,3 @@
-import type { SideMenu } from 'models/header.model';
 import { Component, Input } from '@angular/core';
 
 import { Core } from 'app';
@@ -11,6 +10,6 @@ import { Core } from 'app';
   imports: Core,
 })
 export class SideMenuComponent {
-  @Input() sideMenu = {} as SideMenu;
+  @Input() sideMenu = [] as Header['menuItems'];
   readonly facebookUrl = 'https://www.facebook.com/mariececile.caron';
 }
