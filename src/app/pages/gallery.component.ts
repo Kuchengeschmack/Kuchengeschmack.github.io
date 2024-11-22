@@ -32,9 +32,9 @@ import { Core } from 'core/index';
 
     .content {
       display: grid;
-      width: min(100%, 75rem);
+      width: min(100%, 100rem);
       margin: 0 auto;
-      grid-template-columns: repeat(auto-fill, 15rem);
+      grid-template-columns: repeat(auto-fill, 20rem);
       grid-auto-rows: minmax(20rem, auto);
       grid-auto-flow: row dense;
       justify-content: center;
