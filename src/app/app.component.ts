@@ -18,9 +18,11 @@ import { Core } from './core';
       </article>
     </main>
 
-    <footer class="footer">
-      <address class="address">mc-caron.com</address>
+    <footer>
       <div class="version">v{{ version }}</div>
+      <div class="footer">
+        <address class="address">mc-caron.com</address>
+      </div>
     </footer>
   `,
   styles: `
@@ -48,10 +50,13 @@ import { Core } from './core';
     }
 
     .version {
-      position: fixed;
-      left: 20px;
       align-content: center;
       width: fit-content;
+      height: 40px;
+      position: fixed;
+      left: 10px;
+      bottom: 0px;
+      z-index: 1;
     }
 
     .address {
@@ -66,7 +71,7 @@ import { Core } from './core';
       background-color: white;
       text-align: center;
       justify-content: center;
-      position: sticky;
+      position: fixed;
       bottom: 0px;
     }
   `,
