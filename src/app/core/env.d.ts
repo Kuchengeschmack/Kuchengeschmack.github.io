@@ -11,7 +11,7 @@ interface Header {
   title: string
 }
 
-declare module 'assets/images/images.json' {
+declare module 'assets/images.json' {
   const photos: Photo[];
   export default photos;
 }

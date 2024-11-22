@@ -1,7 +1,7 @@
 import type { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import photos from 'assets/images/images.json';
+import photos from 'assets/images.json';
 
 import { PhotoCardComponent } from 'components/photo-card.component';
 import { Core } from 'core/index';

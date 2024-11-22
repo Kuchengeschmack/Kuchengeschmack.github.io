@@ -1,7 +1,7 @@
 {
   "menuItems": [
     { "title": "Présentation", "link": "intro/" },
-    { "title": "Book", "link": "gallery/book/" },
+    { "title": "Book", "link": "book/" },
     { "title": "Cours de piano", "link": "piano/" }
   ],
   "title": "Marie-Cécile Caron, artiste-peintre"
