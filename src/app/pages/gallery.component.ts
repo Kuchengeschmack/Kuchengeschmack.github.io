@@ -1,8 +1,8 @@
 import type { OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
-import photos from 'assets/images.json';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 
+import photos from 'assets/images.json';
 import { PhotoCardComponent } from 'components/photo-card.component';
 import { Core } from 'core/index';
 
@@ -46,14 +46,17 @@ import { Core } from 'core/index';
       text-align: center;
     }
   `,
-  providers: [HttpClient],
 })
 export class GalleryComponent implements OnInit {
   readonly gallery = { photos };
   breakpoint: number = 3;
 
+  constructor (@Inject(DOCUMENT) private _document: Document) {}
+
   ngOnInit () {
-    this.breakpoint = window.innerWidth <= 500 ? 1 : 3;
+    if (this._document.defaultView) {
+      this.breakpoint = this._document.defaultView.innerWidth <= 500 ? 1 : 3;
+    }
   }
 
   onResize (event: Event) {
