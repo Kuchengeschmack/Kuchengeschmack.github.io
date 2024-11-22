@@ -21,14 +21,11 @@ import { TitleComponent } from './title.component';
       .content {
         display: flex;
         justify-content: space-around;
-        width: 100%;
         max-width: 700px;
       }
 
       .divider {
         width: 1px;
-        background: var(--red-to-pink-to-purple-vertical-gradient);
-        margin-inline: 1.5rem;
       }
     }
 
@@ -36,15 +33,21 @@ import { TitleComponent } from './title.component';
       .content {
         display: grid;
         justify-content: start;
-        width: 100%;
       }
 
       .divider {
         height: 1px;
-        background: var(--red-to-pink-to-purple-vertical-gradient);
-        margin-inline: 1.5rem;
         writing-mode: vertical-lr;
       }
+    }
+
+    .content {
+      width: 100%;
+    }
+
+    .divider {
+      background: var(--red-to-pink-to-purple-vertical-gradient);
+      margin-inline: 2.5rem;
     }
   `,
 })

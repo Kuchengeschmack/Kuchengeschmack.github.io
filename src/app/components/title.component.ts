@@ -15,7 +15,7 @@ import { Component, Input } from '@angular/core';
       font-weight: 500;
       line-height: 100%;
       letter-spacing: -0.125rem;
-      margin: 1.75rem 0 0;
+      margin: 1.75rem 0 1.75rem;
       font-family:
         'Inter Tight',
         -apple-system,
@@ -28,6 +28,7 @@ import { Component, Input } from '@angular/core';
         'Apple Color Emoji',
         'Segoe UI Emoji',
         'Segoe UI Symbol';
+      text-align: right;
     }
 
     p {
