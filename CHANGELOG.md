@@ -1,3 +1,21 @@
+## 0.10.0 (2024-11-22)
+
+### 🚀 Features
+
+- move version to footer ([fcf397b](https://github.com/Kuchengeschmack/artiste-peintre/commit/fcf397b))
+- add new photos ([3acf925](https://github.com/Kuchengeschmack/artiste-peintre/commit/3acf925))
+- increase gallery and photo size ([9cdf0a7](https://github.com/Kuchengeschmack/artiste-peintre/commit/9cdf0a7))
+- open face book in new tab ([745bc6f](https://github.com/Kuchengeschmack/artiste-peintre/commit/745bc6f))
+- move github link to footer ([f1839a1](https://github.com/Kuchengeschmack/artiste-peintre/commit/f1839a1))
+
+### 🩹 Fixes
+
+- version number css ([e30a04e](https://github.com/Kuchengeschmack/artiste-peintre/commit/e30a04e))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.9.1 (2024-11-22)
 
 This was a version bump only, there were no code changes.
