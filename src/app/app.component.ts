@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from 'components/header.component';
-import { Core } from '.';
 import { version } from '../../package.json';
+import { Core } from './core';
 
 @Component({
   selector: 'app-root',

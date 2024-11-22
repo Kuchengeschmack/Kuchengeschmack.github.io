@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Core } from 'app';
-
 import header from 'assets/header.json';
+
+import { Core } from 'core/index';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TitleComponent } from './title.component';
 

@@ -1,10 +1,10 @@
 import type { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { Core } from 'app';
-
 import photos from 'assets/images/images.json';
+
 import { PhotoCardComponent } from 'components/photo-card.component';
+import { Core } from 'core/index';
 
 @Component({
   selector: 'app-gallery',

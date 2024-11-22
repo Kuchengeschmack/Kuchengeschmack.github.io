@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Core } from 'app';
+import { Core } from 'core/index';
 
 @Component({
   selector: 'app-photo-card',
