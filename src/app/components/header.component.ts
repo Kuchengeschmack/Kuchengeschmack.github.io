@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import header from 'assets/header.json';
 
 import { Core } from 'core/index';
-import { SideMenuComponent } from './side-menu/side-menu.component';
+import { SideMenuComponent } from './side-menu.component';
 import { TitleComponent } from './title.component';
 
 @Component({
