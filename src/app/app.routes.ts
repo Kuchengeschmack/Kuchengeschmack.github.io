@@ -6,14 +6,9 @@ import { PianoComponent } from 'pages/piano.component';
 
 export const routes: Routes = [
   {
-    path: 'gallery',
-    children: [
-      {
-        path: 'book',
-        title: 'Marie-Cécile Caron | Book',
-        component: GalleryComponent,
-      },
-    ],
+    path: 'book',
+    title: 'Marie-Cécile Caron | Book',
+    component: GalleryComponent,
   },
   {
     path: 'intro',
@@ -27,6 +22,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'gallery/book',
+    redirectTo: 'book',
   },
 ];

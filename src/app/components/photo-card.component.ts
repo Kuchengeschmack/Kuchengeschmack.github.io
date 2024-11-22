@@ -1,16 +1,14 @@
-import type { Photo } from 'models/gallery.model';
 import { Component, Input } from '@angular/core';
-import { Core } from 'app';
-import { CapitalizePipe } from 'core/capitalize.pipe';
+import { Core } from 'core/index';
 
 @Component({
   selector: 'app-photo-card',
   standalone: true,
-  imports: [...Core, CapitalizePipe],
+  imports: Core,
   template: `
     <mat-card class="card" appearance="outlined">
       <mat-card-header class="header">
-        <mat-card-title>{{ photo.alt | capitalize }}</mat-card-title>
+        <mat-card-title>{{ photo.alt }}</mat-card-title>
       </mat-card-header>
       <div class="img">
         <img mat-card-image [src]="photo.src" [alt]="photo.alt" />

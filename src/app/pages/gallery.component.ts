@@ -1,11 +1,10 @@
-import type { OnDestroy, OnInit } from '@angular/core';
-import type { Subscription } from 'rxjs';
+import type { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
-import { Core } from 'app';
+import { Component } from '@angular/core';
+import photos from 'assets/images.json';
 
 import { PhotoCardComponent } from 'components/photo-card.component';
-import { GalleryService } from 'services/gallery.service';
+import { Core } from 'core/index';
 
 @Component({
   selector: 'app-gallery',
@@ -15,7 +14,7 @@ import { GalleryService } from 'services/gallery.service';
     <article class="article">
       <h1>Book</h1>
       <div class="content">
-        @for (photo of gallery().photos; track photo.alt) {
+        @for (photo of gallery.photos; track photo.alt) {
           <app-photo-card [photo]="photo"></app-photo-card>
         } @empty {
           <mat-progress-spinner color="primary" mode="indeterminate" value="50">
@@ -49,13 +48,8 @@ import { GalleryService } from 'services/gallery.service';
   `,
   providers: [HttpClient],
 })
-export class GalleryComponent implements OnInit, OnDestroy {
-  private readonly _galleryService = inject(GalleryService);
-  private _subscription: Subscription = this._galleryService
-    .getGallery()
-    .subscribe();
-
-  readonly gallery = this._galleryService.gallery;
+export class GalleryComponent implements OnInit {
+  readonly gallery = { photos };
   breakpoint: number = 3;
 
   ngOnInit () {
@@ -65,12 +59,8 @@ export class GalleryComponent implements OnInit, OnDestroy {
   onResize (event: Event) {
     this.breakpoint
       = (event.target as Window).innerWidth <= 500
-      || this.gallery().photos.length === 1
+      || this.gallery.photos.length === 1
         ? 1
         : 3;
-  }
-
-  ngOnDestroy () {
-    this._subscription.unsubscribe();
   }
 }
