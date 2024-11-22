@@ -1,5 +1,4 @@
-import type { OnDestroy, OnInit } from '@angular/core';
-import type { Subscription } from 'rxjs';
+import type { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { Core } from 'app';
@@ -49,12 +48,8 @@ import { GalleryService } from 'services/gallery.service';
   `,
   providers: [HttpClient],
 })
-export class GalleryComponent implements OnInit, OnDestroy {
+export class GalleryComponent implements OnInit {
   private readonly _galleryService = inject(GalleryService);
-  private _subscription: Subscription = this._galleryService
-    .getGallery()
-    .subscribe();
-
   readonly gallery = this._galleryService.gallery;
   breakpoint: number = 3;
 
@@ -68,9 +63,5 @@ export class GalleryComponent implements OnInit, OnDestroy {
       || this.gallery().photos.length === 1
         ? 1
         : 3;
-  }
-
-  ngOnDestroy () {
-    this._subscription.unsubscribe();
   }
 }

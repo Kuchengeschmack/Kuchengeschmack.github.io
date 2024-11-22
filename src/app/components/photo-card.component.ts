@@ -1,4 +1,3 @@
-import type { Photo } from 'models/gallery.model';
 import { Component, Input } from '@angular/core';
 import { Core } from 'app';
 import { CapitalizePipe } from 'core/capitalize.pipe';
