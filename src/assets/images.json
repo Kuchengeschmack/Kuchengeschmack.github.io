@@ -1,36 +1,82 @@
 [
   { "alt": "51 Degrés", "src": "assets/images/book/51degre.jpg" },
-  { "alt": "Agave The Blues", "src": "assets/images/book/agave.jpg" },
+  { "alt": "Agave The Blues", "src": "assets/images/book/Agave the blues.JPG" },
   { "alt": "Bandoleo", "src": "assets/images/book/Bandoleo.jpg" },
-  { "alt": "Bellisla", "src": "assets/images/book/Bellisla.jpg" },
+  { "alt": "Bell Island", "src": "assets/images/book/Bell Island.JPG" },
   { "alt": "Blonde", "src": "assets/images/book/Blonde.jpg" },
   { "alt": "Bronzage", "src": "assets/images/book/bronzage.jpg" },
-  { "alt": "Buick", "src": "assets/images/book/buick.jpg" },
-  { "alt": "Cadillac", "src": "assets/images/book/Cadillac.jpg" },
+  { "alt": "Brugge", "src": "assets/images/book/Brugge.JPG" },
+  { "alt": "Brugge 2", "src": "assets/images/book/Brugge 2.JPG" },
+  {
+    "alt": "Bugatti Royale 1927",
+    "src": "assets/images/book/Bugatti Royale 1927.JPG"
+  },
+  {
+    "alt": "Buick Electra 225",
+    "src": "assets/images/book/Buick Electra 225.JPG"
+  },
+  { "alt": "Cadillac 59", "src": "assets/images/book/Cadillac 59.JPG" },
+  { "alt": "Chat noir", "src": "assets/images/book/Chat noir.JPG" },
+  {
+    "alt": "Chrysler New-Yorker - 1956",
+    "src": "assets/images/book/Chrysler New-Yorker - 1956.JPG"
+  },
   { "alt": "Clair de Lune", "src": "assets/images/book/clairde.jpg" },
   { "alt": "Contrejour", "src": "assets/images/book/Contrejo.jpg" },
   { "alt": "Crescent", "src": "assets/images/book/crescent.jpg" },
+  {
+    "alt": "Délires de fuite",
+    "src": "assets/images/book/Délires de fuite.JPG"
+  },
   { "alt": "Diane", "src": "assets/images/book/Diane.jpg" },
+  { "alt": "Docteur Schpil", "src": "assets/images/book/Docteur Schpil.JPG" },
+  { "alt": "DS de Philippe", "src": "assets/images/book/DS Phil.JPG" },
   { "alt": "Ethermer", "src": "assets/images/book/Ethermer.jpg" },
   { "alt": "Femme", "src": "assets/images/book/Femme.jpg" },
   { "alt": "Fenêtre", "src": "assets/images/book/Fenetre.jpg" },
+  {
+    "alt": "Ferme la fenêtre",
+    "src": "assets/images/book/Ferme la fenetre.jpg"
+  },
   { "alt": "Ford Mustang", "src": "assets/images/book/fordmust.jpg" },
   { "alt": "French Riviera", "src": "assets/images/book/Frenchri.jpg" },
-  { "alt": "Helios", "src": "assets/images/book/helios.jpg" },
+  { "alt": "Girl", "src": "assets/images/book/Girl.JPG" },
+  { "alt": "Hélioscopie", "src": "assets/images/book/Helioscopie.JPG" },
   { "alt": "Heuresch", "src": "assets/images/book/Heuresch.jpg" },
+  {
+    "alt": "Il était une fois …",
+    "src": "assets/images/book/Il etait une fois.JPG"
+  },
+  {
+    "alt": "Invitation à la sieste",
+    "src": "assets/images/book/Invitation a la sieste.JPG"
+  },
   { "alt": "Jaguar", "src": "assets/images/book/jaguar.jpg" },
   {
-    "alt": "La Main passe, les Yeux sont faits",
-    "src": "assets/images/book/Lamain.jpg"
+    "alt": "La main passe, les yeux sont faits",
+    "src": "assets/images/book/La main passe, les yeux sont faits.JPG"
   },
-  { "alt": "Lavoute Chillac", "src": "assets/images/book/Lavoute.jpg" },
+  {
+    "alt": "La voûte Chilhac",
+    "src": "assets/images/book/La voute Chilhac.JPG"
+  },
+  { "alt": "Lumen", "src": "assets/images/book/Lumen.JPG" },
+  { "alt": "Maine Coon", "src": "assets/images/book/Maine Coon.JPG" },
+  { "alt": "Mako", "src": "assets/images/book/MAKO CHAT.jpg" },
   { "alt": "Matin", "src": "assets/images/book/Matin.jpg" },
   { "alt": "Méditation", "src": "assets/images/book/Meditati.jpg" },
   { "alt": "Meilleur", "src": "assets/images/book/meilleur.jpg" },
-  { "alt": "Réminiscence", "src": "assets/images/book/reminisc.jpg" },
-  { "alt": "Rolls", "src": "assets/images/book/Rolls.jpg" },
+  { "alt": "Mont Saint Michel", "src": "assets/images/book/Mt St Michel.JPG" },
+  { "alt": "Mustang", "src": "assets/images/book/Mustang.JPG" },
+  { "alt": "Oups", "src": "assets/images/book/Oups.JPG" },
+  { "alt": "Patience", "src": "assets/images/book/Patience.JPG" },
+  { "alt": "Prière", "src": "assets/images/book/Prière.JPG" },
+  { "alt": "Réminiscence", "src": "assets/images/book/Reminiscence.JPG" },
+  { "alt": "Rolls-Royce", "src": "assets/images/book/Rolls.jpg" },
+  { "alt": "Serenity", "src": "assets/images/book/Serenity.jpg" },
   { "alt": "Songeuse", "src": "assets/images/book/Songeuse.jpg" },
   { "alt": "Themeant", "src": "assets/images/book/themeant.jpg" },
   { "alt": "Timine", "src": "assets/images/book/Timine.jpg" },
-  { "alt": "Visage", "src": "assets/images/book/Visage.jpg" }
+  { "alt": "Visage", "src": "assets/images/book/Visage.jpg" },
+  { "alt": "Vu !", "src": "assets/images/book/VU.JPG" }
 ]
