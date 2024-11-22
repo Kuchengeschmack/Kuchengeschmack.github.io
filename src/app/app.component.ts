@@ -8,9 +8,8 @@ import { Core } from './core';
   standalone: true,
   imports: [...Core, HeaderComponent],
   template: `
-    <header class="sticky">
-      <div class="version">v{{ version }}</div>
-      <app-header class="header"></app-header>
+    <header class="header">
+      <app-header></app-header>
     </header>
 
     <main class="main">
@@ -20,24 +19,17 @@ import { Core } from './core';
     </main>
 
     <footer class="footer">
-      <address>mc-caron.com</address>
+      <address class="address">mc-caron.com</address>
+      <div class="version">v{{ version }}</div>
     </footer>
   `,
   styles: `
     @use '@angular/material' as mat;
     @use 'core/variables.scss';
 
-    .sticky {
+    .header {
       @include mat.elevation(8);
       position: sticky;
-      top: 0px;
-      background-color: white;
-      margin-bottom: 4rem;
-      z-index: 1;
-    }
-
-    .header {
-      position: relative;
       top: 0px;
       width: 100%;
       min-height: content-fit;
@@ -46,6 +38,9 @@ import { Core } from './core';
       align-items: center;
       padding: 1rem;
       box-sizing: inherit;
+      background-color: white;
+      margin-bottom: 4rem;
+      z-index: 1;
     }
 
     .main {
@@ -53,22 +48,26 @@ import { Core } from './core';
     }
 
     .version {
-      position: relative;
-      top: 10px;
+      position: fixed;
       left: 20px;
+      align-content: center;
       width: fit-content;
     }
 
+    .address {
+      width: fit-content;
+      align-content: center;
+    }
+
     .footer {
+      display: flex;
       width: 100%;
+      height: 40px;
       background-color: white;
       text-align: center;
+      justify-content: center;
       position: sticky;
       bottom: 0px;
-
-      p {
-        margin-bottom: 0px;
-      }
     }
   `,
 })
