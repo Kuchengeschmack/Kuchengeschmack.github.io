@@ -22,16 +22,24 @@ import { SideMenuComponent } from './side-menu.component';
   styles: `
     @media screen and (min-width: 500px) {
       .content {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 81px 1fr;
       }
 
       .divider {
         width: 1px;
+        justify-self: center;
       }
 
-      .left-side h1 {
-        text-align: right;
+      .left-side {
+        justify-self: end;
+        h1 {
+          text-align: right;
+        }
+      }
+
+      .right-side {
+        justify-self: start;
       }
     }
 
@@ -90,7 +98,6 @@ import { SideMenuComponent } from './side-menu.component';
 
     .right-side {
       display: flex;
-      width: auto;
       align-items: center;
       justify-content: center;
     }
