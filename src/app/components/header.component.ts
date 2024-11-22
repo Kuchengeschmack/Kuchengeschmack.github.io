@@ -3,17 +3,20 @@ import header from 'assets/header.json';
 
 import { Core } from 'core/index';
 import { SideMenuComponent } from './side-menu.component';
-import { TitleComponent } from './title.component';
 
 @Component({
   selector: 'app-header',
-  imports: [...Core, TitleComponent, SideMenuComponent],
+  imports: [...Core, SideMenuComponent],
   standalone: true,
   template: `
     <div class="content">
-      <app-title [title]="header.title"></app-title>
+      <div class="left-side">
+        <h1>{{ header.title }}</h1>
+      </div>
       <div class="divider" role="separator" aria-label="Divider"></div>
-      <app-side-menu [sideMenu]="header.menuItems"></app-side-menu>
+      <div class="right-side">
+        <app-side-menu [sideMenu]="header.menuItems"></app-side-menu>
+      </div>
     </div>
   `,
   styles: `
@@ -21,11 +24,14 @@ import { TitleComponent } from './title.component';
       .content {
         display: flex;
         justify-content: space-around;
-        max-width: 700px;
       }
 
       .divider {
         width: 1px;
+      }
+
+      .left-side h1 {
+        text-align: right;
       }
     }
 
@@ -39,6 +45,10 @@ import { TitleComponent } from './title.component';
         height: 1px;
         writing-mode: vertical-lr;
       }
+
+      .left-side h1 {
+        text-align: center;
+      }
     }
 
     .content {
@@ -48,6 +58,41 @@ import { TitleComponent } from './title.component';
     .divider {
       background: var(--red-to-pink-to-purple-vertical-gradient);
       margin-inline: 2.5rem;
+    }
+
+    .left-side {
+      h1 {
+        font-size: 2.125rem;
+        color: var(--gray-900);
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.125rem;
+        margin: 1.75rem 0 1.75rem;
+        font-family:
+          'Inter Tight',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol';
+      }
+
+      p {
+        margin: 1.5rem 0 0;
+        color: var(--gray-700);
+      }
+    }
+
+    .right-side {
+      display: flex;
+      width: auto;
+      align-items: center;
+      justify-content: center;
     }
   `,
 })

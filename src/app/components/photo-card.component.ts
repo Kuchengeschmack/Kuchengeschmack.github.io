@@ -45,6 +45,7 @@ import { Core } from 'core/index';
       @include mat.elevation(8);
       max-width: 300px;
       height: 100%;
+      overflow:hidden;
 
       &:hover,
       &:active {
