@@ -16,11 +16,6 @@ To serve the project, type `pnpm start`.
 
 Then, open your favorite browser at <http://localhost:4200>.
 
-The login credentials are :
-
-- dorian
-- 1234
-
 ## Workflow 🤓
 
 The repository (allegedly) follows [Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development).
