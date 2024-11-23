@@ -28,6 +28,7 @@ import { FooterComponent } from './components/footer.component';
   `,
   styles: `
     @use '@angular/material' as mat;
+    @use 'styles.scss';
 
     .header {
       @include mat.elevation(8);
