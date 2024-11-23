@@ -1,3 +1,27 @@
+## 0.11.0 (2024-11-23)
+
+### 🚀 Features
+
+- favicon + refactor ([7247037](https://github.com/Kuchengeschmack/artiste-peintre/commit/7247037))
+- align divider on the middle of header ([9ccc336](https://github.com/Kuchengeschmack/artiste-peintre/commit/9ccc336))
+- side menu alignment on mobile ([18df223](https://github.com/Kuchengeschmack/artiste-peintre/commit/18df223))
+- improve header responsivity ([b8a92a9](https://github.com/Kuchengeschmack/artiste-peintre/commit/b8a92a9))
+- add link to facebook ([c1e7712](https://github.com/Kuchengeschmack/artiste-peintre/commit/c1e7712))
+- improve visual aspect ([7be4a69](https://github.com/Kuchengeschmack/artiste-peintre/commit/7be4a69))
+- improve rendering of cards ([8e78d75](https://github.com/Kuchengeschmack/artiste-peintre/commit/8e78d75))
+- font weight on titles ([112d4af](https://github.com/Kuchengeschmack/artiste-peintre/commit/112d4af))
+
+### 🩹 Fixes
+
+- window does not exist with ssr ([8d257e6](https://github.com/Kuchengeschmack/artiste-peintre/commit/8d257e6))
+- alignement ([174bf86](https://github.com/Kuchengeschmack/artiste-peintre/commit/174bf86))
+- gallery width ([2723efa](https://github.com/Kuchengeschmack/artiste-peintre/commit/2723efa))
+- la main passe ([8b2472c](https://github.com/Kuchengeschmack/artiste-peintre/commit/8b2472c))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.10.0 (2024-11-22)
 
 ### 🚀 Features
