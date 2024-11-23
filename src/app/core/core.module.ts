@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -10,11 +11,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
-export const Core = [
-  CommonModule,
-  FormsModule,
+const material = [
   MatCardModule,
   MatGridListModule,
   MatProgressSpinnerModule,
@@ -24,6 +23,12 @@ export const Core = [
   MatFormFieldModule,
   MatInputModule,
   MatSnackBarModule,
-  RouterLink,
-  RouterOutlet,
 ];
+
+const core = [CommonModule, FormsModule, ...material, RouterLink];
+
+@NgModule({
+  imports: core,
+  exports: core,
+})
+export class CoreModule {}

@@ -4,11 +4,11 @@ import { Component, Inject } from '@angular/core';
 
 import photos from 'assets/images.json';
 import { PhotoCardComponent } from 'components/photo-card.component';
-import { Core } from 'core/index';
+import { CoreModule } from 'core/core.module';
 
 @Component({
   selector: 'app-gallery',
-  imports: [...Core, PhotoCardComponent],
+  imports: [CoreModule, PhotoCardComponent],
   standalone: true,
   template: `
     <article class="article">

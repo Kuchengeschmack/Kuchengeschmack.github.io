@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from 'components/header.component';
+import { RouterOutlet } from '@angular/router';
 
+import { HeaderComponent } from 'components/header.component';
 import { version } from '../../package.json';
 import { FooterComponent } from './components/footer.component';
-import { Core } from './core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [...Core, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   template: `
     <header class="header">
       <app-header></app-header>
@@ -28,7 +28,6 @@ import { Core } from './core';
   `,
   styles: `
     @use '@angular/material' as mat;
-    @use 'core/variables.scss';
 
     .header {
       @include mat.elevation(8);

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import header from 'assets/header.json';
 
-import { Core } from 'core/index';
+import { CoreModule } from 'core/core.module';
 import { SideMenuComponent } from './side-menu.component';
 
 @Component({
   selector: 'app-header',
-  imports: [...Core, SideMenuComponent],
+  imports: [CoreModule, SideMenuComponent],
   standalone: true,
   template: `
     <div class="content">

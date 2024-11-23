@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-
-import { Core } from 'core/index';
+import { CoreModule } from 'core/core.module';
 
 @Component({
   selector: 'app-side-menu',
   standalone: true,
+  imports: [CoreModule],
   template: `
     <div class="pill-group">
       @for (item of sideMenu; track item.title) {
@@ -97,7 +97,6 @@ import { Core } from 'core/index';
       }
     }
   `,
-  imports: Core,
 })
 export class SideMenuComponent {
   @Input() sideMenu = [] as Header['menuItems'];

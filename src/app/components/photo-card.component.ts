@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { Core } from 'core/index';
+import { CoreModule } from 'core/core.module';
 
 @Component({
   selector: 'app-photo-card',
   standalone: true,
-  imports: Core,
+  imports: [CoreModule],
   template: `
     <mat-card class="card" appearance="outlined">
       <mat-card-header class="header">
@@ -45,7 +45,7 @@ import { Core } from 'core/index';
       @include mat.elevation(8);
       max-width: 300px;
       height: 100%;
-      overflow:hidden;
+      overflow: hidden;
 
       &:hover,
       &:active {

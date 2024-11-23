@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Core } from 'core/index';
+import { CoreModule } from 'core/core.module';
 
 @Component({
   selector: 'app-footer',
-  imports: Core,
+  imports: [CoreModule],
   standalone: true,
   template: `
     <div class="footer">
@@ -34,8 +34,6 @@ import { Core } from 'core/index';
     </div>
   `,
   styles: `
-    @use 'core/variables.scss';
-
     .footer {
       display: grid;
       width: 100%;
