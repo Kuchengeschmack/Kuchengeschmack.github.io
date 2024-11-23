@@ -24,12 +24,6 @@ import { CoreModule } from 'core/core.module';
     </article>
   `,
   styles: `
-    @media screen and (min-width: 500px) {
-      .content {
-        min-width: 1000px;
-      }
-    }
-
     .content {
       display: grid;
       width: min(100%, 100rem);
@@ -61,9 +55,6 @@ export class GalleryComponent implements OnInit {
 
   onResize (event: Event) {
     this.breakpoint
-      = (event.target as Window).innerWidth <= 500
-      || this.gallery.photos.length === 1
-        ? 1
-        : 3;
+      = (event.target as Window).innerWidth <= 500 || this.gallery.photos.length === 1 ? 1 : 3;
   }
 }
