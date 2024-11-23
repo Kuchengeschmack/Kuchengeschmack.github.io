@@ -6,11 +6,11 @@
     "ms-azuretools.vscode-docker",
     "dbaeumer.vscode-eslint",
     "ecmel.vscode-html-css",
-    "davidanson.vscode-markdownlint",
     "pkief.material-icon-theme",
     "christian-kohler.npm-intellisense",
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
-    "sibiraj-s.vscode-scss-formatter"
+    "sibiraj-s.vscode-scss-formatter",
+    "editorconfig.editorconfig"
   ]
 }
