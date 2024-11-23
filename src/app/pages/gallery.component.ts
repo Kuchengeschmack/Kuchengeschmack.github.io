@@ -36,8 +36,11 @@ import { CoreModule } from 'core/core.module';
       gap: 3rem;
     }
 
-    .article h1 {
-      text-align: center;
+    .article {
+      padding: 3rem;
+      h1 {
+        text-align: center;
+      }
     }
   `,
 })

@@ -70,7 +70,7 @@ import { SideMenuComponent } from './side-menu.component';
     }
 
     .left-side {
-      margin: 1.75rem 0 1.75rem;
+      margin: 1rem 0 1rem;
       h1 {
         font-size: 2.125rem;
         color: var(--gray-900);
@@ -102,7 +102,7 @@ import { SideMenuComponent } from './side-menu.component';
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 1.75rem 0 1.75rem;
+      margin: 1rem 0 1rem;
     }
   `,
 })

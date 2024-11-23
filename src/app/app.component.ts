@@ -14,9 +14,7 @@ import { FooterComponent } from './components/footer.component';
     </header>
 
     <main class="main">
-      <article>
-        <router-outlet />
-      </article>
+      <router-outlet />
     </main>
 
     <footer>
@@ -39,7 +37,7 @@ import { FooterComponent } from './components/footer.component';
       padding: 1rem;
       box-sizing: inherit;
       background-color: white;
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
       z-index: 1;
     }
 

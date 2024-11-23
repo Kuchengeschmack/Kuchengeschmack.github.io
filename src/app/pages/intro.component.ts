@@ -8,6 +8,7 @@ import { CoreModule } from 'core/core.module';
   imports: [CoreModule],
   template: `
     <article class="article">
+      <h1>Présentation</h1>
       <iframe
         [src]="trustedUrl"
         width="500"
@@ -20,6 +21,11 @@ import { CoreModule } from 'core/core.module';
   `,
   styles: `
     .article {
+      text-align: center;
+      padding: 3rem;
+    }
+
+    h1 {
       text-align: center;
     }
   `,
