@@ -19,8 +19,6 @@ import { FooterComponent } from './components/footer.component';
       </article>
     </main>
 
-
-
     <footer>
       <app-footer></app-footer>
     </footer>

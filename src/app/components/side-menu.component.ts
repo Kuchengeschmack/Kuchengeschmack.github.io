@@ -6,7 +6,7 @@ import { CoreModule } from 'core/core.module';
   standalone: true,
   imports: [CoreModule],
   template: `
-    <div class="pill-group">
+    <nav class="pill-group">
       @for (item of sideMenu; track item.title) {
         <a class="pill" [routerLink]="item.link" rel="noopener">
           <span>{{ item.title }}</span>
@@ -15,25 +15,15 @@ import { CoreModule } from 'core/core.module';
             height="14"
             viewBox="0 -960 960 960"
             width="14"
-            fill="currentColor">
+            fill="currentColor"
+          >
             <path
-              d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+              d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+            />
           </svg>
         </a>
       }
-      <a class="pill" [href]="facebookUrl" target="_blank" rel="noopener">
-        <span>Facebook</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="14"
-          viewBox="0 -960 960 960"
-          width="14"
-          fill="currentColor">
-          <path
-            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
-        </svg>
-      </a>
-    </div>
+    </nav>
   `,
   styles: `
     @media screen and (max-width: 500px) {
@@ -97,5 +87,4 @@ import { CoreModule } from 'core/core.module';
 })
 export class SideMenuComponent {
   @Input() sideMenu = [] as Header['menuItems'];
-  readonly facebookUrl = 'https://www.facebook.com/mariececile.caron';
 }
