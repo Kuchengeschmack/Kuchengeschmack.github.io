@@ -27,6 +27,7 @@ import { CoreModule } from 'core/core.module';
 
     h1 {
       text-align: center;
+      font-weight: 700;
     }
   `,
 })

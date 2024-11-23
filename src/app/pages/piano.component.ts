@@ -53,6 +53,10 @@ import { CoreModule } from 'core/core.module';
       p {
         text-align: center;
       }
+
+      h1 {
+        font-weight: 700;
+      }
     }
   `,
 })
