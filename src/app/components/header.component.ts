@@ -29,6 +29,7 @@ import { SideMenuComponent } from './side-menu.component';
       .divider {
         width: 1px;
         justify-self: center;
+        margin-inline: 2.5rem;
       }
 
       .left-side {
@@ -52,6 +53,7 @@ import { SideMenuComponent } from './side-menu.component';
       .divider {
         height: 1px;
         writing-mode: vertical-lr;
+        margin-inline: 1rem;
       }
 
       .left-side h1 {
@@ -65,17 +67,17 @@ import { SideMenuComponent } from './side-menu.component';
 
     .divider {
       background: var(--red-to-pink-to-purple-vertical-gradient);
-      margin-inline: 2.5rem;
     }
 
     .left-side {
+      margin: 1.75rem 0 1.75rem;
       h1 {
         font-size: 2.125rem;
         color: var(--gray-900);
         font-weight: 500;
         line-height: 100%;
         letter-spacing: -0.125rem;
-        margin: 1.75rem 0 1.75rem;
+
         font-family:
           'Inter Tight',
           -apple-system,
@@ -100,6 +102,7 @@ import { SideMenuComponent } from './side-menu.component';
       display: flex;
       align-items: center;
       justify-content: center;
+      margin: 1.75rem 0 1.75rem;
     }
   `,
 })
