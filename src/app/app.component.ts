@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { HeaderComponent } from 'components/header.component';
-import { version } from '../../package.json';
 import { FooterComponent } from './components/footer.component';
 
 @Component({
@@ -20,7 +19,7 @@ import { FooterComponent } from './components/footer.component';
       </article>
     </main>
 
-    <div class="version">v{{ version }}</div>
+
 
     <footer>
       <app-footer></app-footer>
@@ -49,18 +48,6 @@ import { FooterComponent } from './components/footer.component';
     .main {
       z-index: 0;
     }
-
-    .version {
-      align-content: center;
-      width: fit-content;
-      height: 40px;
-      position: fixed;
-      left: 10px;
-      bottom: 0px;
-      z-index: 1;
-    }
   `,
 })
-export class AppComponent {
-  public version = version;
-}
+export class AppComponent {}

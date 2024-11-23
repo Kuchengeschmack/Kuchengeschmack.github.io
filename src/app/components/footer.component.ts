@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CoreModule } from 'core/core.module';
+import { version } from '../../../package.json';
 
 @Component({
   selector: 'app-footer',
@@ -7,11 +8,12 @@ import { CoreModule } from 'core/core.module';
   standalone: true,
   template: `
     <div class="footer">
+    <div class="version">v{{ version }}</div>
       <address class="address">mc-caron.com</address>
       <a
         href="https://www.flaticon.com/fr/icones-gratuites/chats"
         title="Icônes de chats"
-        >Icônes de chats créées par Maxim Kulikov - Flaticon</a
+        >Favicon créée par Maxim Kulikov</a
       >
     </div>
     <div class="social-links">
@@ -70,6 +72,18 @@ import { CoreModule } from 'core/core.module';
         fill: var(--gray-900);
       }
     }
+
+    .version {
+      align-content: center;
+      width: fit-content;
+      height: 40px;
+      position: fixed;
+      left: 10px;
+      bottom: 0px;
+      z-index: 1;
+    }
   `,
 })
-export class FooterComponent {}
+export class FooterComponent {
+  public version = version;
+}
