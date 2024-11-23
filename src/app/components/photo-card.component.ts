@@ -6,14 +6,14 @@ import { CoreModule } from 'core/core.module';
   standalone: true,
   imports: [CoreModule],
   template: `
-    <mat-card class="card" appearance="outlined">
-      <mat-card-header class="header">
-        <mat-card-title>{{ photo.alt }}</mat-card-title>
-      </mat-card-header>
+    <div class="card">
+      <div class="header">
+        <h1>{{ photo.alt }}</h1>
+      </div>
       <div class="img">
         <img mat-card-image [src]="photo.src" [alt]="photo.alt" />
       </div>
-    </mat-card>
+    </div>
   `,
   styles: `
     @use '@angular/material' as mat;
@@ -21,9 +21,15 @@ import { CoreModule } from 'core/core.module';
     .header {
       display: flex;
       justify-content: center;
+      height: 32px;
+      padding: 16px;
       margin-bottom: -64px;
-      padding-bottom: 16px;
       transition: 1s ease-in-out;
+
+      h1 {
+        margin: 0px;
+        font-weight: 500;
+      }
     }
 
     .img {
@@ -38,7 +44,6 @@ import { CoreModule } from 'core/core.module';
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: 1s ease-in-out;
     }
 
     .card {
@@ -46,16 +51,14 @@ import { CoreModule } from 'core/core.module';
       max-width: 300px;
       height: 100%;
       overflow: hidden;
+      border-radius: 10px;
+      transition: 1s ease-in-out;
 
       &:hover,
       &:active {
+        transform: scale(1.1);
         .header {
           margin-bottom: 0px;
-        }
-
-        img {
-          object-fit: cover;
-          transform: scale(1.1);
         }
       }
     }
