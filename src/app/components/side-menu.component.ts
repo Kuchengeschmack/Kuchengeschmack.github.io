@@ -39,13 +39,7 @@ import { CoreModule } from 'core/core.module';
     @media screen and (max-width: 500px) {
       .pill-group {
         flex-direction: row;
-        justify-content: center;
-      }
-    }
-
-    @media screen and (min-width: 500px) {
-      .pill-group {
-        flex-direction: row;
+        justify-content: start;
       }
     }
 
@@ -79,17 +73,20 @@ import { CoreModule } from 'core/core.module';
       flex-wrap: wrap;
       gap: 1.25rem;
 
-      .pill:nth-child(6n + 1) {
-        --pill-accent: var(--bright-blue);
-      }
+      .pill {
+        &:nth-child(6n + 1) {
+          --pill-accent: var(--bright-blue);
+        }
 
-      .pill:nth-child(6n + 2) {
-        --pill-accent: var(--french-violet);
-      }
-      .pill:nth-child(6n + 3),
-      .pill:nth-child(6n + 4),
-      .pill:nth-child(6n + 5) {
-        --pill-accent: var(--hot-red);
+        &:nth-child(6n + 2) {
+          --pill-accent: var(--french-violet);
+        }
+
+        &:nth-child(6n + 3),
+        &:nth-child(6n + 4),
+        &:nth-child(6n + 5) {
+          --pill-accent: var(--hot-red);
+        }
       }
 
       svg {
