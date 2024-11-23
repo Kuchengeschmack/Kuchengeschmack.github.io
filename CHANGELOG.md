@@ -12,7 +12,7 @@
 
 - version number css ([e30a04e](https://github.com/Kuchengeschmack/artiste-peintre/commit/e30a04e))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -35,7 +35,7 @@ This was a version bump only, there were no code changes.
 - environments settings ([dfd1828](https://github.com/Kuchengeschmack/artiste-peintre/commit/dfd1828))
 - import prod environment ([2aa845e](https://github.com/Kuchengeschmack/artiste-peintre/commit/2aa845e))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -48,7 +48,7 @@ This was a version bump only, there were no code changes.
 - add an image title drawer ([4c8aef8](https://github.com/Kuchengeschmack/artiste-peintre/commit/4c8aef8))
 - center gallery ([47c1215](https://github.com/Kuchengeschmack/artiste-peintre/commit/47c1215))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -60,7 +60,7 @@ This was a version bump only, there were no code changes.
 - change login id ([10353b8](https://github.com/Kuchengeschmack/artiste-peintre/commit/10353b8))
 - **gallery:** improve rendering ([1170f76](https://github.com/Kuchengeschmack/artiste-peintre/commit/1170f76))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -70,7 +70,7 @@ This was a version bump only, there were no code changes.
 
 - add http call to backend ([b537824](https://github.com/Kuchengeschmack/artiste-peintre/commit/b537824))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -80,7 +80,7 @@ This was a version bump only, there were no code changes.
 
 - **auth:** handle navigation when not authentified ([6f01c82](https://github.com/Kuchengeschmack/artiste-peintre/commit/6f01c82))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -90,7 +90,7 @@ This was a version bump only, there were no code changes.
 
 - **package.json:** add @swc/core and @swc-node/register ([580a2cf](https://github.com/Kuchengeschmack/artiste-peintre/commit/580a2cf))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -108,7 +108,7 @@ This was a version bump only, there were no code changes.
 
 - **gallery:** render gallery faster ([6149a12](https://github.com/Kuchengeschmack/artiste-peintre/commit/6149a12))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -118,7 +118,7 @@ This was a version bump only, there were no code changes.
 
 - **login:** fix auth guard ([68f8691](https://github.com/Kuchengeschmack/artiste-peintre/commit/68f8691))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -128,7 +128,7 @@ This was a version bump only, there were no code changes.
 
 - **docker:** switch from npm to yarn ([4b353ae](https://github.com/Kuchengeschmack/artiste-peintre/commit/4b353ae))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -138,7 +138,7 @@ This was a version bump only, there were no code changes.
 
 - **gallery:** responsive design ([c12ee67](https://github.com/Kuchengeschmack/artiste-peintre/commit/c12ee67))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -155,7 +155,7 @@ This was a version bump only, there were no code changes.
 - **login:** center form on div ([c270198](https://github.com/Kuchengeschmack/artiste-peintre/commit/c270198))
 - **side-menu:** facebook profile link ([e4a6707](https://github.com/Kuchengeschmack/artiste-peintre/commit/e4a6707))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -171,7 +171,7 @@ This was a version bump only, there were no code changes.
 - **gallery:** add piano route ([b3a63d7](https://github.com/Kuchengeschmack/artiste-peintre/commit/b3a63d7))
 - **login:** center form on div ([c270198](https://github.com/Kuchengeschmack/artiste-peintre/commit/c270198))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -188,7 +188,7 @@ This was a version bump only, there were no code changes.
 - mat form fields ([af8f1db](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/af8f1db))
 - styling ([14d86c0](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/14d86c0))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -198,7 +198,7 @@ This was a version bump only, there were no code changes.
 
 - ngxs starter-kit ([8e770b7](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/8e770b7))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -218,7 +218,7 @@ This was a version bump only, there were no code changes.
 - adjust images in gallery + shadow ([85608c4](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/85608c4))
 - margin-inline ([a1aecc5](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/a1aecc5))
 - change caption ([e4e8119](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/e4e8119))
-- ***:** création de l'application ([497fefb](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/497fefb))
+- **\*:** création de l'application ([497fefb](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/497fefb))
 
 ### 🩹 Fixes
 
@@ -236,6 +236,6 @@ This was a version bump only, there were no code changes.
 
 - optimise ng serve in dev conf ([5d947ed](https://github.com/Kuchengeschmack/improved-rotary-phone/commit/5d947ed))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
