@@ -1,25 +1,40 @@
 # Artiste-peintre
 
-## Description
+## Description 🔍
 
-This project is meant to be a portofolio for an artist. The website is still under construction.
+This project is an art portfolio. It is currently under construction.
 
-## Motives
+## Motives 💡
 
-I have been developpping professionally using Angular v9. I dedicate this project to improving on my knowledge using v18 so to get updated with Angular's latest features.
+I dedicate this project to improving on my knowledge so as to get updated with Angular's latest features.
 
-I'm also trying to improve my Git workflow and try some technos such as Nx and Docker, even if it's not relevant for my project; I want to make experiments.
+I'm also trying to improve my workflow and try some technos : pnpm, Nx, Docker, eslint ...
 
 ## How-to 🤔
 
-To serve the project, type `pnpm start`.
+### Install the project
 
-Then, access the website :
-* On your local computer via <http://localhost:4200>
-* On your mobile via http://\<computer-local-ip-address\>:4200
+```sh
+git clone https://github.com/Kuchengeschmack/artiste-peintre.git
+cd artiste-peintre
+pnpm install
+```
+
+### Serve the project over the local network
+
+```sh
+pnpm start
+```
+
+### Access the app
+
+- On your computer via <http://localhost:4200>
+- On your mobile via <http://192.168.X.Y:4200>
 
 ## Workflow 🤓
 
-The repository (allegedly) follows [Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development).
+The repository (allegedly) follows [Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-The commits follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+## Feedback 🔂
+
+Feel free to address any issues using the [_Issues_](https://github.com/Kuchengeschmack/artiste-peintre/issues) tab of this Github repo.
