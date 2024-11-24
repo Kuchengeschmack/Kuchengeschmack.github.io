@@ -58,6 +58,7 @@ import { CoreModule } from 'core/core.module';
         font-weight: 500;
         line-height: 100%;
         letter-spacing: -0.125rem;
+        margin-bottom: 0px;
       }
 
       p {
