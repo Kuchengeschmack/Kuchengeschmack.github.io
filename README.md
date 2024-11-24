@@ -14,7 +14,9 @@ I'm also trying to improve my Git workflow and try some technos such as Nx and D
 
 To serve the project, type `pnpm start`.
 
-Then, open your favorite browser at <http://localhost:4200>.
+Then, access the website :
+* On your local computer via <http://localhost:4200>
+* On your mobile via http://\<computer-local-ip-address\>:4200
 
 ## Workflow 🤓
 
