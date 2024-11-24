@@ -1,3 +1,13 @@
+## 0.12.0 (2024-11-24)
+
+### 🚀 Features
+
+- improve styling ([8c9fc3a](https://github.com/Kuchengeschmack/artiste-peintre/commit/8c9fc3a))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.11.0 (2024-11-23)
 
 ### 🚀 Features
