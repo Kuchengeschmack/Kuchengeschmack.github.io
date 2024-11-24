@@ -35,7 +35,7 @@ import { FooterComponent } from './components/footer.component';
       justify-content: center;
       align-items: center;
       padding: 1rem;
-      box-sizing: inherit;
+      box-sizing: border-box;
       background-color: white;
       margin-bottom: 1rem;
       z-index: 1;
