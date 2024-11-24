@@ -3,12 +3,9 @@ interface Photo {
   src: string
 }
 
-interface Header {
-  menuItems: {
-    title: string
-    link: string
-  }[]
+interface MenuItem {
   title: string
+  link: string
 }
 
 declare module 'assets/images.json' {
@@ -17,6 +14,6 @@ declare module 'assets/images.json' {
 }
 
 declare module 'assets/header.json' {
-  const header: Header;
+  const header: MenuItem[];
   export default header;
 }
