@@ -26,13 +26,6 @@ import { CoreModule } from 'core/core.module';
     </nav>
   `,
   styles: `
-    @media screen and (max-width: 500px) {
-      .pill-group {
-        flex-direction: row;
-        justify-content: start;
-      }
-    }
-
     .pill {
       display: flex;
       align-items: center;
@@ -81,6 +74,13 @@ import { CoreModule } from 'core/core.module';
 
       svg {
         margin-inline-start: 0.25rem;
+      }
+    }
+
+    @media screen and (min-width: 500px) {
+      .pill-group {
+        flex-direction: row;
+        justify-content: start;
       }
     }
   `,

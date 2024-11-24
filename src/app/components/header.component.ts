@@ -20,30 +20,6 @@ import { SideMenuComponent } from './side-menu.component';
     </div>
   `,
   styles: `
-    @media screen and (min-width: 500px) {
-      .content {
-        display: grid;
-        grid-template-columns: 1fr 81px 1fr;
-      }
-
-      .divider {
-        width: 1px;
-        justify-self: center;
-        margin-inline: 2.5rem;
-      }
-
-      .left-side {
-        justify-self: end;
-        h1 {
-          text-align: right;
-        }
-      }
-
-      .right-side {
-        justify-self: start;
-      }
-    }
-
     @media screen and (max-width: 500px) {
       .content {
         display: grid;
@@ -103,6 +79,30 @@ import { SideMenuComponent } from './side-menu.component';
       align-items: center;
       justify-content: center;
       margin: 1rem 0 1rem;
+    }
+
+    @media screen and (min-width: 500px) {
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 81px 1fr;
+      }
+
+      .divider {
+        width: 1px;
+        justify-self: center;
+        margin-inline: 2.5rem;
+      }
+
+      .left-side {
+        justify-self: end;
+        h1 {
+          text-align: right;
+        }
+      }
+
+      .right-side {
+        justify-self: start;
+      }
     }
   `,
 })
