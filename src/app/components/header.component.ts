@@ -6,7 +6,6 @@ import { CoreModule } from 'core/core.module';
 @Component({
   selector: 'app-header',
   imports: [CoreModule],
-  standalone: true,
   template: `
     <div class="content">
       <div class="left-side">

@@ -3,7 +3,6 @@ import { CoreModule } from 'core/core.module';
 
 @Component({
   selector: 'app-piano',
-  standalone: true,
   imports: [CoreModule],
   template: `
     <article class="article">

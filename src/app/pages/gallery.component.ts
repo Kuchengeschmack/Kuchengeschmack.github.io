@@ -9,7 +9,6 @@ import { CoreModule } from 'core/core.module';
 @Component({
   selector: 'app-gallery',
   imports: [CoreModule, PhotoCardComponent],
-  standalone: true,
   template: `
     <article class="article">
       <h1>Book</h1>

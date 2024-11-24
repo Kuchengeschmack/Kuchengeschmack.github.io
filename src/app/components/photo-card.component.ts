@@ -3,7 +3,6 @@ import { CoreModule } from 'core/core.module';
 
 @Component({
   selector: 'app-photo-card',
-  standalone: true,
   imports: [CoreModule],
   template: `
     <div class="card">

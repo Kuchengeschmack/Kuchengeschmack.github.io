@@ -4,7 +4,6 @@ import { CoreModule } from 'core/core.module';
 
 @Component({
   selector: 'app-intro',
-  standalone: true,
   imports: [CoreModule],
   template: `
     <article class="article">

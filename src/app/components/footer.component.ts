@@ -5,7 +5,6 @@ import { version } from '../../../package.json';
 @Component({
   selector: 'app-footer',
   imports: [CoreModule],
-  standalone: true,
   template: `
     <div class="footer">
       <div class="version">v{{ version }}</div>
