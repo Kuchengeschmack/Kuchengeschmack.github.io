@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { CoreModule } from 'core/core.module';
+import { CoreModule } from 'core/core-module';
 import { version } from '../../../package.json';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'art-footer',
   imports: [CoreModule],
   template: `
     <div class="footer">
@@ -103,6 +103,6 @@ import { version } from '../../../package.json';
     }
   `,
 })
-export class FooterComponent {
-  public version = version;
+export class Footer {
+  protected version = version;
 }

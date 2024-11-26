@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { HeaderComponent } from 'components/header.component';
-import { FooterComponent } from './components/footer.component';
+import { Header } from 'components/header';
+import { Footer } from './components/footer';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  selector: 'art-root',
+  imports: [RouterOutlet, Header, Footer],
   template: `
     <header class="header">
-      <app-header></app-header>
+      <art-header></art-header>
     </header>
 
     <main class="main">
@@ -17,7 +17,7 @@ import { FooterComponent } from './components/footer.component';
     </main>
 
     <footer>
-      <app-footer></app-footer>
+      <art-footer></art-footer>
     </footer>
   `,
   styles: `
@@ -45,4 +45,4 @@ import { FooterComponent } from './components/footer.component';
     }
   `,
 })
-export class AppComponent {}
+export class App {}

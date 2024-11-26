@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import header from 'assets/header.json';
 
-import { CoreModule } from 'core/core.module';
+import { CoreModule } from 'core/core-module';
 
 @Component({
-  selector: 'app-header',
+  selector: 'art-header',
   imports: [CoreModule],
   template: `
     <div class="content">
@@ -156,6 +156,6 @@ import { CoreModule } from 'core/core.module';
     }
   `,
 })
-export class HeaderComponent {
-  readonly header = header;
+export class Header {
+  protected readonly header = header;
 }

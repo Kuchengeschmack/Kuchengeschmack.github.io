@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { CoreModule } from 'core/core.module';
+import { CoreModule } from 'core/core-module';
 
 @Component({
-  selector: 'app-intro',
+  selector: 'art-intro',
   imports: [CoreModule],
   template: `
     <article class="article">
@@ -30,9 +30,9 @@ import { CoreModule } from 'core/core.module';
     }
   `,
 })
-export class IntroComponent {
+export class Intro {
   private _sanitizer = inject(DomSanitizer);
-  trustedUrl;
+  protected trustedUrl;
 
   constructor () {
     this.trustedUrl = this._sanitizer.bypassSecurityTrustResourceUrl(

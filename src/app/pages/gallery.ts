@@ -3,18 +3,18 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
 import photos from 'assets/images.json';
-import { PhotoCardComponent } from 'components/photo-card.component';
-import { CoreModule } from 'core/core.module';
+import { PhotoCard } from 'components/photo-card';
+import { CoreModule } from 'core/core-module';
 
 @Component({
-  selector: 'app-gallery',
-  imports: [CoreModule, PhotoCardComponent],
+  selector: 'art-gallery',
+  imports: [CoreModule, PhotoCard],
   template: `
     <article class="article">
       <h1>Book</h1>
       <div class="content">
         @for (photo of gallery.photos; track photo.alt) {
-          <app-photo-card [photo]="photo"></app-photo-card>
+          <art-photo-card [photo]="photo"></art-photo-card>
         } @empty {
           <mat-progress-spinner color="primary" mode="indeterminate" value="50">
           </mat-progress-spinner>
@@ -44,20 +44,19 @@ import { CoreModule } from 'core/core.module';
     }
   `,
 })
-export class GalleryComponent implements OnInit {
-  readonly gallery = { photos };
-  breakpoint: number = 3;
+export class Gallery implements OnInit {
+  protected readonly gallery = { photos };
+  protected breakpoint: number = 3;
 
   constructor (@Inject(DOCUMENT) private _document: Document) {}
 
   ngOnInit () {
+    this._size();
+  }
+
+  private _size () {
     if (this._document.defaultView) {
       this.breakpoint = this._document.defaultView.innerWidth <= 500 ? 1 : 3;
     }
-  }
-
-  onResize (event: Event) {
-    this.breakpoint
-      = (event.target as Window).innerWidth <= 500 || this.gallery.photos.length === 1 ? 1 : 3;
   }
 }

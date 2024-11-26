@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { CoreModule } from 'core/core.module';
+import { CoreModule } from 'core/core-module';
 
 @Component({
-  selector: 'app-piano',
+  selector: 'art-piano',
   imports: [CoreModule],
   template: `
     <article class="article">
@@ -59,4 +59,4 @@ import { CoreModule } from 'core/core.module';
     }
   `,
 })
-export class PianoComponent {}
+export class Piano {}

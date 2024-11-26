@@ -1,24 +1,24 @@
 import type { Routes } from '@angular/router';
 
-import { GalleryComponent } from 'pages/gallery.component';
-import { IntroComponent } from 'pages/intro.component';
-import { PianoComponent } from 'pages/piano.component';
+import { Gallery } from 'pages/gallery';
+import { Intro } from 'pages/intro';
+import { Piano } from 'pages/piano';
 
 export const routes: Routes = [
   {
     path: 'book',
     title: 'Marie-Cécile Caron | Book',
-    component: GalleryComponent,
+    component: Gallery,
   },
   {
     path: 'intro',
     title: 'Marie-Cécile Caron | Présentation',
-    component: IntroComponent,
+    component: Intro,
   },
   {
     path: 'piano',
     title: 'Marie-Cécile Caron | Cours de piano',
-    component: PianoComponent,
+    component: Piano,
   },
   {
     path: '**',
