@@ -12,7 +12,7 @@ import { Footer } from './footer/footer';
       <art-header></art-header>
     </header>
 
-    <main class="main">
+    <main>
       <router-outlet />
     </main>
 
@@ -37,11 +37,6 @@ import { Footer } from './footer/footer';
       box-sizing: border-box;
       background-color: white;
       margin-bottom: 1rem;
-      z-index: 1;
-    }
-
-    .main {
-      z-index: 0;
     }
   `,
 })
