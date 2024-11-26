@@ -1,8 +1,8 @@
 import type { Routes } from '@angular/router';
 
-import { Gallery } from 'pages/gallery';
-import { Intro } from 'pages/intro';
-import { Piano } from 'pages/piano';
+import { Gallery } from 'app/gallery/gallery';
+import { Intro } from 'app/intro/intro';
+import { Piano } from 'app/piano/piano';
 
 export const routes: Routes = [
   {

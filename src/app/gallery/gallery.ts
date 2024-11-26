@@ -3,8 +3,8 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
 import photos from 'assets/images.json';
-import { PhotoCard } from 'components/photo-card';
 import { CoreModule } from 'core/core-module';
+import { PhotoCard } from './photo-card';
 
 @Component({
   selector: 'art-gallery',
