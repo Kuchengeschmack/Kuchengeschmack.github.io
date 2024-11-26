@@ -1,3 +1,13 @@
+## 0.13.0 (2024-11-26)
+
+### 🩹 Fixes
+
+- vertically center title ([68c993e](https://github.com/Kuchengeschmack/artiste-peintre/commit/68c993e))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.12.0 (2024-11-24)
 
 ### 🚀 Features
