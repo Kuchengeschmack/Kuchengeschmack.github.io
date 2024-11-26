@@ -10,11 +10,7 @@
     "moduleResolution": "node",
     "paths": {
       "assets/*": ["assets/*"],
-      "components/*": ["app/components/*"],
-      "core/*": ["app/core/*"],
-      "models/*": ["app/models/*"],
-      "pages/*": ["app/pages/*"],
-      "services/*": ["app/services/*"]
+      "core/*": ["app/core/*"]
     },
     "resolveJsonModule": true,
     "strict": true,
