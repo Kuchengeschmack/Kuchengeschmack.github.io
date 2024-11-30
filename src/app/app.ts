@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { Header } from 'app/header/header';
 import { Footer } from './footer/footer';
+import { Header } from './header/header';
 
 @Component({
   selector: 'art-root',
@@ -12,11 +12,11 @@ import { Footer } from './footer/footer';
       <art-header></art-header>
     </header>
 
-    <main>
+    <main class="main">
       <router-outlet />
     </main>
 
-    <footer>
+    <footer class="footer">
       <art-footer></art-footer>
     </footer>
   `,
@@ -37,6 +37,15 @@ import { Footer } from './footer/footer';
       box-sizing: border-box;
       background-color: white;
       margin-bottom: 1rem;
+      box-sizing: border-box;
+    }
+
+    .main {
+      box-sizing: border-box;
+    }
+
+    .footer {
+      box-sizing: border-box;
     }
   `,
 })

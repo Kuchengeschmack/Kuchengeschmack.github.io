@@ -9,9 +9,8 @@ import { CoreModule } from 'core/core-module';
     <article class="article">
       <h1>Présentation</h1>
       <iframe
+        class="iframe"
         [src]="trustedUrl"
-        width="500"
-        height="673"
         style="border:none;overflow:hidden"
         scrolling="no"
         frameborder="0"
@@ -24,9 +23,19 @@ import { CoreModule } from 'core/core-module';
       padding: 3rem;
     }
 
+    .iframe {
+      height: 673px;
+    }
+
     h1 {
       text-align: center;
       font-weight: 700;
+    }
+
+    @media screen and (min-width: 500px) {
+      .iframe {
+        width: 500px;
+      }
     }
   `,
 })
