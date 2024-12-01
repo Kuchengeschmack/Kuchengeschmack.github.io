@@ -19,7 +19,7 @@ import { CoreModule } from 'core/core-module';
         </li>
         <li>
           Chaque élève est unique, et mes cours sont adaptés à vos goûts musicaux, votre rythme
-          d'apprentissage et vos objectfs personnels.
+          d'apprentissage et vos objectifs personnels.
         </li>
         <li>
           Je possède plus de 20 ans d'expérience dans l'enseignement du piano que j'ai exercé entre
