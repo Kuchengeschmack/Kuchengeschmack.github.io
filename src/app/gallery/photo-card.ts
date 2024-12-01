@@ -1,9 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { CoreModule } from 'core/core-module';
 
 @Component({
   selector: 'art-photo-card',
-  imports: [CoreModule],
   template: `
     <div class="photo-card">
       <div class="photo-card-header">

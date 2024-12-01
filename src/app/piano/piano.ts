@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { CoreModule } from 'core/core-module';
 
 @Component({
   selector: 'art-piano',
-  imports: [CoreModule],
   template: `
     <article class="article">
       <h1>Cours de piano disponibles dès maintenant !</h1>

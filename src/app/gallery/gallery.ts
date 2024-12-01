@@ -2,13 +2,13 @@ import type { OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
 import photos from 'assets/images.json';
-import { CoreModule } from 'core/core-module';
 import { PhotoCard } from './photo-card';
 
 @Component({
   selector: 'art-gallery',
-  imports: [CoreModule, PhotoCard],
+  imports: [MatProgressSpinner, PhotoCard],
   template: `
     <article class="article">
       <h1>Book</h1>

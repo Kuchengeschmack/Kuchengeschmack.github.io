@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import header from 'assets/header.json';
-
-import { CoreModule } from 'core/core-module';
 
 @Component({
   selector: 'art-header',
-  imports: [CoreModule],
+  imports: [RouterLink],
   template: `
     <div class="container">
       <div class="left-side">

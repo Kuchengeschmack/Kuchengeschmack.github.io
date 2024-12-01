@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { CoreModule } from 'core/core-module';
 import { version } from '../../../package.json';
 
 @Component({
   selector: 'art-footer',
-  imports: [CoreModule],
   template: `
     <div class="container">
       <div class="version">v{{ version }}</div>
