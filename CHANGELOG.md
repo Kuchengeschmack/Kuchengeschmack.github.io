@@ -1,3 +1,18 @@
+## 0.14.0 (2024-12-01)
+
+### 🚀 Features
+
+- improve rendering of intro page ([9798e19](https://github.com/Kuchengeschmack/artiste-peintre/commit/9798e19))
+- remove intro page ([586efa6](https://github.com/Kuchengeschmack/artiste-peintre/commit/586efa6))
+
+### 🩹 Fixes
+
+- header z-index ([1e48d3d](https://github.com/Kuchengeschmack/artiste-peintre/commit/1e48d3d))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.13.0 (2024-11-26)
 
 ### 🩹 Fixes
