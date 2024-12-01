@@ -22,7 +22,6 @@ import { Header } from './header/header';
   `,
   styles: `
     @use '@angular/material' as mat;
-    @use 'styles.scss';
 
     .header {
       @include mat.elevation(8);
@@ -34,18 +33,14 @@ import { Header } from './header/header';
       justify-content: center;
       align-items: center;
       padding: 1rem;
-      box-sizing: border-box;
       background-color: white;
       margin-bottom: 1rem;
-      box-sizing: border-box;
       z-index: 1;
     }
 
-    .main {
-      box-sizing: border-box;
-    }
-
-    .footer {
+    .main,
+    .footer,
+    .header {
       box-sizing: border-box;
     }
   `,

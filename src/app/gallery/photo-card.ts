@@ -5,11 +5,11 @@ import { CoreModule } from 'core/core-module';
   selector: 'art-photo-card',
   imports: [CoreModule],
   template: `
-    <div class="card">
-      <div class="header">
+    <div class="photo-card">
+      <div class="photo-card-header">
         <h1>{{ photo.alt }}</h1>
       </div>
-      <div class="img">
+      <div class="photo-card-img">
         <img mat-card-image [src]="photo.src" [alt]="photo.alt" />
       </div>
     </div>
@@ -17,7 +17,7 @@ import { CoreModule } from 'core/core-module';
   styles: `
     @use '@angular/material' as mat;
 
-    .header {
+    .photo-card-header {
       display: flex;
       justify-content: center;
       height: 32px;
@@ -31,21 +31,21 @@ import { CoreModule } from 'core/core-module';
       }
     }
 
-    .img {
+    .photo-card-img {
       display: grid;
       width: 100%;
       height: 100%;
       overflow: hidden;
       place-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .card {
+    .photo-card {
       @include mat.elevation(8);
       max-width: 300px;
       height: 100%;
@@ -56,7 +56,7 @@ import { CoreModule } from 'core/core-module';
       &:hover,
       &:active {
         transform: scale(1.1);
-        .header {
+        .photo-card-header {
           margin-bottom: 0px;
         }
       }

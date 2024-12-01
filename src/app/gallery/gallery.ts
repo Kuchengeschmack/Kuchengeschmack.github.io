@@ -12,7 +12,7 @@ import { PhotoCard } from './photo-card';
   template: `
     <article class="article">
       <h1>Book</h1>
-      <div class="content">
+      <div class="gallery">
         @for (photo of gallery.photos; track photo.alt) {
           <art-photo-card [photo]="photo"></art-photo-card>
         } @empty {
@@ -23,7 +23,7 @@ import { PhotoCard } from './photo-card';
     </article>
   `,
   styles: `
-    .content {
+    .gallery {
       display: grid;
       width: min(100%, 100rem);
       margin: 0 auto;
@@ -33,14 +33,6 @@ import { PhotoCard } from './photo-card';
       justify-content: center;
       place-items: center;
       gap: 3rem;
-    }
-
-    .article {
-      padding: 3rem;
-      h1 {
-        text-align: center;
-        font-weight: 700;
-      }
     }
   `,
 })

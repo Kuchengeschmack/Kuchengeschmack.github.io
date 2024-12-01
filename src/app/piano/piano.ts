@@ -41,22 +41,5 @@ import { CoreModule } from 'core/core-module';
       </p>
     </article>
   `,
-  styles: `
-    .article {
-      width: fit-content;
-      margin: 0 auto;
-      padding: 3rem;
-
-      h1,
-      h2,
-      p {
-        text-align: center;
-      }
-
-      h1 {
-        font-weight: 700;
-      }
-    }
-  `,
 })
 export class Piano {}

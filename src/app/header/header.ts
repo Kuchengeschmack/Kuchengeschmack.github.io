@@ -7,7 +7,7 @@ import { CoreModule } from 'core/core-module';
   selector: 'art-header',
   imports: [CoreModule],
   template: `
-    <div class="content">
+    <div class="container">
       <div class="left-side">
         <h1>Marie-Cécile Caron, artiste-peintre</h1>
       </div>
@@ -35,7 +35,7 @@ import { CoreModule } from 'core/core-module';
     </div>
   `,
   styles: `
-    .content {
+    .container {
       width: 100%;
       display: grid;
       justify-content: start;
@@ -45,7 +45,7 @@ import { CoreModule } from 'core/core-module';
       height: 1px;
       writing-mode: vertical-lr;
       margin-inline: 1rem;
-      background: var(--red-to-pink-to-purple-vertical-gradient);
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
     }
 
     .left-side {
@@ -125,7 +125,7 @@ import { CoreModule } from 'core/core-module';
     }
 
     @media screen and (min-width: 500px) {
-      .content {
+      .container {
         grid-template-columns: 1fr 81px 1fr;
       }
 
@@ -135,6 +135,7 @@ import { CoreModule } from 'core/core-module';
         justify-self: center;
         margin-inline: 2.5rem;
         writing-mode: horizontal-tb;
+        background: var(--red-to-pink-to-purple-vertical-gradient);
       }
 
       .left-side {

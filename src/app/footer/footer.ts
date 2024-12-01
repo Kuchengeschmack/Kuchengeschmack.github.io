@@ -6,7 +6,7 @@ import { version } from '../../../package.json';
   selector: 'art-footer',
   imports: [CoreModule],
   template: `
-    <div class="footer">
+    <div class="container">
       <div class="version">v{{ version }}</div>
       <address class="address">mc-caron.com</address>
       <a href="https://www.flaticon.com/fr/icones-gratuites/chats" title="Icônes de chats"
@@ -55,7 +55,7 @@ import { version } from '../../../package.json';
     </div>
   `,
   styles: `
-    .footer {
+    .container {
       display: grid;
       width: 100%;
       height: 40px;
