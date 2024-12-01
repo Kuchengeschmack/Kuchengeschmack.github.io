@@ -2,22 +2,18 @@ import type { OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
-import { MatProgressSpinner } from '@angular/material/progress-spinner';
 import photos from 'assets/images.json';
 import { PhotoCard } from './photo-card';
 
 @Component({
   selector: 'art-gallery',
-  imports: [MatProgressSpinner, PhotoCard],
+  imports: [PhotoCard],
   template: `
     <article class="article">
       <h1>Book</h1>
       <div class="gallery">
         @for (photo of gallery.photos; track photo.alt) {
           <art-photo-card [photo]="photo"></art-photo-card>
-        } @empty {
-          <mat-progress-spinner color="primary" mode="indeterminate" value="50">
-          </mat-progress-spinner>
         }
       </div>
     </article>

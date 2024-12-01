@@ -20,7 +20,6 @@ import { Component, Input } from '@angular/core';
       justify-content: center;
       height: 32px;
       padding: 16px;
-      margin-bottom: -64px;
       transition: 1s ease-in-out;
 
       h1 {
@@ -50,12 +49,20 @@ import { Component, Input } from '@angular/core';
       overflow: hidden;
       border-radius: 10px;
       transition: 1s ease-in-out;
+    }
 
-      &:hover,
-      &:active {
-        transform: scale(1.1);
+    @media screen and (min-width: 500px) {
+      .photo-card {
         .photo-card-header {
-          margin-bottom: 0px;
+          margin-bottom: -64px;
+        }
+
+        &:hover,
+        &:active {
+          transform: scale(1.1);
+          .photo-card-header {
+            margin-bottom: 0px;
+          }
         }
       }
     }
