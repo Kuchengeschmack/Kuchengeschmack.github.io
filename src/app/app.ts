@@ -38,6 +38,7 @@ import { Header } from './header/header';
       background-color: white;
       margin-bottom: 1rem;
       box-sizing: border-box;
+      z-index: 1;
     }
 
     .main {
