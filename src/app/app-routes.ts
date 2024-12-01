@@ -1,18 +1,15 @@
 import type { Routes } from '@angular/router';
 
-import { Gallery } from 'app/gallery/gallery';
-import { Piano } from 'app/piano/piano';
-
 export const routes: Routes = [
   {
     path: 'book',
     title: 'Marie-Cécile Caron | Book',
-    component: Gallery,
+    loadComponent: () => import('./gallery/gallery').then(m => m.Gallery),
   },
   {
     path: 'piano',
     title: 'Marie-Cécile Caron | Cours de piano',
-    component: Piano,
+    loadComponent: () => import('./piano/piano').then(m => m.Piano),
   },
   {
     path: '**',
