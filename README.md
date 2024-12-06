@@ -8,7 +8,7 @@ This project is an art portfolio. It is currently under construction.
 
 I dedicate this project to improving on my knowledge so as to get updated with Angular's latest features.
 
-I'm also trying to improve my workflow and try some technos : pnpm, Nx, Docker, eslint ...
+I'm also trying to improve my workflow and try some technos : docker, editorconfig, prettier, eslint, nx, pnpm ... and get to know more on how Node.js serves an Angular app.
 
 ## How-to 🤔
 
