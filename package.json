@@ -2,6 +2,7 @@
   "name": "artiste-peintre",
   "version": "0.14.0",
   "private": true,
+  "packageManager": "pnpm@9.14.2",
   "author": "Dorian Réale--Caron <drealecaron@protonmail.com>",
   "license": "MIT",
   "repository": "git@github.com:Kuchengeschmack/artiste-peintre.git",
