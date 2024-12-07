@@ -97,9 +97,6 @@
           "src/styles.scss"
         ]
       }
-    },
-    "deploy": {
-      "executor": "angular-cli-ghpages:deploy"
     }
   }
 }
