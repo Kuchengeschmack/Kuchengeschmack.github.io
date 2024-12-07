@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [chore/dev-action]
+    branches: [chore/**, feature/**, fix/**, refactor/**]
 jobs:
   build:
     runs-on: ubuntu-latest
