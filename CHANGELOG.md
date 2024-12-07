@@ -1,3 +1,19 @@
+## 0.15.0 (2024-12-07)
+
+### 🚀 Features
+
+- remove version number display in production ([8b2d236](https://github.com/Kuchengeschmack/artiste-peintre/commit/8b2d236))
+- add lazy loading of pages ([7aa018d](https://github.com/Kuchengeschmack/artiste-peintre/commit/7aa018d))
+- simplify  mobile version design ([d16dfaf](https://github.com/Kuchengeschmack/artiste-peintre/commit/d16dfaf))
+
+### 🩹 Fixes
+
+- center list ([0e80132](https://github.com/Kuchengeschmack/artiste-peintre/commit/0e80132))
+
+### ❤️  Thank You
+
+- Dorian Réale--Caron
+
 ## 0.14.0 (2024-12-01)
 
 ### 🚀 Features
