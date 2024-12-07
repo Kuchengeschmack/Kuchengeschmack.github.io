@@ -1,3 +1,7 @@
+## 0.15.2 (2024-12-07)
+
+This was a version bump only, there were no code changes.
+
 ## 0.15.1 (2024-12-07)
 
 This was a version bump only, there were no code changes.
