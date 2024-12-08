@@ -1,12 +1,8 @@
-# Artiste-peintre
+# Artiste-peintre [![main workflow](https://github.com/Kuchengeschmack/artiste-peintre/actions/workflows/main.yml/badge.svg)](https://github.com/Kuchengeschmack/artiste-peintre/actions)
 
 ## Description 🔍
 
 An Angular v19 art portfolio for artist Marie-Cécile Caron. Currently under construction.
-
-## Health ❤️
-
-[![main workflow](https://github.com/Kuchengeschmack/artiste-peintre/actions/workflows/main.yml/badge.svg)](https://github.com/Kuchengeschmack/artiste-peintre/actions)
 
 ## How-to 🤔
 
