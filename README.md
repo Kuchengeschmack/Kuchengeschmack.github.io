@@ -2,13 +2,12 @@
 
 ## Description 🔍
 
-This project is an art portfolio. It is currently under construction.
+An Angular v19 art portfolio for artist Marie-Cécile Caron. Currently under construction.
 
-## Motives 💡
+## Health ❤️
 
-I dedicate this project to improving on my knowledge so as to get updated with Angular's latest features.
-
-I'm also trying to improve my workflow and try some technos : docker, editorconfig, prettier, eslint, nx, pnpm ... and get to know more on how Node.js serves an Angular app.
+![dev workflow](https://github.com/Kuchengeschmack/artiste-peintre/actions/workflows/dev.yml/badge.svg)
+![main workflow](https://github.com/Kuchengeschmack/artiste-peintre/actions/workflows/main.yml/badge.svg)
 
 ## How-to 🤔
 
