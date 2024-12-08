@@ -6,8 +6,8 @@ An Angular v19 art portfolio for artist Marie-Cécile Caron. Currently under con
 
 ## Health ❤️
 
-![dev workflow](https://github.com/Kuchengeschmack/artiste-peintre/actions/workflows/dev.yml/badge.svg)
-![main workflow](https://github.com/Kuchengeschmack/artiste-peintre/actions/workflows/main.yml/badge.svg)
+[![dev workflow](https://github.com/Kuchengeschmack/artiste-peintre/actions/workflows/dev.yml/badge.svg)](https://github.com/Kuchengeschmack/artiste-peintre/actions)
+[![main workflow](https://github.com/Kuchengeschmack/artiste-peintre/actions/workflows/main.yml/badge.svg)](https://github.com/Kuchengeschmack/artiste-peintre/actions)
 
 ## How-to 🤔
 
