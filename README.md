@@ -2,15 +2,15 @@
 
 ## Description 🔍
 
-An Angular v19 art portfolio for artist Marie-Cécile Caron. Currently under construction.
+An Angular art portfolio for artist Marie-Cécile Caron. Currently under construction.
 
 ## How-to 🤔
 
-### Install the project
+### Install
 
 You must have [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en) and [PnPM](https://pnpm.io/) installed on your PC.
 
-Open a shell terminal and type :
+Open a shell terminal in your dev folder and type :
 
 ```sh
 # Clone the project
@@ -21,21 +21,24 @@ cd artiste-peintre
 pnpm install
 ```
 
-### Serve the project over the local network
-
-Open a shell terminal in the project folder and type :
+### Serve the app over the local network
 
 ```sh
 # Launches a local Node server for the app
 pnpm start
 ```
 
-### Access the app
-
 Open a web browser and go to the following address :
 
 - On your computer via <http://localhost:4200>
 - On your mobile over the local network via <http://192.168.X.Y:4200>
+
+### Build the app
+
+```sh
+# Builds the app in the ./dist folder
+pnpm build
+```
 
 ## Workflow 🤓
 
