@@ -2,8 +2,14 @@ name: artiste-peintre CI
 
 on:
   push:
-    branches: [main, chore/**, feature/**, fix/**, refactor/**]
-    tags: ['v[0-9]+.[0-9]+.[0-9]+']
+    branches:
+      - main
+      - 'chore/**'
+      - 'feature/**'
+      - 'fix/**'
+      - 'refactor/**'
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
 jobs:
   build:
     runs-on: ubuntu-latest
