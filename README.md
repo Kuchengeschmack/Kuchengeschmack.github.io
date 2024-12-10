@@ -6,7 +6,6 @@ An Angular art portfolio for artist Marie-Cécile Caron. Currently under constru
 
 ![demo](https://github.com/user-attachments/assets/168a6ec1-693e-4f36-9ad6-efda9d3fb96c)
 
-
 ## How-to 🤔
 
 ### Install
