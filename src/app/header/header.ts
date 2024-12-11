@@ -56,12 +56,6 @@ import header from 'assets/header.json';
         font-weight: 500;
         line-height: 100%;
         letter-spacing: -0.125rem;
-        margin-bottom: 0px;
-      }
-
-      p {
-        margin: 1.5rem 0 0;
-        color: var(--gray-700);
       }
     }
 
@@ -83,7 +77,6 @@ import header from 'assets/header.json';
       border-radius: 2.75rem;
       border: 0;
       transition: background 0.3s ease;
-      font-family: var(--inter-font);
       font-size: 0.875rem;
       font-style: normal;
       font-weight: 500;

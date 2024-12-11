@@ -21,10 +21,7 @@ import { Header } from './header/header';
     </footer>
   `,
   styles: `
-    @use '@angular/material' as mat;
-
     .header {
-      @include mat.elevation(8);
       position: sticky;
       top: 0px;
       width: 100%;
@@ -35,6 +32,7 @@ import { Header } from './header/header';
       padding: 1rem;
       background-color: white;
       margin-bottom: 1rem;
+      box-shadow: 0px 2px 8px gray;
       z-index: 1;
     }
 

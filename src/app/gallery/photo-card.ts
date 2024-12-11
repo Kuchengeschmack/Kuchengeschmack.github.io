@@ -8,13 +8,11 @@ import { Component, Input } from '@angular/core';
         <h1>{{ photo.alt }}</h1>
       </div>
       <div class="photo-card-img">
-        <img mat-card-image [src]="photo.src" [alt]="photo.alt" />
+        <img [src]="photo.src" [alt]="photo.alt" />
       </div>
     </div>
   `,
   styles: `
-    @use '@angular/material' as mat;
-
     .photo-card-header {
       display: flex;
       justify-content: center;
@@ -43,12 +41,12 @@ import { Component, Input } from '@angular/core';
     }
 
     .photo-card {
-      @include mat.elevation(8);
       max-width: 300px;
       height: 100%;
       overflow: hidden;
       border-radius: 10px;
       transition: 1s ease-in-out;
+      box-shadow: 2px 2px 8px gray;
     }
 
     @media screen and (min-width: 500px) {
