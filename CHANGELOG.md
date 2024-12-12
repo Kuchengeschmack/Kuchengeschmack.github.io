@@ -1,3 +1,14 @@
+## 0.16.0 (2024-12-12)
+
+### 🩹 Fixes
+
+- lockfile ([6f6b92b](https://github.com/Kuchengeschmack/artiste-peintre/commit/6f6b92b))
+- **server:** linting ([2082548](https://github.com/Kuchengeschmack/artiste-peintre/commit/2082548))
+
+### ❤️ Thank You
+
+- Dorian Réale--Caron
+
 ## 0.15.6 (2024-12-12)
 
 ### 🚀 Features
