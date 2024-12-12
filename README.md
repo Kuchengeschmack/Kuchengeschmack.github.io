@@ -2,7 +2,7 @@
 
 ## Description 🔍
 
-An Angular art portfolio for artist Marie-Cécile Caron. Currently under construction.
+Art portfolio for artist Marie-Cécile Caron.
 
 ![demo](https://github.com/user-attachments/assets/168a6ec1-693e-4f36-9ad6-efda9d3fb96c)
 
@@ -23,17 +23,21 @@ cd artiste-peintre
 pnpm install
 ```
 
-### Serve the app over the local network
+### Serve the app
+
+#### Locally
 
 ```sh
-# Launches a local Node server for the app
+# Launches a local Node server at http://localhost:4200
 pnpm start
 ```
 
-Open a web browser and go to the following address :
+#### Over the local network
 
-- On your computer via <http://localhost:4200>
-- On your mobile over the local network via <http://192.168.X.Y:4200>
+```sh
+# Launches a Node server over the local area network at http://192.168.X.Y:4200 where 192.168.X.Y is your local IP address
+pnpm start --host 192.168.X.Y
+```
 
 ### Build the app
 
@@ -43,6 +47,8 @@ pnpm build
 ```
 
 ## Workflow 🤓
+
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) are to be used in this project.
 
 Branches are created from the `main` branch :
 
@@ -64,10 +70,8 @@ When ready, create a release using :
 pnpm release
 ```
 
-Follow the prompt and the `package.json` and `CHANGELOG.md` files shall be updated automatically and committed on the fly. The corresponding commit will be automatically tagged with version number.
-
-You must use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) so that the changelog can be updated properly when running `pnpm release`.
+Then follow the prompt. Project's `package.json` and `CHANGELOG.md` files shall be updated automatically and committed on the fly. The corresponding commit shall be automatically tagged with version number.
 
 ## Feedback 🔂
 
-Feel free to address any issues using the [_Issues_](https://github.com/Kuchengeschmack/artiste-peintre/issues) tab of this Github repo.
+Feel free to address any issues using the [Issues](https://github.com/Kuchengeschmack/artiste-peintre/issues) tab of this Github repo.
