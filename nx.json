@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "defaultProject": "artiste-peintre",
+  "defaultProject": "artiste-peintre-front",
   "release": {
     "projects": ["*"]
   }

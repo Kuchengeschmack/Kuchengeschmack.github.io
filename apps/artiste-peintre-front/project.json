@@ -1,22 +1,25 @@
 {
-  "name": "artiste-peintre",
+  "name": "artiste-peintre-front",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/artiste-peintre/src",
+  "sourceRoot": "apps/artiste-peintre-front-front/src",
   "prefix": "app",
   "targets": {
     "build": {
       "executor": "@nx/angular:application",
       "options": {
-        "outputPath": "dist/artiste-peintre",
-        "index": "apps/artiste-peintre/src/index.html",
-        "browser": "apps/artiste-peintre/src/main.ts",
+        "outputPath": "dist/apps/artiste-peintre-front",
+        "index": "apps/artiste-peintre-front-front/src/index.html",
+        "browser": "apps/artiste-peintre-front-front/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/artiste-peintre/tsconfig.app.json",
+        "tsConfig": "apps/artiste-peintre-front-front/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/artiste-peintre/src/favicon.ico", "apps/artiste-peintre/src/assets"],
-        "styles": ["apps/artiste-peintre/src/styles.scss"],
-        "server": "apps/artiste-peintre/src/main-server.ts",
+        "assets": [
+          "apps/artiste-peintre-front-front/src/favicon.ico",
+          "apps/artiste-peintre-front-front/src/assets"
+        ],
+        "styles": ["apps/artiste-peintre-front-front/src/styles.scss"],
+        "server": "apps/artiste-peintre-front-front/src/main-server.ts",
         "prerender": {
           "discoverRoutes": false
         },
@@ -46,8 +49,8 @@
           "namedChunks": false,
           "fileReplacements": [
             {
-              "replace": "apps/artiste-peintre/src/environments/environment.ts",
-              "with": "apps/artiste-peintre/src/environments/environment-development.ts"
+              "replace": "apps/artiste-peintre-front-front/src/environments/environment.ts",
+              "with": "apps/artiste-peintre-front-front/src/environments/environment-development.ts"
             }
           ]
         }
@@ -58,10 +61,10 @@
       "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "artiste-peintre:build:production"
+          "buildTarget": "artiste-peintre-front:build:production"
         },
         "development": {
-          "buildTarget": "artiste-peintre:build:development"
+          "buildTarget": "artiste-peintre-front:build:development"
         }
       },
       "defaultConfiguration": "development"
