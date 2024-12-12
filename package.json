@@ -1,6 +1,6 @@
 {
   "name": "artiste-peintre",
-  "version": "0.15.5",
+  "version": "0.15.6",
   "private": true,
   "packageManager": "pnpm@9.14.2",
   "author": "Dorian Réale--Caron <drealecaron@protonmail.com>",

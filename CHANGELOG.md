@@ -1,3 +1,13 @@
+## 0.15.6 (2024-12-12)
+
+### 🚀 Features
+
+- remove angular material ([9f1f628](https://github.com/Kuchengeschmack/artiste-peintre/commit/9f1f628))
+
+### ❤️ Thank You
+
+- Dorian Réale--Caron
+
 ## 0.15.5 (2024-12-11)
 
 This was a version bump only, there were no code changes.
