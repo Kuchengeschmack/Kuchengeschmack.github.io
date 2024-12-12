@@ -2,11 +2,6 @@
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "name": "artiste-peintre",
   "projectType": "application",
-  "generators": {
-    "@nx/angular:component": {
-      "style": "scss"
-    }
-  },
   "sourceRoot": "src",
   "prefix": "app",
   "targets": {
