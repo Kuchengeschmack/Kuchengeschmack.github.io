@@ -3,7 +3,7 @@
   "name": "artiste-peintre",
   "projectType": "application",
   "generators": {
-    "@schematics/angular:component": {
+    "@nx/angular:component": {
       "style": "scss"
     }
   },
@@ -11,7 +11,7 @@
   "prefix": "app",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:application",
+      "executor": "@nx/angular:application",
       "options": {
         "outputPath": "dist/artiste-peintre",
         "index": "src/index.html",
@@ -60,7 +60,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
           "buildTarget": "artiste-peintre:build:production"
