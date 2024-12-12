@@ -6,7 +6,6 @@
   "author": "Dorian Réale--Caron <drealecaron@protonmail.com>",
   "license": "MIT",
   "repository": "git@github.com:Kuchengeschmack/artiste-peintre.git",
-  "main": "index.js",
   "scripts": {
     "start": "nx serve --host=0.0.0.0",
     "release": "nx release --skip-publish",
