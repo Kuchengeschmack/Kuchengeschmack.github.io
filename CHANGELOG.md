@@ -1,3 +1,13 @@
+## 0.17.0 (2024-12-12)
+
+### 🩹 Fixes
+
+- app name ([1b57e60](https://github.com/Kuchengeschmack/artiste-peintre/commit/1b57e60))
+
+### ❤️ Thank You
+
+- Dorian Réale--Caron
+
 ## 0.16.0 (2024-12-12)
 
 ### 🩹 Fixes
