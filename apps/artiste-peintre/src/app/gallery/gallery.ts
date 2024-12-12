@@ -2,7 +2,7 @@ import type { OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
-import photos from 'assets/images.json';
+import photos from '../../assets/images.json';
 import { PhotoCard } from './photo-card';
 
 @Component({
@@ -34,7 +34,7 @@ import { PhotoCard } from './photo-card';
 })
 export class Gallery implements OnInit {
   protected readonly gallery = { photos };
-  protected breakpoint: number = 3;
+  protected breakpoint = 3;
 
   constructor (@Inject(DOCUMENT) private _document: Document) {}
 

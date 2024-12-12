@@ -1,0 +1,15 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "dom"],
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "declaration": false,
+    "importHelpers": true,
+    "sourceMap": true,
+    "skipLibCheck": true
+  }
+}

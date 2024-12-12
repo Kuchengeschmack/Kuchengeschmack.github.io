@@ -1,22 +1,22 @@
 {
-  "$schema": "node_modules/nx/schemas/project-schema.json",
   "name": "artiste-peintre",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "src",
+  "sourceRoot": "apps/artiste-peintre/src",
   "prefix": "app",
   "targets": {
     "build": {
       "executor": "@nx/angular:application",
       "options": {
         "outputPath": "dist/artiste-peintre",
-        "index": "src/index.html",
-        "browser": "src/main.ts",
+        "index": "apps/artiste-peintre/src/index.html",
+        "browser": "apps/artiste-peintre/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "tsconfig.app.json",
+        "tsConfig": "apps/artiste-peintre/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["src/favicon.ico", "src/assets"],
-        "styles": ["src/styles.scss"],
-        "server": "src/main-server.ts",
+        "assets": ["apps/artiste-peintre/src/favicon.ico", "apps/artiste-peintre/src/assets"],
+        "styles": ["apps/artiste-peintre/src/styles.scss"],
+        "server": "apps/artiste-peintre/src/main-server.ts",
         "prerender": {
           "discoverRoutes": false
         },
@@ -46,8 +46,8 @@
           "namedChunks": false,
           "fileReplacements": [
             {
-              "replace": "src/environments/environment.ts",
-              "with": "src/environments/environment-development.ts"
+              "replace": "apps/artiste-peintre/src/environments/environment.ts",
+              "with": "apps/artiste-peintre/src/environments/environment-development.ts"
             }
           ]
         }

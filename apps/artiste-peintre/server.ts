@@ -49,8 +49,8 @@ export function app (): express.Express {
 }
 
 function run (): void {
-  // eslint-disable-next-line node/prefer-global/process, dot-notation
-  const port = process.env['PORT'] || 4000;
+  // eslint-disable-next-line node/prefer-global/process
+  const port = process.env.PORT || 4000;
 
   // Start up the Node server
   const server = app();

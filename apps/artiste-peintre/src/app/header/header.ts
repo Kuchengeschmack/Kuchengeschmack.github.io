@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import header from 'assets/header.json';
+import header from '../../assets/header.json';
 
 @Component({
   selector: 'art-header',
