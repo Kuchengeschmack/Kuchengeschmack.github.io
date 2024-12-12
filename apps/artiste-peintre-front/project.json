@@ -2,24 +2,24 @@
   "name": "artiste-peintre-front",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/artiste-peintre-front-front/src",
+  "sourceRoot": "apps/artiste-peintre-front/src",
   "prefix": "app",
   "targets": {
     "build": {
       "executor": "@nx/angular:application",
       "options": {
         "outputPath": "dist/apps/artiste-peintre-front",
-        "index": "apps/artiste-peintre-front-front/src/index.html",
-        "browser": "apps/artiste-peintre-front-front/src/main.ts",
+        "index": "apps/artiste-peintre-front/src/index.html",
+        "browser": "apps/artiste-peintre-front/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/artiste-peintre-front-front/tsconfig.app.json",
+        "tsConfig": "apps/artiste-peintre-front/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/artiste-peintre-front-front/src/favicon.ico",
-          "apps/artiste-peintre-front-front/src/assets"
+          "apps/artiste-peintre-front/src/favicon.ico",
+          "apps/artiste-peintre-front/src/assets"
         ],
-        "styles": ["apps/artiste-peintre-front-front/src/styles.scss"],
-        "server": "apps/artiste-peintre-front-front/src/main-server.ts",
+        "styles": ["apps/artiste-peintre-front/src/styles.scss"],
+        "server": "apps/artiste-peintre-front/src/main-server.ts",
         "prerender": {
           "discoverRoutes": false
         },
@@ -49,8 +49,8 @@
           "namedChunks": false,
           "fileReplacements": [
             {
-              "replace": "apps/artiste-peintre-front-front/src/environments/environment.ts",
-              "with": "apps/artiste-peintre-front-front/src/environments/environment-development.ts"
+              "replace": "apps/artiste-peintre-front/src/environments/environment.ts",
+              "with": "apps/artiste-peintre-front/src/environments/environment-development.ts"
             }
           ]
         }
