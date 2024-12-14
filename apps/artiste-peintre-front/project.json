@@ -6,7 +6,8 @@
   "prefix": "app",
   "targets": {
     "build": {
-      "executor": "@nx/angular:application",
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/artiste-peintre-front",
         "index": "apps/artiste-peintre-front/src/index.html",
@@ -15,15 +16,18 @@
         "tsConfig": "apps/artiste-peintre-front/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/artiste-peintre-front/src/favicon.ico",
-          "apps/artiste-peintre-front/src/assets"
+          "apps/artiste-peintre-front/src/assets",
+          {
+            "glob": "**/*",
+            "input": "apps/artiste-peintre-front/public"
+          }
         ],
         "styles": ["apps/artiste-peintre-front/src/styles.scss"],
         "server": "apps/artiste-peintre-front/src/main-server.ts",
-        "prerender": {
-          "discoverRoutes": false
+        "ssr": {
+          "entry": "apps/artiste-peintre-front/src/server.ts"
         },
-        "ssr": false
+        "prerender": true
       },
       "configurations": {
         "production": {
@@ -68,6 +72,25 @@
         }
       },
       "defaultConfiguration": "development"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/artiste-peintre-front/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "artiste-peintre-front:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/artiste-peintre-front/browser",
+        "spa": true
+      }
     }
   }
 }
