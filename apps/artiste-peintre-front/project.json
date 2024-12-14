@@ -6,7 +6,8 @@
   "prefix": "app",
   "targets": {
     "build": {
-      "executor": "@nx/angular:application",
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/artiste-peintre-front",
         "index": "apps/artiste-peintre-front/src/index.html",
@@ -20,10 +21,10 @@
         ],
         "styles": ["apps/artiste-peintre-front/src/styles.scss"],
         "server": "apps/artiste-peintre-front/src/main-server.ts",
-        "prerender": {
-          "discoverRoutes": false
+        "ssr": {
+          "entry": "apps/artiste-peintre-front/src/server.ts"
         },
-        "ssr": false
+        "prerender": true
       },
       "configurations": {
         "production": {
@@ -68,6 +69,9 @@
         }
       },
       "defaultConfiguration": "development"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
