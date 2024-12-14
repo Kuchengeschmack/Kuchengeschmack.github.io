@@ -11,6 +11,7 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "sibiraj-s.vscode-scss-formatter",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "firsttris.vscode-jest-runner"
   ]
 }
