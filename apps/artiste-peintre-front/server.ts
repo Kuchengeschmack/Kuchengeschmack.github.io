@@ -8,7 +8,7 @@ import express from 'express';
 import bootstrap from './src/main-server';
 
 // The Express app is exported so that it can be used by serverless Functions.
-export function app (): express.Express {
+export function app(): express.Express {
   const server = express();
   const serverDistFolder = dirname(fileURLToPath(import.meta.url));
   const browserDistFolder = resolve(serverDistFolder, '../../browser');
@@ -41,15 +41,14 @@ export function app (): express.Express {
         publicPath: browserDistFolder,
         providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
       })
-      .then(html => res.send(html))
-      .catch(err => next(err));
+      .then((html) => res.send(html))
+      .catch((err) => next(err));
   });
 
   return server;
 }
 
-function run (): void {
-  // eslint-disable-next-line node/prefer-global/process, dot-notation
+function run(): void {
   const port = process.env['PORT'] || 4000;
 
   // Start up the Node server
