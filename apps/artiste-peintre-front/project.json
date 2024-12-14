@@ -16,8 +16,11 @@
         "tsConfig": "apps/artiste-peintre-front/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/artiste-peintre-front/src/favicon.ico",
-          "apps/artiste-peintre-front/src/assets"
+          "apps/artiste-peintre-front/src/assets",
+          {
+            "glob": "**/*",
+            "input": "apps/artiste-peintre-front/public"
+          }
         ],
         "styles": ["apps/artiste-peintre-front/src/styles.scss"],
         "server": "apps/artiste-peintre-front/src/main-server.ts",
