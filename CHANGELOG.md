@@ -1,3 +1,13 @@
+## 0.18.0 (2024-12-14)
+
+### 🩹 Fixes
+
+- cypress not found ([107f2cf](https://github.com/Kuchengeschmack/artiste-peintre/commit/107f2cf))
+
+### ❤️ Thank You
+
+- Dorian Réale--Caron
+
 ## 0.17.0 (2024-12-12)
 
 ### 🩹 Fixes
