@@ -8,6 +8,7 @@ on:
       - 'feature/**'
       - 'fix/**'
       - 'refactor/**'
+      - 'test/**'
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
 jobs:
