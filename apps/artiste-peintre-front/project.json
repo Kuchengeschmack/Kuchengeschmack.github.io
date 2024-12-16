@@ -23,7 +23,7 @@
           }
         ],
         "styles": ["apps/artiste-peintre-front/src/styles.scss"],
-        "server": "apps/artiste-peintre-front/src/main-server.ts",
+        "server": "apps/artiste-peintre-front/src/main.server.ts",
         "ssr": {
           "entry": "apps/artiste-peintre-front/src/server.ts"
         },
@@ -54,7 +54,7 @@
           "fileReplacements": [
             {
               "replace": "apps/artiste-peintre-front/src/environments/environment.ts",
-              "with": "apps/artiste-peintre-front/src/environments/environment-development.ts"
+              "with": "apps/artiste-peintre-front/src/environments/environment.development.ts"
             }
           ]
         }

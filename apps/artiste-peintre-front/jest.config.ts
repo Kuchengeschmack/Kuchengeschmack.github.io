@@ -1,7 +1,7 @@
 export default {
   displayName: 'artiste-peintre-front',
   preset: '../../jest.preset.js',
-  setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/src/test.setup.ts'],
   coverageDirectory: '../../coverage/apps/artiste-peintre-front',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
