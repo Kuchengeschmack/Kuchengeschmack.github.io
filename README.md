@@ -54,7 +54,7 @@ Branches are created from the `main` branch :
 
 ```sh
 git switch main
-git switch --create <new-branch>
+git switch --create <my-branch>
 ```
 
 Branches are then merged into `main` without fast-forward :
@@ -62,6 +62,7 @@ Branches are then merged into `main` without fast-forward :
 ```sh
 git switch main
 git merge --no-ff <my-branch>
+git branch --delete <my-branch>
 ```
 
 When ready, create a release using :
