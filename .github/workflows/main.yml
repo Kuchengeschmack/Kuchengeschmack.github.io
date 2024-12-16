@@ -3,7 +3,6 @@ name: artiste-peintre CI
 on:
   push:
     branches:
-      - main
       - 'chore/**'
       - 'feature/**'
       - 'fix/**'
