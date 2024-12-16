@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-
-// eslint-disable-next-line @nx/enforce-module-boundaries
-import { version } from '../../../../package.json';
+import { version } from '../../package.json';
 import header from '../assets/header.json';
 import { environment } from '../environments/environment';
 
