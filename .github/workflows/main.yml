@@ -1,7 +1,5 @@
 name: artiste-peintre CI
 
-version: 10.4.0
-
 on:
   push:
     branches:
