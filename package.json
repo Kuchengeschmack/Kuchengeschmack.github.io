@@ -8,6 +8,7 @@
   "packageManager": "pnpm@10.4.0",
   "scripts": {
     "start": "ng serve",
+    "build": "ng build",
     "prepare": "husky"
   },
   "dependencies": {
