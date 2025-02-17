@@ -5,6 +5,7 @@
   "author": "Dorian Réale Caron <drealecaron@protonmail.com>",
   "license": "MIT",
   "repository": "git@github.com:Kuchengeschmack/artiste-peintre.git",
+  "packageManager": "pnpm@10.4.0",
   "scripts": {
     "start": "ng serve",
     "prepare": "husky"
