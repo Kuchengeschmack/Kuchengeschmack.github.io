@@ -69,13 +69,13 @@ This was a version bump only, there were no code changes.
 
 - remove version number display in production ([8b2d236](https://github.com/Kuchengeschmack/artiste-peintre/commit/8b2d236))
 - add lazy loading of pages ([7aa018d](https://github.com/Kuchengeschmack/artiste-peintre/commit/7aa018d))
-- simplify  mobile version design ([d16dfaf](https://github.com/Kuchengeschmack/artiste-peintre/commit/d16dfaf))
+- simplify mobile version design ([d16dfaf](https://github.com/Kuchengeschmack/artiste-peintre/commit/d16dfaf))
 
 ### 🩹 Fixes
 
 - center list ([0e80132](https://github.com/Kuchengeschmack/artiste-peintre/commit/0e80132))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -90,7 +90,7 @@ This was a version bump only, there were no code changes.
 
 - header z-index ([1e48d3d](https://github.com/Kuchengeschmack/artiste-peintre/commit/1e48d3d))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -100,7 +100,7 @@ This was a version bump only, there were no code changes.
 
 - vertically center title ([68c993e](https://github.com/Kuchengeschmack/artiste-peintre/commit/68c993e))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -110,7 +110,7 @@ This was a version bump only, there were no code changes.
 
 - improve styling ([8c9fc3a](https://github.com/Kuchengeschmack/artiste-peintre/commit/8c9fc3a))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 
@@ -134,7 +134,7 @@ This was a version bump only, there were no code changes.
 - gallery width ([2723efa](https://github.com/Kuchengeschmack/artiste-peintre/commit/2723efa))
 - la main passe ([8b2472c](https://github.com/Kuchengeschmack/artiste-peintre/commit/8b2472c))
 
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Dorian Réale--Caron
 

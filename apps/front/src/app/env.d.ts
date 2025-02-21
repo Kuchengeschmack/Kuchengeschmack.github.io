@@ -1,11 +1,11 @@
 interface Photo {
-  alt: string
-  src: string
+  alt: string;
+  src: string;
 }
 
 interface MenuItem {
-  title: string
-  link: string
+  title: string;
+  link: string;
 }
 
 declare module 'assets/images.json' {

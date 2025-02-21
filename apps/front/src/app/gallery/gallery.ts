@@ -36,13 +36,13 @@ export class Gallery implements OnInit {
   protected readonly gallery = { photos };
   protected breakpoint = 3;
 
-  constructor (@Inject(DOCUMENT) private _document: Document) {}
+  constructor(@Inject(DOCUMENT) private _document: Document) {}
 
-  ngOnInit () {
+  ngOnInit() {
     this._size();
   }
 
-  private _size () {
+  private _size() {
     if (this._document.defaultView) {
       this.breakpoint = this._document.defaultView.innerWidth <= 500 ? 1 : 3;
     }
