@@ -6,7 +6,7 @@
     "front": {
       "projectType": "application",
       "schematics": {},
-      "root": "apps",
+      "root": "apps/front",
       "sourceRoot": "apps/front/src",
       "prefix": "app",
       "architect": {
