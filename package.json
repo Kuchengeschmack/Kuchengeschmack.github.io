@@ -22,9 +22,7 @@
     "@angular/platform-server": "19.1.6",
     "@angular/router": "19.1.6",
     "@angular/ssr": "19.1.7",
-    "esbuild": "0.25.0",
     "express": "4.21.2",
-    "koa": "2.15.4",
     "tslib": "2.8.1",
     "zone.js": "0.15.0"
   },
