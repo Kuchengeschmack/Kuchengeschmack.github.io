@@ -2,7 +2,7 @@ import type { OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
-import photos from '../../assets/images.json';
+import photos from '../../../public/images.json';
 import { PhotoCard } from './photo-card';
 
 @Component({

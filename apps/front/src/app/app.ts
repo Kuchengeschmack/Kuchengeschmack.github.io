@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { version } from '../../package.json';
-import header from '../assets/header.json';
+import header from '../../public/header.json';
 import { environment } from '../environments/environment';
 
 @Component({
