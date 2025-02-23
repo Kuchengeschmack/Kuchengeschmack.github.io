@@ -21,7 +21,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "apps/front/public",
+                "output": "/public/"
               }
             ],
             "styles": ["apps/front/src/styles.scss"],

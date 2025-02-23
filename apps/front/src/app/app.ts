@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { version } from '../../package.json';
-import header from '../assets/header.json';
+import header from '../../public/header.json';
 import { environment } from '../environments/environment';
 
 @Component({
@@ -74,7 +74,7 @@ import { environment } from '../environments/environment';
       position: sticky;
       top: 0px;
       width: 100%;
-      min-height: content-fit;
+      min-height: fit-content;
       display: grid;
       justify-content: center;
       align-items: center;
@@ -105,7 +105,6 @@ import { environment } from '../environments/environment';
     a {
       width: fit-content;
       align-content: center;
-      self-align: center;
     }
 
     .social-links {
